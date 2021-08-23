@@ -1,0 +1,381 @@
+Date: Tue, 4 Aug 2020 19:30:22 +0000 (UTC)
+Message-ID: <2029327857.65.1596569422512@7358258bd595>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_64_1022034245.1596569422512"
+
+------=_Part_64_1022034245.1596569422512
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Payments - Reversal</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Payments - Reversal</h1>
+    <div class=3D"Section1">
+        <p>Documenta=C3=A7=C3=A3o referente =C3=A0 solicita=C3=A7=C3=A3o de=
+ estorno de um pagamento.</p>
+<h2 id=3D"Payments-Reversal-1.Solicita=C3=A7=C3=A3odeestorno">1.&nbsp;Solic=
+ita=C3=A7=C3=A3o de estorno</h2>
+<ol>
+<li><p>O estorno pode ser solicitado informando o <strong>paymentId</strong=
+> ou o <strong>externalId</strong> no path do recurso, a aplica=C3=A7=C3=A3=
+o ir=C3=A1 pesquisar primeiro pelo (<em>customerId e&nbsp;<em>paymentId</em=
+></em>), e caso n=C3=A3o encontre ir=C3=A1 pesquisar pelo (<em>customerId e=
+ externalId</em>)</p></li>
+<li>Quando o estorno =C3=A9 solicitado, o status do pagamento passa para "<=
+strong><em>REVERSAL_IN_PROGRESS</em></strong>"</li>
+</ol>
+<h2 id=3D"Payments-Reversal-2.Fluxodoestorno">2. Fluxo do estorno</h2>
+<p>Quando o estorno for realizado, um evento ou mais eventos ser=C3=A3o pub=
+licados no t=C3=B3pico "<strong><em>rw_payment_events</em></strong>" para q=
+ue todos os m=C3=B3dulos que assinarem o t=C3=B3pico possam tratar o evento=
+ de acordo com suas regras.</p>
+<h3 id=3D"Payments-Reversal-2.1Estornosimples:quandoexisteapenasummeiodepag=
+amentoenvolvido">2.1 Estorno simples: <em>quando existe apenas um meio de p=
+agamento envolvido</em></h3>
+<p>Evento de sucesso para estorno total</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "eventId": "0e77d800-d6b4-44e3-8c4e-658d8fd34517",
+  "eventType": "PAYMENT_REVERSED",
+  "domain": "PAYMENTS",
+  "timestamp": "2017-11-07T16:40:03.700+0000",
+  "customerId": "123e4567-e89b-12d3-a456-426655440000",
+  "userId": "9589bb7e-433b-4574-92f6-339333d51ad3",
+  "context": {
+    "organizationSlug": "zup",
+    "applicationId": "4ad6a310-332f-4cf7-9d2f-c6b5b0fee644"
+  },
+  "payload": {
+    "paymentId": "PAY-86183df9-993b-4699-8e1a-cbef27f79f8b",
+    "externalId": "aab7df60-23a8-4854-92e1-b641981c63f9",
+    "status": "REVERSED",
+    "reversedAmount": {
+      "currency": "BRL",
+      "amount": 1100,
+      "scale": 2
+    }
+  }
+}</pre>=20
+</div>
+</div>
+<h3 id=3D"Payments-Reversal-2.2Estornosplit:quandoexistem2meiosdepagamento"=
+>2.2 Estorno split: <em>quando existem 2 meios de pagamento</em></h3>
+<p>Evento de sucesso parcial (<em>estorno parcial, ou seja, de um dos meios=
+ de pagamento</em>)</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "eventId": "0e77d800-d6b4-44e3-8c4e-658d8fd34517",
+  "eventType": "PAYMENT_PARTIAL_REVERSED",
+  "domain": "PAYMENTS",
+  "timestamp": "2017-11-07T16:40:03.700+0000",
+  "customerId": "123e4567-e89b-12d3-a456-426655440000",
+  "userId": "9589bb7e-433b-4574-92f6-339333d51ad3",
+  "context": {
+    "organizationSlug": "zup",
+    "applicationId": "4ad6a310-332f-4cf7-9d2f-c6b5b0fee644"
+  },
+  "payload": {
+    "paymentId": "PAY-86183df9-993b-4699-8e1a-cbef27f79f8b",
+    "externalId": "aab7df60-23a8-4854-92e1-b641981c63f9",
+    "status": "PARTIAL_REVERSED",
+    "reversedAmount": {
+      "currency": "BRL",
+      "amount": 600,
+      "scale": 2
+    }
+  }
+}</pre>=20
+</div>
+</div>
+<p class=3D"auto-cursor-target">Evento de sucesso total <em>(estorno de tod=
+os os meios de pagamento j=C3=A1 completados)</em></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "eventId": "0e77d800-d6b4-44e3-8c4e-658d8fd34517",
+  "eventType": "PAYMENT_REVERSED",
+  "domain": "PAYMENTS",
+  "timestamp": "2017-11-07T16:40:03.700+0000",
+  "customerId": "123e4567-e89b-12d3-a456-426655440000",
+  "userId": "9589bb7e-433b-4574-92f6-339333d51ad3",
+  "context": {
+    "organizationSlug": "zup",
+    "applicationId": "4ad6a310-332f-4cf7-9d2f-c6b5b0fee644"
+  },
+  "payload": {
+    "paymentId": "PAY-86183df9-993b-4699-8e1a-cbef27f79f8b",
+    "externalId": "aab7df60-23a8-4854-92e1-b641981c63f9",
+    "status": "REVERSED",
+    "reversedAmount": {
+      "currency": "BRL",
+      "amount": 500,
+      "scale": 2
+    }
+  }
+}</pre>=20
+</div>
+</div>
+<h3 id=3D"Payments-Reversal-2.3Eventodeerro/falha(todososcasos,tantosimples=
+comosplit)">2.3 Evento de erro/falha (<em>todos os casos, tanto simples com=
+o split</em>)</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "eventId": "0e77d800-d6b4-44e3-8c4e-658d8fd34517",
+  "eventType": "PAYMENT_REVERSAL_ERROR",
+  "domain": "PAYMENTS",
+  "timestamp": "2017-11-07T16:40:03.700+0000",
+  "customerId": "123e4567-e89b-12d3-a456-426655440000",
+  "userId": "9589bb7e-433b-4574-92f6-339333d51ad3",
+  "context": {
+    "organizationSlug": "claro",
+    "applicationId": "4ad6a310-332f-4cf7-9d2f-c6b5b0fee644"
+  },
+  "payload": {
+    "paymentId": "PAY-86183df9-993b-4699-8e1a-cbef27f79f8b",
+    "externalId": "aab7df60-23a8-4854-92e1-b641981c63f9",
+    "status": "REVERSAL_ERROR",
+    "error": {
+      "code": "PAY-023",
+      "message": "&lt;Mensagem de erro espec=C3=ADfica do gateway de pagame=
+nto utilizado pela organiza=C3=A7=C3=A3o&gt;"
+    }
+  }
+}</pre>=20
+</div>
+</div>
+<p>Obs: o c=C3=B3digo de erro sempre ser=C3=A1 o mesmo "<strong>PAY-023</st=
+rong>" indicando que houve uma falha no estorno, o que muda de acordo com a=
+ organiza=C3=A7=C3=A3o/gateway de pagamento =C3=A9 a mensagem.</p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_64_1022034245.1596569422512--

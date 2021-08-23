@@ -1,0 +1,31 @@
+#### DESCOMPLICANDO O ANSIBLE
+
+# Executar comandos ad-hoc na maquina remota
+$ ansible -u centos -i hosts all -m ping 
+
+-u: usuario remoto
+-i: arquivos que contem o inventario das maquinas
+all: todas as maquinas do arquivo hosts
+-m: modulo que será executado na maquina remota
+-b: executar o comando com sudo
+-a: argumentos do comando
+-k: solicitar a senha do usuario
+
+# Executar um comando especifico na maquina
+$ ansible -u centos -i hosts all -m shell -a 'sudo yum -y update' 
+
+# Copiar arquivos para a maquina
+$ ansible -u centos -i hosts all -m copy -a 'src=<arquivo> dest=/tmp'
+
+# Clonar um repositorio do GitHub na maquina
+$ ansible -u centos -i hosts all -m git -a "repo=<link do repo> dest=/opt/teste-git"
+
+# Pegar informações da maquina
+$ ansible -u centos -i hosts all -m setup
+
+
+
+ansible -u centos -i /etc/ansible/hosts docker-swarm-ext \
+-b --private-key="/opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem" \
+-m shell -a 'docker pull zupacr.azurecr.io/claro-realwave-extensions-custom-processor:2020R3.4.0'
+

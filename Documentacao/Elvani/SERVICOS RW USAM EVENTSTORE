@@ -1,0 +1,96 @@
+*SERVICOS USAM EVENTSTORE*
+
+docker-rw-claro-prod service scale realwave-com_command-application=0
+docker-rw-claro-prod service scale realwave-com_command-application=12
+
+docker-rw-claro-prod service scale realwave-com_command-web=0
+docker-rw-claro-prod service scale realwave-com_command-web=1
+
+docker-rw-claro-prod service scale realwave-com_consumer=0
+docker-rw-claro-prod service scale realwave-com_consumer=5
+
+docker-rw-claro-prod service scale realwave-com_processor-application=0
+docker-rw-claro-prod service scale realwave-com_processor-application=4
+
+docker-rw-claro-prod service scale realwave-com_query-application=0
+docker-rw-claro-prod service scale realwave-com_query-application=3
+
+docker-rw-claro-prod service scale realwave-plm_command-application=0
+docker-rw-claro-prod service scale realwave-plm_command-application=10
+
+docker-rw-claro-prod service scale realwave-plm_command-application-web=0
+docker-rw-claro-prod service scale realwave-plm_command-application-web=1
+
+docker-rw-claro-prod service scale realwave-plm_query-application=0
+docker-rw-claro-prod service scale realwave-plm_query-application=5
+
+docker-rw-claro-prod service scale realwave-mgm_command-application=0
+docker-rw-claro-prod service scale realwave-mgm_command-application=2
+
+docker-rw-claro-prod service scale realwave-mgm_query-application=0
+docker-rw-claro-prod service scale realwave-mgm_query-application=4
+
+docker-rw-claro-prod service scale realwave-ns_consumer=0
+docker-rw-claro-prod service scale realwave-ns_consumer=4
+
+docker-rw-claro-prod service scale realwave-rum_application=0
+docker-rw-claro-prod service scale realwave-rum_application=10
+
+docker-rw-claro-prod service scale realwave-rum_batch=0
+docker-rw-claro-prod service scale realwave-rum_batch=5
+
+docker-rw-claro-prod service scale realwave-rum_consumer=0
+docker-rw-claro-prod service scale realwave-rum_consumer=5
+
+docker-rw-claro-prod service scale realwave-rum_notification-consumer=0
+docker-rw-claro-prod service scale realwave-rum_notification-consumer=5
+
+docker-rw-claro-prod service scale realwave-sales-manager_command-application=0
+docker-rw-claro-prod service scale realwave-sales-manager_command-application=5
+
+docker-rw-claro-prod service scale realwave-sales-manager_consumer=0
+docker-rw-claro-prod service scale realwave-sales-manager_consumer=4
+
+docker-rw-claro-prod service scale realwave-sales-manager_query-application=0
+docker-rw-claro-prod service scale realwave-sales-manager_query-application=2
+
+
+
+
+--------------------------------------------------------------------------
+
+docker-rw-claro-prod service scale realwave-com_command-application=0
+
+docker-rw-claro-prod service scale realwave-com_command-web=0
+
+docker-rw-claro-prod service scale realwave-com_consumer=0
+
+docker-rw-claro-prod service scale realwave-com_processor-application=0
+
+docker-rw-claro-prod service scale realwave-com_query-application=0
+
+docker-rw-claro-prod service scale realwave-plm_command-application=0
+
+docker-rw-claro-prod service scale realwave-plm_command-application-web=0
+
+docker-rw-claro-prod service scale realwave-plm_query-application=0
+
+docker-rw-claro-prod service scale realwave-mgm_command-application=0
+
+docker-rw-claro-prod service scale realwave-mgm_query-application=0
+
+docker-rw-claro-prod service scale realwave-ns_consumer=0
+
+docker-rw-claro-prod service scale realwave-rum_application=0
+
+docker-rw-claro-prod service scale realwave-rum_batch=0
+
+docker-rw-claro-prod service scale realwave-rum_consumer=0
+
+docker-rw-claro-prod service scale realwave-rum_notification-consumer=0
+
+docker-rw-claro-prod service scale realwave-sales-manager_command-application=0
+
+docker-rw-claro-prod service scale realwave-sales-manager_consumer=0
+
+docker-rw-claro-prod service scale realwave-sales-manager_query-application=0

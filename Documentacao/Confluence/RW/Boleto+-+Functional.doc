@@ -1,0 +1,835 @@
+Date: Tue, 4 Aug 2020 19:40:25 +0000 (UTC)
+Message-ID: <596292987.53.1596570025638@c8d122cc4352>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_52_1171168403.1596570025638"
+
+------=_Part_52_1171168403.1596570025638
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Boleto - Functional</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Boleto - Functional</h1>
+    <div class=3D"Section1">
+        <p><style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1596570025243 {padding: 0px;}
+div.rbtoc1596570025243 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1596570025243 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+<div class=3D"toc-macro rbtoc1596570025243">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#Boleto-Functional-Gerarboletocomoformadepagamento">Gerar bo=
+leto como forma de pagamento</a></li>=20
+<li><a href=3D"#Boleto-Functional-Compensa=C3=A7=C3=A3odeboleto">Compensa=
+=C3=A7=C3=A3o de boleto</a></li>=20
+<li><a href=3D"#Boleto-Functional-Reemiss=C3=A3odeBoletoVencido">Reemiss=C3=
+=A3o de Boleto Vencido</a></li>=20
+<li><a href=3D"#Boleto-Functional-Cancelamentodeboleto">Cancelamento de bol=
+eto</a></li>=20
+<li><a href=3D"#Boleto-Functional-Impress=C3=A3odeboleto">Impress=C3=A3o de=
+ boleto</a></li>=20
+<li><a href=3D"#Boleto-Functional-Enviarboletopore-mail">Enviar boleto por =
+e-mail</a></li>=20
+<li><a href=3D"#Boleto-Functional-Recorr=C3=AAnciadeumAdd-onsutilizandoform=
+adepagamentoboleto">Recorr=C3=AAncia de um Add-ons utilizando forma de paga=
+mento boleto</a></li>=20
+<li><a href=3D"#Boleto-Functional-Enviarboleto&quot;X&quot;diasantesdovenci=
+mento">Enviar boleto "X" dias antes do vencimento</a></li>=20
+<li><a href=3D"#Boleto-Functional-Enviarpushap=C3=B3senviodeboletopore-mail=
+">Enviar push ap=C3=B3s envio de boleto por e-mail</a></li>=20
+<li><a href=3D"#Boleto-Functional-Estornodeboleto">Estorno de boleto</a></l=
+i>=20
+<li><a href=3D"#Boleto-Functional-Flagparacontroledeanti-fraudenoboleto">Fl=
+ag para controle de anti-fraude no boleto</a></li>=20
+<li><a href=3D"#Boleto-Functional-Hist=C3=B3ricodeboletos">Hist=C3=B3rico d=
+e boletos</a></li>=20
+</ul>=20
+</div>
+<p></p>
+<p><br></p>
+<p><span style=3D"color: rgb(51,51,51);">Este documento tem por objetivo de=
+screver as regras do boleto.<span>&nbsp;</span></span>Boleto =C3=A9 um t=C3=
+=ADtulo de cobran=C3=A7a que pode ser pago em qualquer institui=C3=A7=C3=A3=
+o ou estabelecimento conveniado, at=C3=A9 a data de vencimento indicada.&nb=
+sp;No boleto, h=C3=A1 par=C3=A2metros fundamentais para que o pagante seja =
+identificado facilmente, contendo os dados necess=C3=A1rios para fazer a co=
+mpensa=C3=A7=C3=A3o certa do valor que tem como d=C3=A9bito.</p>
+<p><br></p>
+<h2 id=3D"Boleto-Functional-Gerarboletocomoformadepagamento"><strong><span =
+style=3D"color: rgb(23,43,77);">Gerar boleto como forma de pagamento</span>=
+</strong></h2>
+<p><strong>RN01 -</strong> Abaixo ser=C3=A1 descrito os principais campos d=
+o boleto junto com suas regras.</p>
+<p><strong>01 - C=C3=B3digo do Banco</strong><br>Que inicia-se com o c=C3=
+=B3digo do banco, mais o digito.</p>
+<p><strong><strong>0</strong>2 - Linha digit=C3=A1vel</strong> <br>=C3=89 a=
+ representa=C3=A7=C3=A3o num=C3=A9rica do c=C3=B3digo de barras. A linha di=
+git=C3=A1vel =C3=A9 baseada no valor do c=C3=B3digo de barras, mas n=C3=A3o=
+ =C3=A9 o mesmo n=C3=BAmero.&nbsp;Ela serve, para o pagamento do boleto via=
+ internet e para ser utilizada quando o c=C3=B3digo de barras esta danifica=
+do.</p>
+<p><strong><strong>0</strong>3 - Vencimento</strong><br>=C3=88 a data em qu=
+e foi programado o vencimento do boleto</p>
+<p><strong><strong>0</strong>4 - Ag=C3=AAncia c=C3=B3digo cedente</strong><=
+br>Este campo varia conforme o banco, mas em geral =C3=A9 composto pelo n=
+=C3=BAmero da carteira, ag=C3=AAncia, conta e digito dependendo do&nbsp;&nb=
+sp;banco pode ser: ag=C3=AAncia+conta ou mesmo carteira+ag=C3=AAncia+conta,=
+ cada banco tem um padr=C3=A3o.</p>
+<p><strong><strong>0</strong>5 - Nosso Numero</strong><br>Este campo tamb=
+=C3=A9m varia conforme a institui=C3=A7=C3=A3o banc=C3=A1ria, quando o bole=
+to =C3=A9 pago em geral =C3=A9 esse n=C3=BAmero que aparece no extrato, des=
+ta forma facilita a identifica=C3=A7=C3=A3o do boleto pago.&nbsp;Este n=C3=
+=BAmero, deve ser diferente para cada boleto emitido, e n=C3=A3o podendo ha=
+ver duplicidades.<br><br><strong><strong>0</strong>6 - Valor do Documento</=
+strong><br>Este campo cont=C3=A9m o valor do documento, com duas casas deci=
+mais e v=C3=ADrgula como separador decimal.</p>
+<p><strong><strong>0</strong>7 - C=C3=B3digo de Barras</strong><br>=C3=89 u=
+m conjunto de barras, que atrav=C3=A9s de sua espessura representam "0" ou =
+"1" em bin=C3=A1rio.&nbsp;No total o c=C3=B3digo de barras =C3=A9 composto =
+por 44 d=C3=ADgitos num=C3=A9ricos, que representam o valor, data de vencim=
+ento&nbsp;entre outras informa=C3=A7=C3=B5es do boleto, a composi=C3=A7=C3=
+=A3o e disposi=C3=A7=C3=A3o desses n=C3=BAmeros variam de banco pra banco, =
+podendo conter o n=C3=BAmero da ag=C3=AAncia, conta corrente, c=C3=B3digo d=
+o cliente, etc.</p>
+<p><strong><strong>0</strong>8 - Carteira</strong><br>=C3=89 o c=C3=B3digo =
+da carteira que est=C3=A1 sendo utilizada.<br><br><strong><strong>0</strong=
+>9 - Sacado</strong><br>Sacado =C3=A9 quem paga o boleto.&nbsp;&nbsp;Este c=
+ampo cont=C3=A9m, os dados da usu=C3=A1rio que ir=C3=A1 efetuar o pagamento=
+ do boleto, nome endere=C3=A7o.</p>
+<p><strong>10 - Data do Documento</strong><br>Data em que o boleto foi gera=
+do ou emitido, no caso de segunda via por internet.</p>
+<p><strong>11 - Cedente</strong><br>Cedente =C3=A9 quem emitiu o boleto. Es=
+te campo cont=C3=A9m o nome de quem emitiu o boleto, em geral o titular da =
+conta, podendo ser pessoa f=C3=ADsica ou jur=C3=ADdica dependendo do banco.=
+</p>
+<p><br></p>
+<p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-manu=
+al-size"><img class=3D"confluence-embedded-image" height=3D"248" src=3D"0ad=
+0a6e7189709154210481540a7e520" data-image-src=3D"https://zupjira.atlassian.=
+net/wiki/download/attachments/203817100/Boleto_edit.jpg?version=3D1&amp;mod=
+ificationDate=3D1521546852062&amp;cacheVersion=3D1&amp;api=3Dv2" data-unres=
+olved-comment-count=3D"0" data-linked-resource-id=3D"215449605" data-linked=
+-resource-version=3D"1" data-linked-resource-type=3D"attachment" data-linke=
+d-resource-default-alias=3D"Boleto_edit.jpg" data-base-url=3D"https://zupji=
+ra.atlassian.net/wiki" data-linked-resource-content-type=3D"image/jpeg" dat=
+a-linked-resource-container-id=3D"203817100" data-linked-resource-container=
+-version=3D"49" data-media-id=3D"c22f13d5-b050-47ae-8b8d-bd5ebbe0c924" data=
+-media-type=3D"file" width=3D"468"></span></p>
+<p><br></p>
+<p><strong>RN02</strong> - O<span style=3D"color: rgb(23,43,77);">&nbsp;val=
+or do boleto deve ser o valor total do servi=C3=A7o contratado, ou seja se =
+a mensalidade custa R$ 30,00, o boleto emitido deve ser exatamente esse val=
+or de R$ 30,00 reais.</span></p>
+<p><strong>RN03</strong> - Se o b<span style=3D"color: rgb(23,43,77);">olet=
+o tiver o vencimento em finais de semana ou feriados nacionais como por exe=
+mplo Dia do Trabalho,&nbsp;Tiradentes,&nbsp;Corpus Christi,&nbsp;Paix=C3=A3=
+o de Cristo, Natal, o pagamento do t=C3=ADtulo deve ser permitido no pr=C3=
+=B3ximo dia =C3=BAtil, sem que haja qualquer tipo de cobran=C3=A7a de juros=
+ e sem reemiss=C3=A3o de nova boleta com um novo valor.</span></p>
+<p><br></p>
+<h2 id=3D"Boleto-Functional-Compensa=C3=A7=C3=A3odeboleto"><strong><span st=
+yle=3D"color: rgb(23,43,77);">Compensa=C3=A7=C3=A3o de boleto</span></stron=
+g></h2>
+<p>O processo de compensa=C3=A7=C3=A3o do boleto banc=C3=A1rio passa pelo s=
+istema de compensa=C3=A7=C3=A3o do banco que o emitiu, detsa forma o pagame=
+nto&nbsp;ser=C3=A1 verificado pelos funcion=C3=A1rios antes que o estabelec=
+imento receba o dinheiro em sua conta.<br><br></p>
+<p><strong>RN01</strong> -&nbsp;O valor compensado do boleto deve ser credi=
+tado em conta de acordo com as configura=C3=A7=C3=B5es do banco/conta.</p>
+<p><strong>RN02</strong> - A data de compensa=C3=A7=C3=A3o, deve levarda em=
+ considera=C3=A7=C3=A3o como por exemplo feriados e feniais de semana. Send=
+o assim, o pagamento de um boleto que for efetivado em um s=C3=A1bado/feria=
+do, o valor&nbsp; deste boleto s=C3=B3 ser=C3=A1 compensando no pr=C3=B3xim=
+o dia =C3=BAtil.</p>
+<p><strong>RN03 -&nbsp;A compensa=C3=A7=C3=A3o do boleto deve levar at=C3=
+=A9 72 horas para ser compensado a partir da data de pagamento.</strong></p=
+>
+<p><br></p>
+<h2 id=3D"Boleto-Functional-Reemiss=C3=A3odeBoletoVencido"><strong><span st=
+yle=3D"color: rgb(23,43,77);">Reemiss=C3=A3o de Boleto Vencido</span></stro=
+ng></h2>
+<p><span style=3D"color: rgb(23,43,77);">A reemiss=C3=A3o, consiste em emit=
+ir uma 2=C2=BA via do boleto quando o mesmo encontrasse vencido por motivos=
+ de falta de pagamento.&nbsp;</span></p>
+<p><br></p>
+<p><strong>RN01 -&nbsp;&nbsp;</strong>A reemiss=C3=A3o de um boleto, deve s=
+e aplicar quando sua data de pagamento tenha expirado, ou seja, no primeiro=
+ dia ap=C3=B3s o vencimento deve-se permitir a emiss=C3=A3o do boleto.</p>
+<p><strong>RN02 -&nbsp;Na reemiss=C3=A3o da segunda via do boleto, deve-se =
+levar em considera=C3=A7=C3=A3o os juros de cada dia ap=C3=B3s a data de ve=
+ncimento, sobre o valor total (Regra a definir).</strong></p>
+<p><strong>RN03 -&nbsp;</strong><span>Sistema deve permitir que o usu=C3=A1=
+rio possa escolher qual a data do pr=C3=B3ximo vencimento ao solicitar a re=
+emiss=C3=A3o da segunda via do boleto. A quantidade de dias deve levar em c=
+onsidera=C3=A7=C3=A3o os juros que ser=C3=A3o gerado a cada dia.</span></p>
+<p><span>&nbsp;</span></p>
+<h2 id=3D"Boleto-Functional-Cancelamentodeboleto"><strong><span style=3D"co=
+lor: rgb(23,43,77);">Cancelamento de boleto</span></strong></h2>
+<p><span>O cancelamento do boleto se d=C3=A1 quando o pagamento n=C3=A3o fo=
+i efetuado, desta forma =C3=A9 cancelado automaticamente, sendo necess=C3=
+=A1rio a emiss=C3=A3o de um novo boleto com novos valores.</span></p>
+<p><strong>RN01</strong> -&nbsp;<span>Sistema deve cancelar automaticamente=
+ o boleto quando ultrapassar a data do pagamento e o mesmo n=C3=A3o tiver s=
+ido pago.</span></p>
+<h2 id=3D"Boleto-Functional-Impress=C3=A3odeboleto"><strong><span style=3D"=
+color: rgb(23,43,77);">Impress=C3=A3o de boleto</span></strong></h2>
+<p><span>A impress=C3=A3o do boleto resulta em ter um =C3=ADcone onde ao se=
+r pressionado, dispara uma a=C3=A7=C3=A3o permitindo a impress=C3=A3o das i=
+nforma=C3=A7=C3=B5es contidas no boleto. </span></p>
+<p><br></p>
+<p><strong>RN01</strong> -&nbsp;<span>Ao solicitar a impress=C3=A3o, o mesm=
+o deve trazer todas as informa=C3=A7=C3=B5es pertinentes boleto.&nbsp;</spa=
+n></p>
+<p><br></p>
+<h2 id=3D"Boleto-Functional-Enviarboletopore-mail"><strong><span style=3D"c=
+olor: rgb(23,43,77);">Enviar boleto por e-mail</span></strong></h2>
+<p><span style=3D"color: rgb(23,43,77);">O envio do boleto por e-mail, cons=
+iste em receber o documento contendo as informa=C3=A7=C3=B5es como data de =
+pagamento, nosso n=C3=BAmero, n=C3=BAmero do cliente, c=C3=B3digo de barras=
+.</span></p>
+<p><br></p>
+<p><span style=3D"color: rgb(23,43,77);"><strong>RN01</strong> - Deve conte=
+r uma op=C3=A3o para que o usu=C3=A1rio possa enserir o email para o recebi=
+mento do boleto.</span></p>
+<p><span><strong>RN02</strong> - O sistema deve possuir um =C3=ADcone que a=
+o ser pressionado mediante ao preenchimento correto de um e-mail v=C3=A1lid=
+o, sistema ir=C3=A1 enviar o boleto.</span></p>
+<h2 id=3D"Boleto-Functional-Recorr=C3=AAnciadeumAdd-onsutilizandoformadepag=
+amentoboleto"><strong><span style=3D"color: rgb(23,43,77);">Recorr=C3=AAnci=
+a de um Add-ons utilizando forma de pagamento boleto</span></strong></h2>
+<p><span>A recorr=C3=AAncia de um Add-ons consiste em ter a renova=C3=A7=C3=
+=A3o todos os meses, ou seja, se o usu=C3=A1rio deseja que o Add-ons contra=
+tado seja renovado automaticamente todos os meses, basta apenas selecionar =
+o flag de ativo. Desta forma o boleto tem que seguir essa recorr=C3=AAncia =
+do Add-ons, sendo assim a cada renova=C3=A7=C3=A3o o boleto tem que renova =
+automaticamente.&nbsp;</span></p>
+<p><br></p>
+<p><span><strong>RN01</strong> -&nbsp;<span>O flag de recorr=C3=AAncia do b=
+oleto, &nbsp;quando estiver selecionado significa que o boleto ir=C3=A1 ser=
+ gerado automaticamente todos os meses.&nbsp;&nbsp;</span></span></p>
+<p><span><span><strong>RN02</strong> -&nbsp;<span>O check-box deve ser din=
+=C3=A2mico &nbsp;possibilitando ser selecionado ou n=C3=A3o.&nbsp;</span></=
+span></span></p>
+<h2 id=3D"Boleto-Functional-Enviarboleto&quot;X&quot;diasantesdovencimento"=
+><strong><span style=3D"color: rgb(23,43,77);">Enviar boleto "X" dias antes=
+ do vencimento</span></strong></h2>
+<p><span>A funcionalidade de envio do boleto dias antes do vencimento, tem =
+por objetivo enviar para o e-mail do usu=C3=A1rio o boleto antes da data pr=
+evista para o pagamento. Ap=C3=B3s o recebimento, o usu=C3=A1rio poder=C3=
+=A1 efetuar o pagamento antes do seu vencimento, evitando desta forma o int=
+errompimento dos servi=C3=A7o.</span></p>
+<p><br></p>
+<p><span><strong>RN01</strong> -&nbsp;<span>Sistema disponibiliza o boleto =
+para consulta, baixar e/ou envio por e-mail de acordo com a defini=C3=A7=C3=
+=A3o de dias antes da data de seu vencimento.</span></span></p>
+<p><strong>RN02</strong> -&nbsp;<span>O boleto deve ser enviado automaticam=
+ente para o e-mail informado &nbsp;no ato do cadastramento do servi=C3=A7o.=
+</span></p>
+<h2 id=3D"Boleto-Functional-Enviarpushap=C3=B3senviodeboletopore-mail"><str=
+ong><span style=3D"color: rgb(23,43,77);">Enviar push ap=C3=B3s envio de bo=
+leto por e-mail</span></strong></h2>
+<p><span>O envio de push, =C3=A9 uma forma de notificar sobre a disponibili=
+dade de um servi=C3=A7o. Neste caso, o push ser=C3=A1 enviado ao usu=C3=A1r=
+io assim que seu boleto for enviado para o e-mail a qual cadastrou para adq=
+uirir o servi=C3=A7o. </span></p>
+<p><br></p>
+<p><span><strong>RN01</strong> -&nbsp;<span>A mensagem enviada como informa=
+tivo do push, deve ser curta de no m=C3=A1ximo 30 caracteres.</span></span>=
+</p>
+<p><strong>RN02 -&nbsp;No corpo da mensagem, deve-se possuir os d=C3=ADgito=
+s do c=C3=B3digo de barras(A definir).</strong></p>
+<h2 id=3D"Boleto-Functional-Estornodeboleto"><strong>Estorno de boleto</str=
+ong></h2>
+<p>A solicita=C3=A7=C3=A3o de estorno =C3=A9 necess=C3=A1ria quando o usu=
+=C3=A1rio de alguma forma precisa do estorno do valor,&nbsp;por desist=C3=
+=AAncia de servi=C3=A7o/compra de produto, gerou e pagou um boleto por enga=
+no.</p>
+<p><br></p>
+<p><strong>RN01</strong> -&nbsp;Quando a solicita=C3=A7=C3=A3o de estorno f=
+or efetuada, ser=C3=A3o enviados e-mail e SMS ao seu usu=C3=A1rio solicitan=
+do o envio do comprovante do pagamento e as informa=C3=A7=C3=B5es banc=C3=
+=A1rias para o estorno do valor deste boleto.&nbsp;</p>
+<p><strong>RN02</strong> -&nbsp;<span>Ao solicitar o estorno, o sistema tem=
+ que oferecer uma op=C3=A7=C3=A3o de enviar o valor para a wallet, facilita=
+ndo o uso deste saldo em futuras aquisi=C3=A7=C3=B5es de servi=C3=A7os.</sp=
+an></p>
+<p><strong>RN03</strong> -&nbsp;<span>O prazo para retorno da solicita=C3=
+=A7=C3=A3o de estorno =C3=A9 de at=C3=A9 2 dias =C3=BAteis.</span></p>
+<h2 id=3D"Boleto-Functional-Flagparacontroledeanti-fraudenoboleto"><strong>=
+Flag para controle de anti-fraude no boleto</strong></h2>
+<p><br>De uma forma gen=C3=A9rica, o antifraude analisa os dados do comprad=
+or, redes sociais, o valor da compra, a localiza=C3=A7=C3=A3o e, muito impo=
+rtante, o perfil de compra do consumidor. O cruzamento destes dados v=C3=A3=
+o indicar se um cliente =C3=A9 leg=C3=ADtimo ou n=C3=A3o.</p>
+<p><br></p>
+<p><strong>RN01</strong> -&nbsp;<span>Sistema deve exibir flag e ao selecio=
+n=C3=A1-la, indicar=C3=A1 que os dados do boleto passar=C3=A3o por um proce=
+sso de an=C3=A1lise para identificar fraudes em suas informa=C3=A7=C3=B5es.=
+</span></p>
+<p><strong>RN02</strong> -&nbsp;&nbsp;<span>Quando os dados do boleto passa=
+rem pela valida=C3=A7=C3=A3o de anti-fraude, caso exista alguma inconsist=
+=C3=AAncia, automaticamente o boleto =C3=A9 cancelado, sendo necess=C3=A1ri=
+o tentar novamente.</span></p>
+<p><strong>RN03</strong> -&nbsp;<span>Caso a flag n=C3=A3o esteja seleciona=
+da, os dados do boleto n=C3=A3o passar pelo fluxo de valida=C3=A7=C3=A3o de=
+ anti-fraude.</span></p>
+<h2 id=3D"Boleto-Functional-Hist=C3=B3ricodeboletos"><strong>Hist=C3=B3rico=
+ de boletos</strong></h2>
+<p><span>O hist=C3=B3rico de boletos, tem por finalidade exibir qual o stat=
+us em que se encontra cada boleto, e quais foram as transa=C3=A7=C3=B5es ex=
+ecutadas. </span></p>
+<p><br></p>
+<p><strong>RN01</strong> -&nbsp;<span>Sistema deve trazer o hist=C3=B3rico =
+apenas dos status Pago, Pendente de pagamento, Cancelado e Liquidado.</span=
+></p>
+<p><strong>RN02</strong> -&nbsp;<span>Sistema deve permitir que o usu=C3=A1=
+rio fa=C3=A7a o download desses hist=C3=B3rico(Verificando com PO).</span><=
+/p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_52_1171168403.1596570025638
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/0ad0a6e7189709154210481540a7e520
+
+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
+y5cuXLly5cuXLly5c1n/2Q==
+------=_Part_52_1171168403.1596570025638--

@@ -1,0 +1,348 @@
+Date: Tue, 4 Aug 2020 18:55:28 +0000 (UTC)
+Message-ID: <31668220.27.1596567328127@b69eb428412d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_26_375261378.1596567328127"
+
+------=_Part_26_375261378.1596567328127
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Principais API&#39;s a serem monitoradas</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Principais API&#39;s a serem monitoradas</h1>
+    <div class=3D"Section1">
+        <p><span style=3D"color: rgb(255,0,0);"><u><strong>Claro Privado:</=
+strong></u></span></p>
+<ul>
+<li><strong>API - CLARO BUS - IDM: servi=C3=A7os utilizados para login</str=
+ong>
+<ul>
+<li>Link API Manager:&nbsp;<a href=3D"https://claroprivate.zup.me/api-manag=
+er/#/log?period=3D24&amp;entrypointId=3D104&amp;apiVersionId=3D11&amp;apiId=
+=3D11&amp;queryString=3D" class=3D"external-link" rel=3D"nofollow">https://=
+claroprivate.zup.me/api-manager/#/log?period=3D24&amp;entrypointId=3D104&am=
+p;apiVersionId=3D11&amp;apiId=3D11&amp;queryString=3D</a></li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li><strong>API - CLARO BUS - SDP: servi=C3=A7os utilizados para login e fl=
+uxo de migra=C3=A7=C3=A3o</strong>
+<ul>
+<li>Link API Manager:&nbsp;<a href=3D"https://claroprivate.zup.me/api-manag=
+er/#/log?period=3D24&amp;entrypointId=3D104&amp;apiVersionId=3D9&amp;apiId=
+=3D9" class=3D"external-link" rel=3D"nofollow">https://claroprivate.zup.me/=
+api-manager/#/log?period=3D24&amp;entrypointId=3D104&amp;apiVersionId=3D9&a=
+mp;apiId=3D9</a></li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li><strong>API - CLARO BUS - ESB CUSTOMER: servi=C3=A7os utilizados no flu=
+xo de migra=C3=A7=C3=A3o</strong>
+<ul>
+<li>Link API Manager:&nbsp;<a href=3D"https://claroprivate.zup.me/api-manag=
+er/#/log?period=3D24&amp;entrypointId=3D104&amp;apiVersionId=3D4&amp;apiId=
+=3D4" class=3D"external-link" rel=3D"nofollow">https://claroprivate.zup.me/=
+api-manager/#/log?period=3D24&amp;entrypointId=3D104&amp;apiVersionId=3D4&a=
+mp;apiId=3D4</a></li>
+</ul></li>
+</ul>
+<ol>
+<li>Principais recursos:</li>
+<li>Incluir/Atualizar Dados Cadastrais</li>
+<li>Listar Dados Pessoa</li>
+<li>WPP - Cancelar Assinante</li>
+<li>WPP - Consultar Saldo Assinante</li>
+<li>WPP - Pr=C3=A9 Ativar Assinante</li>
+</ol>
+<p><br></p>
+<ul>
+<li><strong>API - M4U PAYMENTS TOBE: servi=C3=A7os utilizados para pagament=
+os</strong>
+<ul>
+<li>Link API Manager:&nbsp;<a href=3D"https://claroprivate.zup.me/api-manag=
+er/#/log?period=3D24&amp;entrypointId=3D104&amp;apiVersionId=3D31&amp;apiId=
+=3D31" class=3D"external-link" rel=3D"nofollow">https://claroprivate.zup.me=
+/api-manager/#/log?period=3D24&amp;entrypointId=3D104&amp;apiVersionId=3D31=
+&amp;apiId=3D31</a></li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li><strong>API - M4U CALLBACK TOBE: servi=C3=A7os de callbacks utilizados =
+no fluxo da recorr=C3=AAncia de plano</strong>
+<ul>
+<li>Link API Manager:&nbsp;<a href=3D"https://claroprivate.zup.me/api-manag=
+er/#/log?period=3D24&amp;entrypointId=3D104&amp;apiVersionId=3D34&amp;apiId=
+=3D34" class=3D"external-link" rel=3D"nofollow">https://claroprivate.zup.me=
+/api-manager/#/log?period=3D24&amp;entrypointId=3D104&amp;apiVersionId=3D34=
+&amp;apiId=3D34</a></li>
+</ul></li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><strong><span style=3D"color: rgb(255,0,0);"><u>Claro P=C3=BAblico:</u><=
+/span></strong></p>
+<ul>
+<li><strong>API - CLARO EXTENSIONS - APPLICATION: servi=C3=A7os do projetos=
+ da Claro</strong>
+<ul>
+<li>Link API Manager:&nbsp;<a href=3D"https://claro.zup.me/api-manager/#/lo=
+g?period=3D24&amp;entrypointId=3D99&amp;apiVersionId=3D22&amp;resourceId=3D=
+536&amp;apiId=3D22" class=3D"external-link" rel=3D"nofollow">https://claro.=
+zup.me/api-manager/#/log?period=3D24&amp;entrypointId=3D99&amp;apiVersionId=
+=3D22&amp;resourceId=3D536&amp;apiId=3D22</a></li>
+</ul></li>
+</ul>
+<ol>
+<li>Principal recurso: Payments</li>
+</ol>
+<p><br></p>
+<ul>
+<li><strong>API - RW MIDDLEWARE: servi=C3=A7os do middleware zup</strong>
+<ul>
+<li>Link API Manager:&nbsp;<a href=3D"https://claro.zup.me/api-manager/#/lo=
+g?period=3D24&amp;entrypointId=3D99&amp;apiVersionId=3D30&amp;apiId=3D30" c=
+lass=3D"external-link" rel=3D"nofollow">https://claro.zup.me/api-manager/#/=
+log?period=3D24&amp;entrypointId=3D99&amp;apiVersionId=3D30&amp;apiId=3D30<=
+/a></li>
+</ul></li>
+</ul>
+<ol>
+<li>Principais recursos: Acquisition</li>
+<li>Acquisition checkout</li>
+<li>Authenticator</li>
+<li>Consumption</li>
+</ol>
+<p><br></p>
+<p><span style=3D"color: rgb(0,0,255);"><strong>OBS: os recursos devem ser =
+monitorados em rela=C3=A7=C3=A3o a erros da fam=C3=ADlia 400 e 500.</strong=
+></span></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_26_375261378.1596567328127--

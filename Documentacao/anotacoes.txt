@@ -1,0 +1,761 @@
+114.950.026-32
+
+### AWX
+host: ansible-awx.flexprd.aws.clarobrasil.mobi
+user: admin
+pass: aRWPdfumivHLxZwrU06nAw2TaKPlVPyHuv8hngpE
+
+### GW AZURE
+GW PRIVATE ==> claro-qa-private-zupme-gw-couchbase01.azure.zup.com.br (172.22.2.220)
+GW PUBLIC ==> claro-qa-public-zupme-gw-couchbase01.azure.zup.com.br (172.22.2.218)
+
+#########
+139037874
+forticlient.clarobrasil.mobi
+
+#### SALVA USUARIO E SENHA POR 8 HORAS:
+$ git config --global credential.helper 'cache --timeout=28800'
+
+#### SALVA USUARIO E SENHA PERMANENTE:
+$ git config --global credential.helper cache
+
+## INSTALL HELM
+curl -s https://get.helm.sh/helm-v2.14.3-linux-amd64.tar.gz | tar xz && cd linux-amd64 && sudo cp -rf helm tiller /usr/bin
+
+## Dashboard Dynatrace
+Prod: https://dynatrace.claro.com.br/e/89afdcfd-68f5-4edb-9a9a-215e44803e5f/#dashboard;gtf=-6h;gf=7506124550593399602;id=22c33403-46e2-4193-bdd5-39b29be11f9c
+
+SIT: https://dynatrace.claro.com.br/e/3854e963-249b-47d5-a3a8-f918ef4fad71/#dashboard;gtf=-6h;gf=6935086767585125295;id=47becbc4-d61e-459b-bdf4-6e273576557f
+
+## TLS 1.2
+https://github.com/ZupIT/sre-claro/issues/9
+
+https://gitdev.net.com.br/devops/flex/flex-infra/tree/terraforms
+
+https://github.com/helm/charts/tree/master/stable/graylog
+
+kubectl create namespace graylog
+helm install --namespace "graylog" -n "graylog" stable/graylog
+
+#### VERIFICAR IP PUBLIC
+dig +short myip.opendns.com @resolver1.opendns.com
+
+#### IP PFSENSE
+187.72.102.154:666:udp
+187.72.102.145
+10.66.67.1
+
+#### TIME_WAIT
+ssh -i "ansible-provisioning.pem" centos@192.168.32.4 netstat -an | grep TIME_WAIT | wc -l 
+
+#### LISTAR SERVICOS
+systemctl list-unit-files --type service --all
+
+#### GATWAY CONFIG
+zupme-gateway config
+zupme-gateway config:set VARIAVEL=XXX
+
+NODE_ENV="XXXXX"
+
+zupacr.azurecr.io/zupme-gateway:7.8.7-5
+
+/opt/zupme-gateway/lib/conf
+zupme-deploy/customers/claro/production/flex-private-client/couchbase/inv
+
+#### INSTALL TELNET ALPINE
+apk -U add busybox-extras
+apk -U add openssh
+
+yum install traceroute -y
+
+$ mtr -n -T -c 200 10.28.28.5 --report
+
+#### HORUS PIPELINE
+    horusec {
+      projectPath="./"
+    }
+
+##### Gerar chave ssh
+$ openssl rand -hex 32
+
+#### Limpar linhas comentas
+$ sed '/Excluído/d' arquivo.txt
+
+#### UDEMY ZUP
+Conta: zup.training@gmail.com
+Senha: @123SOMOSnerds
+
+#### ERRO CACHE REPO NEXUS (DOCKERFILE)
+RUN rm -rf /home/maven/.m2/repository
+
+#### LISTAR SECURITY GROUPS
+aws ec2 describe-security-groups --filters Name=tag:Customer,Values=Claro --query "SecurityGroups[*].{Name:GroupName,ID:GroupId,Rules:IpPermissions}" --region sa-east-1 --output json | jq '.[] | (.ID) as $id | (.Name) as $name | .Rules[] | (.FromPort) as $port | (.IpProtocol) as $protocol | .IpRanges[] | "\($id),\($name),\($port),\($protocol),\(.CidrIp),\(.Description)"' | sed 's/"//g'
+
+###### UPDATE SECURITY
+cd /op/zup/continuous-playbooks/provisioning/update-security.yml
+
+#### TOKEN
+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
+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
+
+#### EXPORT VAULT
+$ export VAULT_ADDR=https://vault-claro-lab.apirealwave.io:8200 && export VAULT_TOKEN="97faa56a-7b1a-310b-9603-6cafc3b9a3c2"
+
+#### CLARO SIT VAULT UNSEAL
+Unseal Key 1: VyRf+k6q+2gZYUvz/PWXOeA0fSQkNkbkqP7hTuy3NvIZ
+Unseal Key 2: jZx2EpeFG48cvvFuH/s0FP1o3wDTjuvC9UYN76wyrueA
+Unseal Key 3: T4SHcpshuLLDmBdWQs1W8/EzJDtcbV3w+QlTg9VwqIDO
+Unseal Key 4: ab5gnQBS9WywhjxaimsclEIb1QuE/Hx0cAYYAPmrlPwy
+Unseal Key 5: yr1AKYQzq94+yEPrHZLRV9mFXNtbCamYSRfWyosQ6vKn
+Initial Root Token: 96cfab7e-e1d8-ab2a-a427-591e7f772161
+Root Token: 97faa56a-7b1a-310b-9603-6cafc3b9a3c2
+
+export VAULT_ADDR="https://claro-1a-vault01-sit.flexdev.aws.clarobrasil.mobi:8200"
+export VAULT_TOKEN=97faa56a-7b1a-310b-9603-6cafc3b9a3c2
+$ vault operator unseal -tls-skip-verify
+$ vault status -tls-skip-verify
+
+#### CLARO PROD VAULT UNSEAL
+Unseal Key 1: saWkEpsnE93DnhWwVe+Qa3aQtSBpb5Dy2UVqGmLUmaWX
+Unseal Key 2: 6mYwO1eLdcN9T35YnbahjVT1Opm7c0uAEc2R5HE/bboT
+Unseal Key 3: d/muPQROHEgKRDmegYb0jrojfoK3MCOcB+TG1jgYDpNO
+Unseal Key 4: OBFp3bS8D6qWIWWb7FuFViCJ1vKZXXcVoWGw80xEdPpb
+Unseal Key 5: widYoZ8nFXjEHRNl7GpfrylGnAvcoRzCc53CGuADtnI8
+Initial Root Token: e0c168fe-8f91-43da-adb2-707c9df5e8a4
+New Root Token: 4874c6dd-546e-0ac1-4512-988d2523f28c
+Realwave: bC6GZynrbaYaf7kj87md
+
+export VAULT_ADDR=https://vault-claro.apirealwave.io:8200
+export VAULT_TOKEN=4874c6dd-546e-0ac1-4512-988d2523f28c
+
+export VAULT_ADDR="http://localhost:8200"
+export VAULT_TOKEN=4874c6dd-546e-0ac1-4512-988d2523f28c
+$ vault operator unseal -tls-skip-verify
+$ vault status -tls-skip-verify
+
+
+$ vault operator unseal -migrate
+
+#### HABILITAR ENA INSTANCIA EC2
+$ aws ec2 modify-instance-attribute --instance-id <instance-id> --ena-support
+
+#### LISTAR TODOS OS SERVICOS NO CLUSTER
+$ docker-claro-qa service ls
+
+#### VERIFICAR UM SERVICE ESPECIFICO NO CLUSTER
+$ docker-claro-qa service ps claro-realwave-extensions_crm
+$ docker-claro-qa service ps claro-realwave-extensions_custom
+
+#### MONITORAR O STATUS DE UM SERVICO
+$ while true; do ;sleep 10;clear;done
+$ while true; do docker-rw-claro-qa service ps realwave-wallet_application | grep Runn;sleep 10;clear;done
+
+#### REINICAR UM SERVICO
+$ docker-claro-qa service scale <MODULO>=0
+$ docker-claro-qa service scale <MODULO>=1
+
+#### REINICIAR TODOS OS MODULOS
+$ for i in $(docker-claro-ext-qa service ls | awk '{print $2}' | egrep -v "NAME|haproxy|monitoring"); do echo "docker-claro-ext-prod service scale $i=0 && docker-claro-rw-qa service scale $i=1"; done
+$ for i in $(docker-claro-rw-qa service ls | awk '{print $2}' | egrep -v "NAME|haproxy|monitoring|gateway|consul|metabase"); do docker-claro-rw-qa service scale $i=0 && docker-claro-rw-qa service scale $i=1; done
+
+$ for i in $(helm list --namespace prod | awk '{print $1}' | egrep -v "NAME"); do echo "helm del --purge $i"; done
+
+$ docker-claro-rw-prod service ls|awk '{print $2}'|egrep -v "NAME|haproxy|monitoring|gateway|consul|metabase" > /tmp/docker.txt && exec 3< /tmp/docker.txt && while read i <&3; do num=$(docker-claro-rw-prod service ls|grep $i|awk '{print $4}'|cut -d/ -f1); echo "docker-claro-rw-prod service scale $i=0 && docker-claro-rw-prod service scale $i=$num"; done && exec 3<&- && rm -rf /tmp/docker.txt
+$ docker-claro-rw-prod service ls|awk '{print $2}'|egrep -v "NAME|haproxy|monitoring|gateway|consul|metabase|zabbix" > /tmp/docker.txt && exec 3< /tmp/docker.txt && while read i <&3; do num=$(cat /tmp/docker|grep $i|awk '{print $4}'|cut -d/ -f1); echo "docker-claro-rw-prod service scale $i=0 && docker-claro-rw-prod service scale $i=$num"; done && exec 3<&- && rm -rf /tmp/docker.txt
+
+#### PREPARAR MAQUINAS (ANSIBLE)
+########## Adicionar o host no arquivo /etc/ansible/hosts
+$ ansible-playbook -u centos --private-key="/opt/zup/continuous-playbooks/provisioning/ansible-provisioning.pem" --extra-vars "hosts=claro-1a-couchbase-private04.aws.zup.com.br" ec2-zupfy2.yml
+$ ansible-playbook -u centos --private-key="/opt/zup/continuous-playbooks/provisioning/ansible-provisioning.pem" --extra-vars "hosts=claro-1a-swarm-realwave30.aws.zup.com.br" remote-syslog.yml
+$ ansible-playbook -u centos --private-key="/opt/zup/continuous-playbooks/provisioning/ansible-provisioning.pem" zabbix.yml
+
+#### ADICIONAR MAQUINAS NO CLUSTER
+########## DOCKER CLUSTER EXTENSIONS ##########
+$ yum -y remove docker docker-common docker-selinux docker-engine
+$ yum install -y yum-utils device-mapper-persistent-data lvm2
+$ yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+$ yum install -y docker-ce gettext
+$ mkdir /etc/docker && chmod 0700 /etc/docker
+
+$ echo '{"bip": "192.68.65.1/24"}' > /etc/docker/daemon.json
+
+$ systemctl start docker && systemctl enable docker
+$ docker network create --subnet 192.168.240.0/22 --opt com.docker.network.bridge.name=docker_gwbridge --opt com.docker.network.bridge.enable_icc=false docker_gwbridge
+$ docker swarm join --token SWMTKN-1-17ttzjho98ap95s4szy5vrisrb861xvcee8rz6qgoeg6vvh9v2-3aoqrsq9cbbzvesajj8gsrm4r 192.168.32.164:2377
+$ docker-claro-ext-prod node update --availability drain claro-1c-swarm-realwave-ext09.aws.zup.com.br
+
+
+#### DEPLOY DE CONTAINERS
+$ cd /opt/zup/realwave-deploy/customers/claro/realwave-production-aws/docker-swarm/claro-realwave-extensions/stack
+$ tag=1.0.0 docker-claro-ext-prod stack deploy --with-registry-auth -c claro-flex-operacao.yml claro-flex-operacao
+
+#### REMOVER STACK
+$ docker-claro-ext-prod stack rm claro-flex-operacao
+
+#### REMOVER IMAGENS DOCKER
+docker system prune -a -f
+
+#### VERIFICACAO DE LOGS
+$ docker-claro-ext-prod service logs -f --tail 20 claro-flex-operacao_job
+
+#### Executar Script no Banco Remotamente
+psql -h localhost -d userstoreis -U admin -p 5432 -a -q -f /home/jobs/Desktop/resources/postgresql.sql
+
+-h PostgreSQL server IP address
+-d database name
+-U user name
+-p port which PostgreSQL server is listening on
+-f path to SQL script
+-a all echo
+-q quiet
+
+#### Listar schemas do banco com lock
+DO
+$$
+DECLARE
+  schemaname name;
+  items RECORD;
+BEGIN
+  FOR schemaname IN SELECT nspname FROM pg_namespace WHERE nspname NOT LIKE 'pg_%' AND nspname <> 'information_schema' LOOP
+    FOR items IN EXECUTE format('SELECT locked FROM %I.databasechangeloglock WHERE locked = true', schemaname) LOOP
+      RAISE NOTICE USING MESSAGE = '>>>>>> SCHEMA: ' || schemaname || ', ' || 'LOCKED: ' || items.locked;
+    END LOOP;
+  END LOOP;
+END;
+$$ LANGUAGE plpgsql;
+
+
+#### Remover locks de todos os schemas do banco
+DO
+$$
+DECLARE
+  schemaname name;
+BEGIN
+  FOR schemaname IN SELECT nspname FROM pg_namespace WHERE nspname NOT LIKE 'pg_%' AND nspname <> 'information_schema' LOOP
+    EXECUTE format('UPDATE %I.databasechangeloglock SET locked = false, lockgranted = null, lockedby = null;', schemaname);
+  END LOOP;
+END;
+$$ LANGUAGE plpgsql;
+
+###### GCP 
+#### Para mudar de projeto
+#NX1 PRE-PROD
+gcloud config set project claro-preprod
+gcloud beta container clusters get-credentials cluster-rw --region southamerica-east1 --project claro-preprod
+
+#NX1-PROD
+gcloud config set project claro-nx1-producao
+gcloud beta container clusters get-credentials cluster-nx1-producao --region southamerica-east1 --project claro-nx1-producao
+
+#REALWAVE-PRODUCAO
+gcloud config set project claro-realwave-producao
+gcloud beta container clusters get-credentials cluster-rw-producao --region southamerica-east1
+
+#FLEX-PRODUCAO
+gcloud config set project claro-flex-prod
+gcloud beta container clusters get-credentials cluster-flex-producao --region southamerica-east1 --project claro-flex-prod
+
+#### VERIFICAR LOGS NO KUBERNETES
+klogs --tail 200 <CONTAINER> <STACK> -n <NAMESPACE>
+kubectl logs -f --tail 500 realwave-ns-application-deployment-1-645bb56446-p8fc8 realwave-ns-application -n stg
+
+#### REINICIAR PODES
+kubectl delete pod realwave-cmm-processor-deployment-1-6f67686648-2svxg -n stg
+kubectl scale deployment realwave-cmm-processor-deployment-1 --replicas=1 -n stg
+
+#### INICIAR PODES
+kubectl apply -f consul-k8s-rw-prod.yaml -n prod
+
+#### DELETAR PODES
+kubectl delete -f consul-k8s-rw-prod.yaml -n prod
+
+### DELETAR INGRESS (TRAVADO)
+kubectl patch ingress prometheus-server -n prometheus -p '{"metadata":{"finalizers":[]}}' --type=merge
+
+#### INICIAR O TILLER NO KUBERNETES
+helm init --stable-repo-url https://charts.helm.sh/stable
+kubectl create serviceaccount -n kube-system tiller && kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller && helm init --service-account tiller --history-max 5 --override spec.selector.matchLabels.'name'='tiller',spec.selector.matchLabels.'app'='helm' --output yaml | sed 's@apiVersion: extensions/v1beta1@apiVersion: apps/v1@' | kubectl apply -f -
+
+#### PARA ATUALIZAR O HELM NO TILLER
+helm init --upgrade --service-account tiller --history-max 5
+
+#### CONFIGURANDO CERTIFICADOS NO GCP
+gcloud compute ssl-certificates create "apirealwave-io-2019-2020" --certificate apirealwave.io-cert --private-key apirealwave.io-key
+gcloud compute ssl-certificates list
+kubectl apply -f arquivo_ingress.yaml
+
+#### LISTAR TOPICOS NO KAFKA
+/opt/kafka/bin/kafka-topics.sh --list --zookeeper localhost:2181
+
+#### VERIFICAR SE OS DADOS ESTÂO CHEGANDO AO TOPICO NO KAFKA 
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic your_topic_name --from-beginning
+
+##### DB AWS
+DNS: bi-etl-claro-v2.cgj6o4vje0vr.sa-east-1.rds.amazonaws.com
+Porta: 5432
+
+User: postgres
+Password: 5EYni5luXJehfjPSiNUA
+
+User: usr_claro
+Password: EM144nGXAoLfimq9Rqmt
+
+###### METABASE NX1 PROD
+Link: http://claro-nx1-metabase.apirealwave.io
+Usuario: administrador@zup.com.br
+Senha: G57U3sMfwHcCmc
+
+####### SENHA KEEPASS
+01_Claro_Prd_Dbs.kdbx - Senha: Claro@ZupProd123
+02_Claro_QA_Dbs.kdbx - Senha: ClaroQA@Zup123
+
+####### LIBERAR ACESSO DE LEITURA EM BANCO DE DADOS
+CREATE USER "moreno.zanetti" WITH PASSWORD 'Cl4r0@ZUp2421aS';
+GRANT CONNECT ON DATABASE rw_customer_inventory TO "moreno.zanetti";
+GRANT USAGE ON SCHEMA rw_customer_inventory_claro_flex TO "moreno.zanetti";
+GRANT SELECT ON ALL TABLES IN SCHEMA rw_customer_inventory_claro_flex TO "moreno.zanetti";
+
+####### LIBERAR ACESSO DE LEITURA E ESCRITA EM BANCO DE DADOS
+GRANT CONNECT ON DATABASE rw_customer_inventory TO "moreno.zanetti";
+GRANT ALL ON SCHEMA rw_customer_inventory_claro_flex TO "moreno.zanetti";
+GRANT ALL ON ALL TABLES IN SCHEMA rw_customer_inventory_claro_flex TO "moreno.zanetti";
+
+####### REALIZAR BACKUP DO EVENTSTORE
+cd /opt && curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+
+time aws s3 sync . s3://backup-claro-eventstore/backup/ --exclude "index/*" --exclude "*.00*"
+time aws s3 sync . s3://backup-claro-eventstore/backup/ --exclude "*.chk" --exclude "*.00*"
+time aws s3 sync . s3://backup-claro-eventstore/backup/ --exclude "*.chk" --exclude "index/*"
+
+####### REALIZAR RESTORE DO EVENTSTORE
+time aws s3 sync s3://backup-claro-eventstore/backup/chaser.chk /var/lib/eventstore/truncate.chk
+time aws s3 sync --exclude="truncate.chk" s3://backup-claro-eventstore/backup /var/lib/eventstore
+
+#### BRIDGE AZURE
+commons-bridge001.azure.zup.com.br
+
+#### REDIRECIONAMENTO DO PORTAS IPTABLES
+iptables -t nat -A PREROUTING -p tcp --dport 8091 -j DNAT --to 192.168.64.95:8091
+iptables -t nat -A PREROUTING -p tcp --dport 8092 -j DNAT --to 192.168.64.95:8092
+iptables -t nat -A POSTROUTING  -j MASQUERADE
+
+echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.d/99-ipforward.conf 
+sysctl -p /etc/sysctl.d/99-ipforward.conf
+
+#### REMOVER ARQUIVOS COM MAIS DE 30 DIAS
+find . -type f -mtime +30 -exec echo {} \;
+find . -type f -mtime +30 -exec rm -r {} \;
+
+#### ENGENHARIA CLARO
+apimanager-eng-01 - 10.100.80.196
+gw-eng-01         - 10.100.80.132
+
+Connection to 10.100.80.196 
+Connection to 10.100.80.60 
+Connection to 10.100.80.69 
+
+#### INSTALL PROMETHEUS K8S
+$ helm repo add stable https://prometheus-community.github.io/helm-charts
+$ kubectl create ns prometheus
+$ helm install --name prometheus stable/prometheus --namespace prometheus --set alertmanager.persistentVolume.storageClass="gp2",server.persistentVolume.storageClass="gp2"
+$ kubectl --namespace=prometheus port-forward deploy/prometheus-server 9090
+
+####### VERIFICAR CERTIFICADOS 
+echo | openssl s_client -connect claro-extensions.zup.me:443 2>/dev/null |  openssl x509 -noout -text
+openssl x509 -in zupme-api-manager-api.crt -noout -dates
+openssl x509 -in zupme-api-manager-api.crt -noout -text
+
+#### CRIAR CERTIFICADO AUTO ASSINADO
+# Generate the CA certificate
+openssl genrsa -out rootCA.key 4096
+openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 9999 -out rootCA.crt
+openssl x509 -in rootCA.crt -noout -text
+
+# Generate the Server certificate
+openssl genrsa -out mydomain.com.key 4096
+openssl req -new -key mydomain.com.key -out mydomain.com.csr
+openssl x509 -req -in mydomain.com.csr -CA rootCA.crt -CAkey rootCA.key -CAcreateserial -out mydomain.com.crt -days 9999 -sha256
+openssl x509 -in mydomain.com.crt -noout -text
+
+
+# Criando certificados para o servidor
+certtool --generate-privkey --bits 4096 --outfile certs/development/api.zup.com.br.key
+certtool --generate-request --load-privkey certs/development/api.zup.com.br.key --outfile certs/development/api.zup.com.br.csr
+certtool --generate-certificate --load-ca-certificate certs/development/ca.crt --load-ca-privkey certs/development/ca.key  --load-request  certs/development/api.zup.com.br.csr --outfile  certs/development/api.zup.com.br.crt
+
+# Extraindo a chave pública
+openssl rsa -in certs/development/api.zup.com.br.key -pubout > certs/development/api.zup.com.br.pub
+
+
+
+# Verificar versão do TLS
+nmap --script ssl-enum-ciphers claro.csp.realwave.zup.me 
+
+########### BACKUP / RESTORE DO ELASTICSEARCH COMO INSTANCIA EC2 ###########
+export cluster=claro-1a-prod-elasticsearch5-eoc-client01.aws.zup.com.br
+export bucket=backup-claro-elasticsearch-eoc
+export backup=backup-pre-migracao-17-04-2021
+
+## VERIFICAR CLUSTER
+while true; do curl -s "http://$cluster:9200/_cat/allocation?v"; echo "" ; curl -s "$cluster:9200/_cat/shards" | grep RELO; curl -s $cluster:9200/_cluster/health?pretty;   sleep 10; clear ; done
+
+## REALOCAR INSTANCIAS NO CLUSTER 
+curl -XPUT "http://$cluster:9200/_cluster/settings" -H 'Content-Type: application/json' -d'
+{
+  "transient" : {
+    "cluster.routing.allocation.exclude._host" : ""
+  }
+}'
+
+## CURL PARA CONFIGURAÇÃO DO BACKUT S3
+curl -XPUT -H "Content-Type: application/json;charset=UTF-8" "http://$cluster:9200/_snapshot/$bucket" -d '{
+  "type": "s3",
+  "settings": {
+    "bucket": "$bucket",
+    "region": "sa-east-1",
+    "access_key": "<access_key>",
+    "secret_key": "<secret_key>"
+  }
+}'
+
+## CURL PARA VERIFICAR OS BUCKUTS DE BACKUP 
+curl -XGET "http://$cluster:9200/_snapshot/_all?pretty"
+
+## CURL PARA REALIZAR O BACKUP
+curl -X PUT "http://$cluster:9200/_snapshot/$bucket/$backup?wait_for_completion=true"
+
+## CURL PARA REALIZAR O RESTORE
+curl -XPOST "http://$cluster:9200/_snapshot/$bucket/$backup/_restore?pretty=true&wait_for_completion=true"
+
+## CURL PARA VERIFICAR O STATUS DO BACKUP
+curl "http://$cluster:9200/_cat/snapshots/$bucket?v&s=id&pretty"
+
+## CURL PARA VERIFICAR OS INDICES
+curl -X GET "http://$cluster:9200/_cat/indices"
+
+## CURL PARA VERIFICAR OS SHARDS
+curl -X GET "http://$cluster:9200/_cat/shards"
+
+## CURL PARA DELETAR TODOS OS INDICES
+curl -X DELETE 'http://$cluster:9200/_all'
+
+## CURL PARA FECHAR INDICES
+curl -X POST "http://$cluster:9200/rw_usage_2020_02_*/_close"
+curl -X GET "http://$cluster:9200/_cat/indices" | grep open | grep rw_usage_`date --date='-7 month' +%Y_%m` > /root/shards.txt
+
+## CURL PARA REALICAR SHARDS UNASSIGNED
+curl -XGET http://$cluster:9200/_cat/shards | grep UNASSIGNED | grep ' r ' | awk '{print $1}' | xargs -I {} curl -XPUT http://$cluster:9200/{}/_settings -H "Content-Type: application/json" -d '{ "index":{ "number_of_replicas": 0}}'
+curl -XGET http://$cluster:9200/_cat/shards | awk '{print $1}' | xargs -I {} curl -XPUT http://$cluster:9200/{}/_settings -H "Content-Type: application/json" -d '{ "index":{ "number_of_replicas": 1}}'
+
+########### BACKUP / RESTORE ELASTICSEARCH SERVICE ########### 
+export cluster=vpc-claro-kubernetes-logs-prd-yo2dtdoysmheilxjn5e3mm2hjm.sa-east-1.es.amazonaws.com
+export bucket=backup-claro-elasticsearch-eoc
+export backup=backup-pre-migracao-17-04-2021
+
+## CURL PARA CONFIGURAÇÃO DO BACKUT S3
+ssh 192.168.23.15
+cd /home/willian.siqueira/eric.rodrigues/aws-elastic
+python3 register-repo-sre.py
+
+## CURL PARA VERIFICAR O BUCKET S3
+curl -XGET "https://$cluster/_snapshot/_all?pretty"
+
+## CURL PARA REALIZAR O BACKUP
+curl -X PUT "https://$cluster/_snapshot/$bucket/$backup?wait_for_completion=true"
+
+## CURL PARA REALIZAR O RESTORE
+curl -XPOST "https://$cluster/_snapshot/$bucket/$backup/_restore" -d '
+{
+  "indices": "*",
+  "ignore_unavailable": true,
+  "include_global_state": true,
+  "rename_pattern": ".kibana",
+  "rename_replacement": "restored_.kibana"
+}'
+
+## CURL PARA VERIFICAR O STATUS DO BACKUP
+curl "https://$cluster/_cat/snapshots/$bucket?v&s=id&pretty"
+
+## CURL PARA VERIFICAR OS INDICES
+curl -X GET "https://$cluster/_cat/indices"
+
+## CURL PARA VERIFICAR OS SHARDS
+curl -X GET "https://$cluster/_cat/shards"
+
+## CURL PARA DELETAR TODOS OS INDICES
+curl -X DELETE "https://$cluster/_all"
+
+## VERIFICAR CLUSTER
+while true;do curl -s "https://$cluster/_cat/allocation?v";curl -s "https://$cluster/_cluster/health?pretty";sleep 10;clear;done
+
+
+#### EVENTSTORE EXPORTER
+cd /tmp
+wget https://dl.google.com/go/go1.15.3.linux-amd64.tar.gz
+
+sudo tar -xvf go1.15.3.linux-amd64.tar.gz
+sudo mv go /usr/local
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+source ~/.profile
+
+go get github.com/marcinbudny/eventstore_exporter
+cd $GOPATH/src/github.com/marcinbudny/eventstore_exporter 
+go build -o eventstore_exporter
+cp -rf eventstore_exporter /usr/bin/eventstore_exporter
+
+
+echo "[Unit]
+Description=EventStore exporter
+
+[Service]
+ExecStart=/usr/bin/eventstore_exporter --eventstore-url=http://localhost:2113 --eventstore-user=admin --eventstore-password=4Aljsk8VAY3N --cluster-mode=cluster --insecure-skip-verify
+Restart=always
+
+[Install]
+WantedBy=multi-user.target" > /etc/systemd/system/eventstore_exporter.service
+
+systemctl enable eventstore_exporter.service
+systemctl start eventstore_exporter.service
+journalctl -f -u eventstore_exporter.service
+
+#### INSTALL COUCHBASE
+####### flex-public-client
+$ ansible-playbook -b -u centos --private-key="/opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem" ansible/roles/couchbase/provision-cluster.yml -i ansible/inventory/flex-public-client/couchbase/inv/hosts --extra-vars "ansible_distribution=RedHat" --limit="zupme-couchbase" --tags=installation
+$ ansible-playbook -b -u centos --private-key="/opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem" ansible/roles/couchbase/provision-buckets.yml -i ansible/inventory/flex-public-client/couchbase/inv/hosts --extra-vars "ansible_distribution=RedHat" --limit="zupme-couchbase"
+$ ansible-playbook -b -u centos --private-key="/opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem" ansible/roles/couchbase/provision-views.yml -i ansible/inventory/flex-public-client/couchbase/inv/hosts --extra-vars "ansible_distribution=RedHat" --limit="zupme-couchbase"
+$ ansible-playbook -b -u centos --private-key="/opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem" ansible/roles/couchbase/provision-user.yml -i ansible/inventory/flex-public-client/couchbase/inv/hosts --extra-vars "ansible_distribution=RedHat" --limit="zupme-couchbase"
+
+####### flex-private-client
+$ ansible-playbook -b -u centos --private-key="/opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem" ansible/roles/couchbase/provision-cluster.yml -i ansible/inventory/flex-private-client/couchbase/inv/hosts --extra-vars "ansible_distribution=RedHat" --limit="zupme-couchbase" --tags=installation
+$ ansible-playbook -b -u centos --private-key="/opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem" ansible/roles/couchbase/provision-buckets.yml -i ansible/inventory/flex-private-client/couchbase/inv/hosts --extra-vars "ansible_distribution=RedHat" --limit="zupme-couchbase"
+$ ansible-playbook -b -u centos --private-key="/opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem" ansible/roles/couchbase/provision-views.yml -i ansible/inventory/flex-private-client/couchbase/inv/hosts --extra-vars "ansible_distribution=RedHat" --limit="zupme-couchbase"
+$ ansible-playbook -b -u centos --private-key="/opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem" ansible/roles/couchbase/provision-user.yml -i ansible/inventory/flex-private-client/couchbase/inv/hosts --extra-vars "ansible_distribution=RedHat" --limit="zupme-couchbase"
+
+####### flex-realwave
+$ ansible-playbook -b -u centos --private-key="/opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem" ansible/roles/couchbase/provision-cluster.yml -i ansible/inventory/flex-realwave/couchbase/inv/hosts --extra-vars "ansible_distribution=RedHat" --limit="zupme-couchbase" --tags=installation
+$ ansible-playbook -b -u centos --private-key="/opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem" ansible/roles/couchbase/provision-buckets.yml -i ansible/inventory/flex-realwave/couchbase/inv/hosts --extra-vars "ansible_distribution=RedHat" --limit="zupme-couchbase"
+$ ansible-playbook -b -u centos --private-key="/opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem" ansible/roles/couchbase/provision-views.yml -i ansible/inventory/flex-realwave/couchbase/inv/hosts --extra-vars "ansible_distribution=RedHat" --limit="zupme-couchbase"
+$ ansible-playbook -b -u centos --private-key="/opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem" ansible/roles/couchbase/provision-user.yml -i ansible/inventory/flex-realwave/couchbase/inv/hosts --extra-vars "ansible_distribution=RedHat" --limit="zupme-couchbase"
+
+#### LIMPAR LOGS
+cd /var/log && lista=`find -type f` && for i in $lista; do echo -n >$i &>/dev/null; echo Zerando arquivo $i...; done
+
+#### EXTRAIR RELATORIOS DO REALWAVE-REPORTS
+LOCAL: /opt/report
+SFTP: /opt/claro/aplic/bigdata/
+
+SFTP_ENABLED=false SFTP_HOST=teste LINE_CANCELLATION_PERIOD=PERIOD_DYNAMIC java -DREPORT_START=2021-02-14T00:00:00 -DREPORT_END=2021-02-14T23:59:59 -Dspring.profiles.active=${SPRING_PROFILES} ${JAVA_OPTS} -Xms${JAVA_XMS:-512m} -Xmx${JAVA_XMX:-1024m} -jar /opt/rw-report-claro.jar RUN CANCELAMENTO_LINHA
+SFTP_ENABLED=false SFTP_HOST=teste ACQUISITION_SERVICE_PERIOD=PERIOD_DYNAMIC java -DREPORT_START=2021-02-14T00:00:00 -DREPORT_END=2021-02-14T23:59:59 -Dspring.profiles.active=${SPRING_PROFILES} ${JAVA_OPTS} -Xms${JAVA_XMS:-512m} -Xmx${JAVA_XMX:-1024m} -jar /opt/rw-report-claro.jar RUN COMPRA_SERVICO
+
+#### REMOVER HPA (Horizontal Pod Autoscaler)
+export namespace=prd && for i in $(kubectl get deployment -n $namespace | awk '{print $1}'); do kubectl -n $namespace delete hpa $i;done
+
+#### DELETAR AS PODS EVICTED
+kubectl get pods --all-namespaces --field-selector 'status.phase==Failed' -o json | kubectl delete -f -
+kubectl get pods --all-namespaces --field-selector 'status.phase==Succeeded' -o json | kubectl delete -f -
+
+kubectl get pods -A --all-namespaces | grep -E 'ImagePullBackOff|ErrImagePull|Evicted|Error|Completed' | awk '{print $2 " --namespace=" $1}' | xargs kubectl delete pod
+pod "elasticsearch-curator-1613520000-pskqp" deleted
+
+kubectl get pvc -A | grep "elasticsearch" | awk '{print $2 " --namespace=" $1}' | xargs kubectl delete pvc
+
+#######################################################
+kubectl exec -it --namespace=prod realwave-reports-application-deployment-1-5c48d559c7-frxr9 -- sh -c 'SFTP_ENABLED=false SFTP_HOST=teste LINE_CANCELLATION_PERIOD=PERIOD_DYNAMIC java -DREPORT_START=2021-02-14T00:00:00 -DREPORT_END=2021-02-14T23:59:59 -Dspring.profiles.active=${SPRING_PROFILES} ${JAVA_OPTS} -Xms${JAVA_XMS:-512m} -Xmx${JAVA_XMX:-1024m} -jar /opt/rw-report-claro.jar RUN CANCELAMENTO_LINHA'
+
+##### STACK ELK
+kubectl create ns elkstack 
+
+helm repo add elastic https://helm.elastic.co
+helm repo update
+
+helm upgrade --install elasticsearch elastic/elasticsearch --namespace elkstack
+helm upgrade --install filebeat elastic/filebeat --namespace elkstack
+helm upgrade --install kibana elastic/kibana --namespace elkstack
+helm upgrade --install metricbeat elastic/metricbeat --namespace elkstack
+
+##### VAULT KUBERNETES
+https://github.com/ZupIT/realwave-docs/wiki/KB006---How-to-configure-Vault-using-a-Kubernetes-Service-Account
+https://testdriven.io/blog/running-vault-and-consul-on-kubernetes/
+https://medium.com/@jackalus/vault-kubernetes-auth-and-database-secrets-engine-6551d686a12
+
+##### MIGRAÇÂO API MANAGER CLARO
+willian.siqueira@zup.com.br
+T7Je8pMrJ*7^RYbo
+
+
+Server    smtp.sendgrid.net
+Ports   587
+Username  apikey
+Password  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
+
+
+https://drive.google.com/drive/folders/19IeEat_zliULeQq7GeYG8IAWDfDCO0uN
+
+EC2 - RMQ, Elastic;
+K8s - Logstash, User Manager, API Manager, Gateways;
+RDS - PostgreSQL
+
+Manifesto (RW)
+
+kubectl apply -f zupme-user-manager-api - OK
+kubectl apply -f zupme-api-manager-api - OK
+kubectl apply -f zupme-api-manager-ui - OK
+kubectl apply -f zupme-logstash - OK
+kubectl apply -f zupme-ui - OK
+kubectl apply -f zupme-dev-portal-ui - OK
+
+
+https://github.com/ZupIT/zupme-api-manager-api
+https://github.com/ZupIT/zupme-user-manager-api
+https://github.com/ZupIT/zupme-api-manager-ui
+https://github.com/ZupIT/zupme-dev-portal-ui
+https://github.com/ZupIT/zupme-ui
+
+
+zupme-api-manager-api:8.2.5-rc1
+zupme-api-manager-ui:8.2.3
+zupme-dev-portal-ui:8.0.0
+zupme-gateway:8.2.7
+zupme-ui:8.0.1
+zupme-user-manager-api:8.0.1-rc5
+
+external secret
+https://github.com/external-secrets/kubernetes-external-secrets
+
+
+recaptcha-priv-key - 6LfC0Q0TAAAAAHgLHCUlc4GBd5Gdfxlpjd8PCwW0
+recaptcha-pub-key - 6LfC0Q0TAAAAADs408GCLVjEjsuzrbKxSwhydAN7
+
+
+kubectl -n prd create secret generic zupme-api-manager-credentials \
+  --from-literal="pg-host=apimanager-claro-prd.ccvkkkqwkw2e.sa-east-1.rds.amazonaws.com" \
+  --from-literal="pg-user=zupme_production" \
+  --from-literal="pg-pass=MSBw4AvDikulIrh9tbcf" \
+  --from-literal="es-host=nlb-claro-elasticsearch-apigw-1ebc067a7d3191df.elb.sa-east-1.amazonaws.com" \
+  --from-literal="rmq-credentials=amqp://apimanager:zRV2tZvV@nlb-claro-rabbitmq-apigw.flexprd.aws.clarobrasil.mobi:5672" \
+  --from-literal="secret-auth-provider=IUfzbsTZKpy+XRG7jvgZkhuGxjAhR+bul/zjxTSsUKEmJWlWsdHHFQ6Bckyxj+bL7PCMMjEL3dFy4JCCBLVn9WTJikGSiRb9tlboQI7Q2BrWjMcGDdnSOD1pvgkL4GhDVgKO3fufHZFO0A3qEp/9QNrQL9xsSETxerSUMo3GAQI=" \
+  --from-literal="secret-client-app-attribute=L1VuYDe8T+RuZUOu+5mb2HTFUM+GMAfpDNhkQ4ypIOtBPCh0iHLSsRhDU+CtXwIG7VQDw4p1qRf1uMOXewjGp6aookBf3toQnDd/7Xg7xFXk8+qcT8TI7LQdhcMm21YWLrWtCI1ZLzlfBd/XRJ9Qqjk9IF8GQaPo0Vy+L+bG3bU=" \
+  --from-literal="secret-endpoint-context-attribute=k874LluybFjwivzzODIqtAkbdw2BdELmiOyQHkzyu1Lu2F9X4kaET0cewuUpp55T25tESNKeE/uQ3NC515rmb//rPXEiO2Vfxgdhx6VWdeahpOO0g8WZZTrJs78Sb4//wsNNdnSN9+w1qcmIKPM6XGIwCWGnV9IgAxE5IpjWks4=" \
+  --from-literal="secret-key-base=hOMOmPk9/M3e1TzB802Y44YHd1BNcXZOFjS72vgQkh5e8qHuR0f9dxFTi9Y0tCJKefxCQFBlI6fetpNm0pmwXzjvA1e4dm6h41cRl6JXzAUNtMLU6KOMb7l4Hyx/GNJ06MsWfzrMGMwfr0ZEmrWvSWHuT1xMq1nK4vE55ZZysho=" \
+  --from-literal="secret-third-part-oauth-endpoint=ppboSvp9LbKBzle1lsUA+0zc6mkTHr55Ra1h1q8MDUilB6O5V2q6GLsvf8bZSOmcNzzYhRHe/ACtSV9RTSOysKSjVSHA9j+Pv3Qp3TcdC/mzyQIswZAm8b1qYAghH2ehPXB+53UlaUv2aEs1fYLd4PcxpOTAmWIjr6ahSdRBzG4=" \
+  --from-literal="smtp-pass=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" \
+  --from-literal="smtp-user=apikey"
+
+kubectl -n prd create secret generic zupme-user-manager-credentials \
+  --from-literal="pg-host=apimanager-claro-prd.ccvkkkqwkw2e.sa-east-1.rds.amazonaws.com" \
+  --from-literal="pg-user=zupme_production" \
+  --from-literal="pg-pass=MSBw4AvDikulIrh9tbcf" \
+  --from-literal="secret-auth=Cg5Avdu9d2zOEpVMKUVSwfFMPgpe6Iwmaw7Kk9UQD/+4GHmVvJaNIpP8BvQuGGEmIj2rlLpdWb5BGJXtMeHQKujS2Cw1PDeoqchwx7kGBKIg9nLRl9kiN2gJNkGfyFBQHX6xIIMmEYgQkKW91DcrjSfH6/o0kn0OWcFI1jae3rk=" \
+  --from-literal="secret-key=82sTTNesZO8U5gaCTMJf9L1tW1Vgx0jAhfxOa5hVecF+FF7OlimmRMN/Twpt5utSsu3PqeBKZTEphgXC3yy0Beks2ZQbddKeAVLFP9+mI5FivXVVsZHr1fiUV97UAwwDXMmeIPrRgrOt0lMSwZL8syLPK49vrnHOhm+3fzbaec8=" \
+  --from-literal="recaptcha-priv-key=6LfC0Q0TAAAAAHgLHCUlc4GBd5Gdfxlpjd8PCwW0" \
+  --from-literal="recaptcha-pub-key=6LfC0Q0TAAAAADs408GCLVjEjsuzrbKxSwhydAN7" \
+  --from-literal="smtp-pass=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" \
+  --from-literal="smtp-user=apikey"
+
+
+kubectl -n prd create secret generic zupme-gateway-demo-credentials \
+  --from-literal="cb-host=claro-couchbase-apigw.flexprd.aws.clarobrasil.mobi" \
+  --from-literal="cb-user=Administrator" \
+  --from-literal="cb-pass=evK7BAtxPx" \
+  --from-literal="rmq-credentials=amqp://gateway:rfJpxiZj@nlb-claro-rabbitmq-apigw.flexprd.aws.clarobrasil.mobi:5672"
+
+
+kubectl -n prd create secret tls zupme-manager-api-cert \
+  --cert=tls.crt \
+  --key=tls.key
+
+kubectl -n prd create secret tls zupme-developer-cert \
+  --cert=tls.crt \
+  --key=tls.key
+
+kubectl -n prd create secret tls zupme-ui-tls-zupme-cert \
+  --cert=tls.crt \
+  --key=tls.key
+
+
+kubectl -n prd create secret generic zupme-api-manager-cert \
+  --from-file="zupme-ca.crt" \
+  --from-file="api_communication.crt" \
+  --from-file="api_communication.key" \
+  --from-file="api_communication.pub" \
+  --from-file="zupme-api-manager-api.crt" \
+  --from-file="zupme-api-manager-api.key" \
+  --from-file="zupme-api-manager-api.pub" \
+  --from-file="user_manager_session.crt" \
+  --from-file="user_manager_session.key" \
+  --from-file="user_manager_session.pub"
+
+kubectl -n prd create secret generic zupme-user-manager-cert \
+  --from-file="zupme-ca.crt" \
+  --from-file="api_communication.crt" \
+  --from-file="api_communication.key" \
+  --from-file="api_communication.pub" \
+  --from-file="zupme-api-manager-api.crt" \
+  --from-file="zupme-api-manager-api.key" \
+  --from-file="zupme-api-manager-api.pub" \
+  --from-file="user_manager_session.crt" \
+  --from-file="user_manager_session.key" \
+  --from-file="user_manager_session.pub"
+
+
+## COMANDOS USER MANAGER
+./bin/config/organization create_default --name "Demo" --slug demo
+./bin/config/organization create --name "RealWave" --slug realwave
+./bin/config/organization create --name "Claro" --slug claro
+./bin/config/organization create --name "Claro Private" --slug claroprivate
+
+
+./bin/config/organization auth_provider --strategy active_directory \
+--user_creation_allowed true --password_reset_allowed true --user_confirmation_required true \
+--settings host:activedirectory.flexprd.aws.clarobrasil.mobi port:636 base_dn:"OU=Prod,OU=Api_Manager,DC=flexprd,DC=aws,DC=clarobrasil,DC=mobi" filter_attribute:mail \
+auth_method:simple auth_username:'FLEXPRD\manager.admin' auth_password:'jJ*$oZh@^5Hi@@j' encryption:simple_tls \
+--user_mapping email:mail name:displayName uid:mail displayname:givenname memberof:memberof \
+--group_mapping name:name gid:distinguishedname  members:member \
+--organization_slug demo
+
+./bin/config/organization auth_provider --strategy active_directory \
+--user_creation_allowed true --password_reset_allowed true --user_confirmation_required true \
+--settings host:activedirectory.flexprd.aws.clarobrasil.mobi port:636 base_dn:"OU=Prod,OU=Api_Manager,DC=flexprd,DC=aws,DC=clarobrasil,DC=mobi" filter_attribute:mail \
+auth_method:simple auth_username:'FLEXPRD\manager.admin' auth_password:'jJ*$oZh@^5Hi@@j' encryption:simple_tls \
+--user_mapping email:mail name:displayName uid:mail displayname:givenname memberof:memberof \
+--group_mapping name:name gid:distinguishedname  members:member \
+--organization_slug realwave
+
+./bin/config/organization auth_provider --strategy active_directory \
+--user_creation_allowed true --password_reset_allowed true --user_confirmation_required true \
+--settings host:activedirectory.flexprd.aws.clarobrasil.mobi port:636 base_dn:"OU=Prod,OU=Api_Manager,DC=flexprd,DC=aws,DC=clarobrasil,DC=mobi" filter_attribute:mail \
+auth_method:simple auth_username:'FLEXPRD\manager.admin' auth_password:'jJ*$oZh@^5Hi@@j' encryption:simple_tls \
+--user_mapping email:mail name:displayName uid:mail displayname:givenname memberof:memberof \
+--group_mapping name:name gid:distinguishedname  members:member \
+--organization_slug claro
+
+./bin/config/organization auth_provider --strategy active_directory \
+--user_creation_allowed true --password_reset_allowed true --user_confirmation_required true \
+--settings host:activedirectory.flexprd.aws.clarobrasil.mobi port:636 base_dn:"OU=Prod,OU=Api_Manager,DC=flexprd,DC=aws,DC=clarobrasil,DC=mobi" filter_attribute:mail \
+auth_method:simple auth_username:'FLEXPRD\manager.admin' auth_password:'jJ*$oZh@^5Hi@@j' encryption:simple_tls \
+--user_mapping email:mail name:displayName uid:mail displayname:givenname memberof:memberof \
+--group_mapping name:name gid:distinguishedname  members:member \
+--organization_slug claroprivate
+
+
+./bin/config/admin_user create \
+--admin-user-name='apimanager.admin' \
+--organization-slug=demo \
+--admin-user-role=general_administrator --admin-user-uid='apimanager.admin@flexprd.aws.clarobrasil.mobi' \
+--admin-user-display-name='Admin_ApiManager' \
+--admin-user-email='apimanager.admin@flexprd.aws.clarobrasil.mobi' \
+--admin-user-password='jJ*$oZh@^5Hi@@j'
+
+## COMANDOS API MANAGER
+rake zupme:provision_es_templates $ELASTIC_SEARCH_PROVISION_URLS
+
+rake zupme:provision_es_scripts $ELASTIC_SEARCH_PROVISION_URLS
+
+##### ALB CONTROLLER
+https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html

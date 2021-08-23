@@ -1,0 +1,400 @@
+Date: Tue, 4 Aug 2020 18:55:14 +0000 (UTC)
+Message-ID: <2050616580.19.1596567314212@fa0f03a4ba39>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_18_82020501.1596567314212"
+
+------=_Part_18_82020501.1596567314212
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Fluxo de chamados WebSan</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Fluxo de chamados WebSan</h1>
+    <div class=3D"Section1">
+        <p><span><strong>URL</strong>:<span>&nbsp;</span></span><a class=3D=
+"external-link" style=3D"text-decoration: none;" href=3D"https://websan.cla=
+ro.com.br/P00SAN/infraEnterprise.aspx?Lite" rel=3D"nofollow"><span>https://=
+websan.claro.com.br/P00SAN/infraEnterprise.aspx?Lite</span></a><span style=
+=3D"color: rgb(255,0,0);"><span>&nbsp;</span>(S=C3=B3 =C3=A9 poss=C3=ADvel =
+acessar da rede ZUP Claro)</span></p>
+<p><span><strong>login:</strong><span>&nbsp;</span>93340107</span></p>
+<p><span><strong>senha:</strong><span>&nbsp;</span>flex@12345</span></p>
+<p><br></p>
+<ul>
+<li><strong>WPP</strong></li>
+</ul>
+<p><br></p>
+<p><span style=3D"color: rgb(0,51,102);">1- Registrar novo incidente</span>=
+</p>
+<p><span style=3D"color: rgb(0,51,102);">2 =E2=80=93 Selecionar todos os se=
+rvi=C3=A7os e na sequ=C3=AAncia, clicar em OK</span></p>
+<p><span style=3D"color: rgb(0,51,102);">3 =E2=80=93 Na lista, clicar na se=
+ta =E2=80=93 do item<span>&nbsp;</span><strong>WPP - NACIONAL</strong></spa=
+n></p>
+<p><span style=3D"color: rgb(0,51,102);">4 =E2=80=93 No campo Tipo, clicar =
+em<span>&nbsp;</span><strong>?</strong><span>&nbsp;</span>. Na sequ=C3=AAnc=
+ia selecionar:<span>&nbsp;</span><strong>WPP - NACIONAL</strong></span></p>
+<p><span style=3D"color: rgb(0,51,102);">5 =E2=80=93 Clicar uma vez em<span=
+>&nbsp;</span><strong>WPP =E2=80=93 NACIONAL</strong><span>&nbsp;</span>&nb=
+sp;e escolher a op=C3=A7=C3=A3o mais adequada pois s=C3=A3o muitas op=C3=A7=
+=C3=B5es, se mesmo assim n=C3=A3o houver uma de acordo com o problema, sele=
+cionar outras falhas</span></p>
+<p><span style=3D"color: rgb(0,51,102);">6 - &nbsp;No campo Site, escolher<=
+span>&nbsp;</span><strong>Matriz =E2=80=93 S=C3=A3o Paulo =E2=80=93 Henri D=
+unant</strong></span></p>
+<p><span style=3D"color: rgb(0,51,102);">7 - Na descri=C3=A7=C3=A3o, explic=
+ar detalhadamente o que houve e inserir e-mails, telas e etc, no campo<stro=
+ng><span>&nbsp;</span>=E2=80=9CAnexar Arquivo=E2=80=9D</strong>.<span>&nbsp=
+;</span><span style=3D"color: rgb(255,0,0);">No caso da ZUP, =C3=A9 nesse c=
+ampo que deve-se colocar as informa=C3=A7=C3=B5es de endpoint, request e re=
+sponse do servi=C3=A7o que est=C3=A1 com erro.</span></span></p>
+<p><br></p>
+<ul>
+<li><strong><strong>PS8</strong></strong></li>
+</ul>
+<p><br></p>
+<p>1 =E2=80=93 Registrar novo incidente</p>
+<p>2 =E2=80=93 Selecionar todos os servi=C3=A7os e na sequ=C3=AAncia, clica=
+r em OK</p>
+<p>3 =E2=80=93 Na lista, clicar na seta =E2=80=93 do item<span>&nbsp;</span=
+><strong>PS8 =E2=80=93 ATENDIMENTO</strong></p>
+<p>4 =E2=80=93 No campo Tipo, clicar em ? . Na sequ=C3=AAncia selecionar: P=
+S8 =E2=80=93 ATENDIMENTO</p>
+<p>5 =E2=80=93 Clicar uma vez em<span>&nbsp;</span><strong>PS8 =E2=80=93 AT=
+ENDIMENTO</strong><span>&nbsp;</span>e escolher a op=C3=A7=C3=A3o mais adeq=
+uada. Caso n=C3=A3o saiba, escolher<span>&nbsp;</span><strong>outras falhas=
+</strong></p>
+<p>6 - &nbsp;No campo Site, escolher<span>&nbsp;</span><strong>Matriz =E2=
+=80=93 S=C3=A3o Paulo =E2=80=93 Henri Dunant</strong></p>
+<p>7 - Na descri=C3=A7=C3=A3o, explicar detalhadamente o que houve e inseri=
+r e-mails, telas e etc, no campo<span>&nbsp;</span><strong>=E2=80=9CAnexar =
+Arquivo=E2=80=9D</strong>.<span>&nbsp;</span><span style=3D"color: rgb(255,=
+0,0);">No caso da ZUP, =C3=A9 nesse campo que deve-se colocar as informa=C3=
+=A7=C3=B5es de endpoint, request e response do servi=C3=A7o que est=C3=A1 c=
+om erro.</span></p>
+<p><br><br></p>
+<ul>
+<li><strong>PORTABILIDADE (SPN)</strong></li>
+</ul>
+<p><br></p>
+<p><span>1 =E2=80=93 Registrar novo incidente:</span></p>
+<p><span>2 =E2=80=93 Selecionar todos os servi=C3=A7os e na sequ=C3=AAncia,=
+ clicar em OK</span></p>
+<p><span>3 =E2=80=93 Na lista, clicar em<span>&nbsp;</span><strong>Portabil=
+idade</strong>, descer a rolagem e clicar em OK</span></p>
+<p><span>4 =E2=80=93 No campo Tipo, clicar em<span>&nbsp;</span><strong>Por=
+tabilidade</strong></span></p>
+<p><span>5 =E2=80=93 Clicar em Portabilidade e escolher a op=C3=A7=C3=A3o<s=
+pan>&nbsp;</span><strong>Produ=C3=A7=C3=A3o</strong><span>&nbsp;</span>na l=
+istagem apresentada</span></p>
+<p><span>6 =E2=80=93 Ap=C3=B3s selecionar Produ=C3=A7=C3=A3o, clicar em<spa=
+n>&nbsp;</span><strong>Suporte ONLINE</strong></span></p>
+<p><span>7 =E2=80=93 No campo Site, escolher<span>&nbsp;</span><strong>Matr=
+iz =E2=80=93 S=C3=A3o Paulo =E2=80=93 Henri Dunant</strong></span></p>
+<p><span>8 =E2=80=93 Na descri=C3=A7=C3=A3o, explicar o que houve e informa=
+r os<span>&nbsp;</span><strong>MSISDNs</strong><span>&nbsp;</span>que est=
+=C3=A3o pendentes</span></p>
+<p><br></p>
+<ul style=3D"list-style-type: square;">
+<li><strong>IDM&nbsp;</strong></li>
+</ul>
+<p><span style=3D"color: rgb(34,34,34);">1 =E2=80=93 Registrar novo inciden=
+te:</span></p>
+<p><span style=3D"color: rgb(34,34,34);"><span style=3D"color: rgb(34,34,34=
+);">2 =E2=80=93 Selecionar todos os servi=C3=A7os e na sequ=C3=AAncia, clic=
+ar em OK</span></span></p>
+<p><span style=3D"color: rgb(34,34,34);"><span style=3D"color: rgb(34,34,34=
+);"><span style=3D"color: rgb(34,34,34);">3 - Na lista, clicar na&nbsp;</sp=
+an><span style=3D"color: rgb(0,51,102);">seta&nbsp;=E2=80=93 do&nbsp;item&n=
+bsp;</span><strong style=3D""><span>&nbsp;IDM&nbsp;</span></strong></span><=
+/span></p>
+<p><span style=3D"color: rgb(34,34,34);"><span style=3D"color: rgb(34,34,34=
+);"><span style=3D"color: rgb(34,34,34);">4 =E2=80=93 No campo Tipo, clicar=
+ em</span>?<span style=3D"color: rgb(34,34,34);">. Na sequ=C3=AAncia seleci=
+onar&nbsp;</span><strong style=3D""><span><strong style=3D""><span>IDM</spa=
+n></strong></span></strong></span></span></p>
+<p><span style=3D"color: rgb(34,34,34);"><span style=3D"color: rgb(34,34,34=
+);"><span style=3D"color: rgb(34,34,34);">5 =E2=80=93 Clicar uma vez em&nbs=
+p;</span><strong>IDM</strong>&nbsp;<span style=3D"color: rgb(34,34,34);">e =
+escolher a op=C3=A7=C3=A3o mais&nbsp;</span>adequada<span style=3D"color: r=
+gb(31,73,125);">,</span><span style=3D"color: rgb(34,34,34);">se mesmo assi=
+m n=C3=A3o houver uma de acordo com o problema, selecionar </span><strong s=
+tyle=3D""><span><strong style=3D""><span><span style=3D"color: rgb(34,34,34=
+);">outras&nbsp;</span><strong style=3D"">falhas</strong></span></strong></=
+span></strong></span></span></p>
+<p><span style=3D"color: rgb(34,34,34);"><span style=3D"color: rgb(34,34,34=
+);"><span style=3D"color: rgb(34,34,34);">6 -</span><span style=3D"color: r=
+gb(34,34,34);">&nbsp;No campo Site, escolher</span><strong style=3D""><span=
+><strong style=3D""><span><strong style=3D""><span style=3D"color: rgb(34,3=
+4,34);"> Matriz =E2=80=93 S=C3=A3o Paulo =E2=80=93 Henri Dunant</span></str=
+ong></span></strong></span></strong></span></span></p>
+<p>7 - Na descri=C3=A7=C3=A3o, explicar detalhadamente o que houve e inseri=
+r e-mails, telas e etc, no campo<span>&nbsp;</span><strong>=E2=80=9CAnexar =
+Arquivo=E2=80=9D</strong>.<span>&nbsp;</span><span style=3D"color: rgb(255,=
+0,0);">No caso da ZUP, =C3=A9 nesse campo que deve-se colocar as informa=C3=
+=A7=C3=B5es de endpoint, request e response do servi=C3=A7o que est=C3=A1 c=
+om erro.</span></p>
+<p><br></p>
+<ul>
+<li><strong>SPS&nbsp;</strong></li>
+</ul>
+<p><span style=3D"color: rgb(34,34,34);">1 =E2=80=93 Registrar novo inciden=
+te:</span></p>
+<p><span style=3D"color: rgb(34,34,34);"><span style=3D"color: rgb(34,34,34=
+);">2 =E2=80=93 Selecionar todos os servi=C3=A7os e na sequ=C3=AAncia, clic=
+ar em OK</span></span></p>
+<p><span style=3D"color: rgb(34,34,34);"><span style=3D"color: rgb(34,34,34=
+);"><span style=3D"color: rgb(34,34,34);">3 - Na lista, clicar na&nbsp;</sp=
+an><span style=3D"color: rgb(0,51,102);">seta&nbsp;=E2=80=93 do&nbsp;item&n=
+bsp;</span><strong style=3D""><span>&nbsp;SPS ONLINE</span></strong></span>=
+</span></p>
+<p><span style=3D"color: rgb(34,34,34);"><span style=3D"color: rgb(34,34,34=
+);"><span style=3D"color: rgb(34,34,34);">4 =E2=80=93 No campo Tipo, clicar=
+ em</span>?<span style=3D"color: rgb(34,34,34);">. Na sequ=C3=AAncia seleci=
+onar <strong>SPS ONLINE/OUTRAS FALHAS</strong></span></span></span></p>
+<p><span style=3D"color: rgb(34,34,34);"><span style=3D"color: rgb(34,34,34=
+);"><span style=3D"color: rgb(34,34,34);">5 -</span><span style=3D"color: r=
+gb(34,34,34);">&nbsp;No campo Site, escolher</span><strong style=3D""><span=
+><strong style=3D""><span><strong style=3D""><span style=3D"color: rgb(34,3=
+4,34);"> Matriz =E2=80=93 S=C3=A3o Paulo =E2=80=93 Henri Dunant</span></str=
+ong></span></strong></span></strong></span></span></p>
+<p>6 - Na descri=C3=A7=C3=A3o, explicar detalhadamente o que houve e inseri=
+r e-mails, telas e etc, no campo<span>&nbsp;</span><strong>=E2=80=9CAnexar =
+Arquivo=E2=80=9D</strong>.<span>&nbsp;</span><span style=3D"color: rgb(255,=
+0,0);">No caso da ZUP, =C3=A9 nesse campo que deve-se colocar as informa=C3=
+=A7=C3=B5es de endpoint, request e response do servi=C3=A7o que est=C3=A1 c=
+om erro.</span></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_18_82020501.1596567314212--

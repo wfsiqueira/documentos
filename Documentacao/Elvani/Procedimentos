@@ -1,0 +1,746 @@
+================================================================================================
+
+*Gerar build da Vivo Easy
+
+Seguir documentacao abaixo:
+https://docs.google.com/document/d/18YEt5nvQL1g7xz3R1NQ9l5a6jBn-QSYIRCg7GbgjlJA/edit
+
+===============================================================================================
+
+*Procurar máquina:
+
+Entrar na conta zapos da AWS, e procurar pelo serviço de DNS.
+
+===============================================================================================
+
+*Deploy do elasticsearch
+Copiar o git zupme-deploy/zupme-customers/zup.me/production/elasticsearch/ em um novo diretório, exemplo zupme-deploy/zupme-customers/algar/production-onpremisse/elasticsearch;
+Editar o arquivo hosts zupme-deploy/zupme-customers/algar/production-onpremisse/elasticsearch/inv/hosts
+Entrar no diretório zupme-deploy/;
+Executar o comando: bin/zupme provision --module=elasticsearch --customer=algar --env=production-onpremisse --skip-tags=running_cluster
+
+*Deploy do event handler
+Copiar o git zupme-deploy/zupme-customers/zup.me/production/zupme-event-handler/ em um novo diretório, exemplo zupme-deploy/zupme-customers/algar/production-onpremisse/zupme-event-handler;
+Editar o arquivo hosts zupme-deploy/zupme-customers/algar/production-onpremisse/zupme-event-handler/inv/hosts;
+Verificar qual o endereço do Couchbase que está no ambiente, no caso Algar. Verificar também se está liberada essa comunicação para os servidores do eventhandler;
+Verificar se o IP externo da máquina está liberado no repositório aws zupme.repo. Caso não esteja liberado, entrar no S3 e liberar;
+Entrar no diretório zupme-deploy/;
+Executar o comando: bin/zupme provision --module=zupme-event-handler --customer=algar --env=production-onpremisse --skip-tags=running_cluster ; 
+
+
+===============================================================================================
+
+*Os logs do cliente não estão aparecendo, ou parou de aparecer por volta das 22h.
+
+Pessoal,
+
+com a nova versão dos jobs em produção, criei novos comandos para serem executados em caso de falha ou necessidade. Segue para documentação:
+
+1 - Executar o job de criação de índice e alias para todas as organizações
+sudo zupme-api-manager-api run rake zupme:create_index_alias_for_all_organizations 20171123
+
+2 - Executar o job de criação de índice para uma organização específica
+sudo zupme-api-manager-api run rake zupme:create_es_index_for_organization nextel 20171123
+
+3 - Executar o job de criação de alias para uma organização específica (alias diário e mensal)
+sudo zupme-api-manager-api run rake zupme:create_es_aliases_for_organization nextel 20171123 daily
+sudo zupme-api-manager-api run rake zupme:create_es_aliases_for_organization nextel 20171123 monthly
+
+4 - Executar o job de criação de alias de portal para uma organização específica (alias diário e mensal)
+sudo zupme-api-manager-api run rake zupme:create_es_dev_portal_aliases_for_organization nextel 20171123 daily
+sudo zupme-api-manager-api run rake zupme:create_es_dev_portal_aliases_for_organization nextel 20171123 monthly
+
+===============================================================================================
+
+*Alterar senha de usuário bloqueado na rede WIFI
+
+Loga no 10.0.0.2
+para fazer o reset da senha: samba-tool user setpassword XXXXXX (usuário de e-mail)
+
+Depois entra no site https://ss.local.zup.com.br para o usuário alterar a senha dele.
+
+===============================================================================================
+
+*Liberar acesso para pessoal de fora conseguir acessar um ambiente, pode estar faltando rota. Nesse caso era o pessoal de Ribeirão Preto.
+
+Acesso ao FW pFsense Ribeirão preto: https://10.0.4.1:8000/
+Entrar na opção de OpenVPN clients e liberar a rota na opção Tunneling
+
+===============================================================================================
+
+*Liberar acesso no repositório GEMS(172.17.2.68) da Azure para um servidor que está na AWS(commonsnetwork-1a-centos7-zupmebuilder001 - 192.168.4.112). O acesso será através da VPN.
+
+Foi necessário conectar nos servidores de VPN.
+VPN AZURE: 172.17.0.148 - commons-openvpn01
+VPN AWS: 192.168.4.125 - commons-network-1a-openvpn001
+
+São as VPNs que interligam o ambiente AZURE com AWS. Conectei nos servidores para validar as configurações se eram os mesmos servidores. Depois foi necessário entrar na interface de gerenciamneto Azure, criar a rota 192.168.4.0/22 saindo pelo IP 172.17.0.148, dentro do menu "RT-Commons-Gems". Nome da rota criada "commons-aws-commons-azure".
+
+Depois liberar a regra de entrada na porta 80 para a rede do GEMS(172.17.2.64/28) no menu "NSG-Commons-Gems - regras de segurança de entrada"
+
+===============================================================================================
+
+*Erro ao rodar o ansible-playbook
+
+TASK [Create AMI] **************************************************************************************************************************************************************
+fatal: [nextel-application-template.aws.zup.com.br -> localhost]: FAILED! => {"changed": false, "msg": "No handler was ready to authenticate. 1 handlers were checked. ['HmacAuthV4Handler'] Check your credentials"}
+
+Solução:
+dnf install gcc redhat-rpm-config python-devel openssl-devel sshpass
+
+
+
+*Erro ao rodar o ansible-playbook
+
+TASK [Create AMI] **************************************************************************************************************************************************************
+fatal: [nextel-application-template.aws.zup.com.br -> localhost]: FAILED! => {"changed": false, "msg": "boto required for this module"}
+
+
+Solução:
+pip install boto
+pip install boto3
+
+
+
+*Erro ao rodar o ansible-playbook
+
+TASK [Create AMI] **************************************************************************************************************************************************************
+fatal: [nextel-application-template.aws.zup.com.br -> localhost]: FAILED! => {"changed": false, "msg": "No handler was ready to authenticate. 1 handlers were checked. ['HmacAuthV4Handler'] Check your credentials"}
+
+Solução: criar o diretório .aws dentro do home do usuário do notebook, criar o arquivo credentials dentro do diretório e colocar as informações abaixo referente ao usuário.
+
+[default]
+aws_access_key_id = AKIAJANQ64RIBIKMICHA
+aws_secret_access_key = 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
+
+[s3]
+aws_access_key_id = AKIAIXGRQZETTEK5O4YQ
+aws_secret_access_key = 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
+
+[zapos]
+aws_access_key_id = AKIAJH2KOGOLSFNKDYRQ
+aws_secret_access_key = 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
+
+
+===============================================================================================
+
+*Criar acesso a VPN para um Zuper
+
+VPN
+10.0.0.206
+
+ssh elvani.neto@10.0.0.206
+sudo su -
+cd /etc/openvpn/easy-rsa/key/
+ll |grep <nome-do-usuário>
+cd ..
+. ./vars
+./build-key <nome-do-usuário>
+cd keys/
+cp <nome-do-usuário>.key <nome-do-usuário>.crt /tmp
+chown bruno.silva <nome-do-usuário>*
+
+scp  elvani.neto@10.0.0.206:/tmp/<nome-do-usuário>*  .
+vi zup.conf     
+
+Windows
+mv zup.conf zup.ovpn
+zip -r vpn.zip arquivos
+
+Linux
+tar -zcvf vpn.tar.gz arquivos
+
+MAC
+mkdir vpn.tblk
+mv arquivos vpn.tblk/
+zip -r vpn.tblk.zip vpn.tblk/
+
+===============================================================================================
+
+*Deploy ipiranga-marketplace Docker
+
+- Conectar no servidor commons-bridge001.azure.zup.com.br
+- Entrar no diretório stack do ipiranga-marketplace.
+cd /opt/zup/continuous-deploy/commons-docker-swarm/ipiranga-marketplace/production/stack
+
+- Atualizar o github do projeto.
+sudo git pull
+
+- Fazer o docker-login.
+docker-login
+
+- Listar o docker service, verificar e anotar a versão atual para casa seja necessário depois.
+docker-commons-prod service ls | grep ipiranga-marketplace
+
+- Comando para fazer o deploy da versão 1.2.9.
+tag=1.2.9  docker-commons-prod stack deploy --with-registry-auth -c ipiranga-marketplace.yml ipiranga-marketplace
+
+- Caso seja necessário rodar as gravações de banco, rodar os comando abaixo:
+cd /opt/zup/deploy
+sudo sh copycat_recorder_ipirangamkt.sh
+
+===============================================================================================
+
+*Deploy banco ole Docker - ole-b2c-service-v2
+
+- Entrar no diretório stack do ipiranga-marketplace.
+cd /opt/zup/continuous-deploy/commons-docker-swarm/ole-b2c-service-v2/production/stack
+
+- Atualizar o github do projeto.
+sudo git pull
+
+- Fazer o docker-login.
+docker-login
+
+- Listar o docker service, verificar e anotar a versão atual para casa seja necessário depois.
+docker-commons-prod service ls | grep ole-b2c-service-v2
+
+- Comando para fazer o deploy da versão 2.45.2
+tag=2.45.2  docker-commons-prod stack deploy --with-registry-auth -c ole-b2c-service-v2.yml ole-b2c-service-v2
+
+===============================================================================================
+
+*Deploy banco ole Docker - ole-b2c-web-v2_app
+
+- Entrar no diretório stack do ole-b2c-web.
+cd /opt/zup/continuous-deploy/commons-docker-swarm/ole-b2c-web-v2/production/stack
+
+- Atualizar o github do projeto.
+sudo git pull
+
+- Fazer o docker-login.
+docker-login
+
+- Listar o docker service, verificar e anotar a versão atual para casa seja necessário depois.
+docker-commons-prod service ls | grep ole-b2c-web-v2
+
+- Comando para fazer o deploy da versão 2.2.0
+tag=2.2.0 docker-commons-prod stack deploy --with-registry-auth -c ole-b2c-web-v2.yml ole-b2c-web-v2
+
+===============================================================================================
+
+https://zupjira.atlassian.net/wiki/spaces/INFRA/pages/49124167/Deploy
+https://zupjira.atlassian.net/wiki/spaces/INFRA/pages/49125506/Atualizando+AMI+ASG
+
+*Deploy Ole - ole-b2b-emprestimo
+
+- Ligar a maquina template: ole-app-autoscaling-TEMPLATE
+
+- Entrar no diretório do ansible do projeto:
+cd /opt/zup/continuous-deploy/ansible/ole-b2b/emprestimo/production
+
+- Atualizar o git do projeto:
+sudo git pull
+
+- Executar o deploy da aplicacao:
+ansible-playbook -u elvani.neto --ask-pass --ask-sudo-pass -i ../../../../customers/ole-b2b/emprestimo/production/inv/hosts -e "hosts=ole-app-template" deploy.yml
+
+- Verificar a versão no site da AWS antes de rodar.
+Ex.: Se for b2c o deploy verificar no nome do ASG a versão do b2b e vice versa
+Entrar no menu Launch Configuration, procurar por ole-app-autoscaling-template e pegar a versao do b2b para colocar no deploy abaixo.
+
+- Executar a criacao do Launch Configuration:
+cd /opt/zup/continuous-deploy/ansible/ole-b2c/production
+ansible-playbook -u elvani.neto --ask-pass --ask-sudo-pass -i ../../shared/ole-b2c/app/inv/hosts -e "hosts=ole-app-template version=b2b_1.0.3__b2c_1.0.21" ole-ami.yml
+
+- Fazer a configuracao do scaling para reclicar as maquinas com a nova versao.
+
+- Desligar a maquina template.
+
+===============================================================================================
+
+*Deploy Viavarejo PRD Docker - viavarejo-integracao-mobile
+
+- Entrar no diretório stack do viavarejo-integracao-mobile.
+cd /opt/zup/continuous-deploy/commons-docker-swarm/viavarejo-integracao-mobile/production/stack/
+
+- Atualizar o github do projeto.
+sudo git pull
+
+- Fazer o docker-login.
+docker-login
+
+- Listar o docker service, verificar e anotar a versão atual para casa seja necessário depois.
+docker-commons-prod service ls | grep viavarejo-integracao-mobile
+
+- Comando para fazer o deploy da versão 1.3.3.
+tag=1.5.2  docker-commons-prod stack deploy --with-registry-auth -c viavarejo-integracao-mobile.yml viavarejo-integracao-mobile
+
+===============================================================================================
+
+*Deploy ipiranga-marketplace-web
+
+- O deploy é feito de forma automática. O que pode ser necessário fazer é limpar o cache do cloudfront.
+
+- Verificar o s3 bucket ipirangamktbackoffice.continuousplatform.com se realmente já foi atualizado, ver a última data de modificacao.
+
+- Limpar o cache no ipirangamktbackoffice.continuousplatform.com dentro do cloudfront na opcao invalidation.
+
+- Caso o deploy seja no ambiente 
+
+===============================================================================================
+
+*Deploy Gateway SAS AWS
+
+
+GIT: ZUPME-DEPLOY - clonar o repositório
+dentro de: zupme-deploy/bin executar os comandos:
+### EM CASO DE ROLLBACK ADICIONAR NA LINHA --rollback ###
+
+[ordem]:
+zupme-gateway (backend)
+zupme-api-manager-api (backend)
+zupme-ui (tela)
+
+ 
+############ SAS ############
+Ligar máquina zupme-1a-gateway-template / Apagar LC zupme-gateway
+./zupme deploy --module=zupme-gateway --customer=zup.me --env=template --version=7.0.0 --create-ami --create-lc  --limit=group1-zupme-gateway-production
+
+Reciclar as máquinas - Desligar máquina de template
+
+./zupme deploy --module=zupme-gateway --customer=zup.me --env=production --version=7.0.0 --limit=zupme-gateway-production-secondary
+
+./zupme deploy --module=zupme-gateway --customer=zup.me --env=production --version=7.0.0 --limit=zupme-gateway-production-demo
+
+
+===============================================================================================
+
+*Procedimentos Elasticsearch
+
+- Verificar status do cluster:
+curl -XGET 'http://zupme-elasticsearch-client01:9200/_cluster/health?pretty'
+watch -n10 'curl -s zupme-elasticsearch-client04.azure.zup.com.br:9200/_cluster/health?pretty'
+
+- Verificar os status dos shards:
+curl -s "http://zupme-elasticsearch-client01:9200/_cat/shards?v"
+
+- Verifciar os shards com status UNASSIGNED
+curl -s "http://zupme-elasticsearch-client01:9200/_cat/shards?v"  | grep UNASSIGNED
+
+- Se tiver muitos shards UNASSIGNED, ativar o  routing allocation do cluster e depois quando finalizar desativar novamente
+curl -XPUT 'http://zupme-elasticsearch-client02.azure.zup.com.br:9200/_cluster/settings' -d '{ "transient": { "cluster.routing.allocation.enable": "all"}}'
+curl -XPUT 'http://zupme-elasticsearch-client02.azure.zup.com.br:9200/_cluster/settings' -d '{ "transient": { "cluster.routing.allocation.enable": "none"}}'
+
+- Verifica a alocaçao dos shards, os shards que estão realocando e o status do cluster
+while true; do curl -s "http://zupme-elasticsearch-client01.azure.zup.com.br:9200/_cat/allocation?v"; echo "" ; curl -s "http://zupme-elasticsearch-client01.azure.zup.com.br:9200/_cat/shards" | grep RELO; curl -s zupme-elasticsearch-client04.azure.zup.com.br:9200/_cluster/health?pretty;   sleep 10; clear ; done
+
+- Listar um índice ou shard filtrando pelo cliente
+curl localhost:9200/_cat/indices?pretty | grep marvel
+
+- Apagar um determinado índice ou shard
+curl -X DELETE http://localhost:9200/.marvel-2018.02.14
+
+- Remover nó de data do cluster
+curl -XPUT 'http://claro-1a-elasticsearch5-client01.aws.zup.com.br:9200/_cluster/settings' -d '{ "transient": { "cluster.routing.allocation.exclude._host": ""}}'
+
+- Listar os backups ou snapshots por ID
+curl -X GET "http://claro-1a-elasticsearch5-client01.aws.zup.com.br:9200/_cat/snapshots/s3-backup?v&s=id&pretty"
+curl -X GET 'http://claro-1a-elasticsearch5-client01.aws.zup.com.br:9200/_snapshot/s3-backup/*2020*?pretty'
+
+- Listar os plugins instalados no ambiente
+curl -XGET 'http://claro-1a-elasticsearch5-client01.aws.zup.com.br:9200/_cat/plugins?v&s=name'
+
+- Rodar o verify do job de backup configurado
+curl -X POST "http://claro-1a-elasticsearch5-client01.aws.zup.com.br:9200/_snapshot/s3-backup/_verify?pretty"
+
+- Instalar plugin do backup-s3 - necessário restart do serviço do elastic
+sudo /usr/share/elasticsearch/bin/elasticsearch-plugin install repository-s3  
+
+- Remover plugin do backup-s3 - necessário restart do serviço do elastic
+sudo /usr/share/elasticsearch/bin/elasticsearch-plugin remove repository-s3  
+
+- Criar o job de backup utilizando o plubin do backup-s3
+curl -XPUT 'http://claro-1a-elasticsearch5-client01.aws.zup.com.br:9200/_snapshot/s3-backup?pretty' -d '
+{
+   "type":"s3",
+   "settings":{
+      "bucket":"claro-elasticsearch-backup",
+      "region":"sa-east-1",
+      "access_key":"AKIAZOEOX42FKJZC5GUB",
+      "secret_key":"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",
+      "server_side_encryption":"false"
+   }
+}'
+
+
+===============================================================================================
+
+*Script para mover shards do Elasticsearch
+
+[root@zupme-uiapi001 ~]# cat /home/thiago.santos/move.sh
+#!/bin/bash
+
+
+FROM=$1
+TO=$2
+QDE=$3
+DT=`date +%s`
+FILE=".SHARDS_${DT}"
+curl -s "http://zupme-elasticsearch-client01.azure.zup.com.br:9200/_cat/shards" > $FILE 
+for a in $(cat $FILE | grep $FROM | awk '{ print $1}' | head -$QDE); do
+
+    echo "Movendo $a de $FROM para $TO"
+    TNODE=`grep $a $FILE | grep $TO | awk '{ print $1}'`
+    if [ "$TNODE" = "$a" ]; then
+        echo " +- Impossivel mover $a para $TO"
+    else
+        echo " +- Moving $a para $TO"
+    fi
+    SHARD=$(grep $a $FILE | grep $FROM | awk '{ print $2 }' | head -1)
+    curl -XPOST 'zupme-elasticsearch-client01.azure.zup.com.br:9200/_cluster/reroute' -d '{
+    "commands" : [ {
+        "move" :
+            {
+              "index" : "'$a'", 
+              "shard" : "'$SHARD'",
+              "from_node" : "'$FROM'", 
+              "to_node" : "'$TO'"
+            }
+        }
+    ]
+}'
+done
+
+===============================================================================================
+
+*Comandos OpenStack
+
+- Listar as máquinas virtuais. Talvez seja necessário setar as variavies de acesso.
+openstack server list
+
+===============================================================================================
+
+*Querys personalizadas para o Zupme Api Manager
+
+- Filtar pelos erros 500 ate 600
+entries.entrypoint.response.status:[500 TO 600]
+
+===============================================================================================
+
+* Problema no backoffice vivo
+
+- Entrar no VMSS vmss-vivo-next-application dentro da Azure e dar um reimage nas instancias.
+
+
+===============================================================================================
+
+* ZABBIX VALUE CACHE WORKING IN LOW MEMORY MODE 
+
+- Entrar na máquina do Zabbix e limpar a memória cache do serviror com o comando abaixo:
+sysctl -w vm.drop_caches=3
+
+===============================================================================================
+
+*Deploy Claro Wallet e Payments
+
+
+Segue procedimentos de deploy dos artefatos que dependem do VAULT:
+
+
+Passo 1: SSH
+ssh vault-claro-lab.apirealwave.io
+ssh vault-claro.apirealwave.io
+
+Passo 2: Exportar a URL do vault 
+QA: export VAULT_ADDR=https://vault-claro-lab.apirealwave.io:8200
+PRD: export VAULT_ADDR=https://vault-claro.apirealwave.io:8200
+
+Passo 3: Autenticar
+QA: vault auth -method=userpass username=realwave password="##realwave##"
+PRD: vault auth -method=userpass username=realwave password="bC6GZynrbaYaf7kj87md"
+
+Passo 4: Gerar o Token necessário para aplicacao
+vault token-create -role=realwave -wrap-ttl="20m" -policy=wallet-policy -format=json
+vault token-create -role=realwave -wrap-ttl="20m" -policy=payments-policy
+
+[root@realwave-qa-claro-vault01 ~]# vault token-create -role=realwave -wrap-ttl="20m" -policy=wallet-policy -format=json
+{
+	"request_id": "",
+	"lease_id": "",
+	"lease_duration": 0,
+	"renewable": false,
+	"data": null,
+	"warnings": null,
+	"wrap_info": {
+		"token": "2115c84c-052a-5e8f-1742-ed225145997a",
+		"ttl": 1200,
+		"creation_time": "2017-10-18T18:24:05.297788978-02:00",
+		"creation_path": "auth/token/create/realwave",
+		"wrapped_accessor": "52a0857e-eed6-36c8-61d3-f4a874b608b1"
+	}
+}
+
+
+Passo 5: Realizar o deploy passando o token:
+tag=2018R2.4.0 vault_token1=1a80e747-5265-946f-4c51-2548a887dea0 vault_token2=b351e908-8fc3-50ea-d0a5-d7e733311850 docker-rw-claro-qa stack deploy --with-registry-auth -c ... 
+
+
+Artefatos afetados: realwave-payments-manager e realwave-wallet
+
+===============================================================================================
+
+*CLARO QA VAULT UNSEAL
+
+Unseal Key 1: VyRf+k6q+2gZYUvz/PWXOeA0fSQkNkbkqP7hTuy3NvIZ
+Unseal Key 2: jZx2EpeFG48cvvFuH/s0FP1o3wDTjuvC9UYN76wyrueA
+Unseal Key 3: T4SHcpshuLLDmBdWQs1W8/EzJDtcbV3w+QlTg9VwqIDO
+Unseal Key 4: ab5gnQBS9WywhjxaimsclEIb1QuE/Hx0cAYYAPmrlPwy
+Unseal Key 5: yr1AKYQzq94+yEPrHZLRV9mFXNtbCamYSRfWyosQ6vKn
+Initial Root Token: 96cfab7e-e1d8-ab2a-a427-591e7f772161
+Root Token: 97faa56a-7b1a-310b-9603-6cafc3b9a3c2
+
+[root@realwave-qa-claro-vault01 ~]# vault read auth/approle/role/rw_wallet_role/role-id
+Key     Value
+---     -----
+role_id 3aeface2-93b6-4e37-541c-467a2f7bef79
+
+You have mail in /var/spool/mail/root
+[root@realwave-qa-claro-vault01 ~]# vault write -f auth/approle/role/rw_wallet_role/secret-id
+Key                 Value
+---                 -----
+secret_id           e56f694f-788c-89a9-f400-e03daa91f87b
+secret_id_accessor  e6a2eaae-7d1d-fd3c-e387-d0bb1dcde198
+
+
+[root@realwave-qa-claro-vault01 ~]# vault read auth/approle/role/rw_payments_role/role-id
+Key     Value
+---     -----
+role_id 4c028bcc-81e3-b4c5-1648-a5b8c61cc28b
+
+[root@realwave-qa-claro-vault01 ~]# vault write -f auth/approle/role/rw_payments_role/secret-id
+Key                 Value
+---                 -----
+secret_id           68d32f68-8ccc-c7f8-8b63-9df17b0207f1
+secret_id_accessor  e3339fa6-3963-3084-cf03-ac98374e7d9e
+
+senha do zip: d9q5qwvk2zugEQMR9qea
+
+
+
+===============================================================================================
+
+*CLARO PROD VAULT UNSEAL
+
+Unseal Key 1: saWkEpsnE93DnhWwVe+Qa3aQtSBpb5Dy2UVqGmLUmaWX
+Unseal Key 2: 6mYwO1eLdcN9T35YnbahjVT1Opm7c0uAEc2R5HE/bboT
+Unseal Key 3: d/muPQROHEgKRDmegYb0jrojfoK3MCOcB+TG1jgYDpNO
+Unseal Key 4: OBFp3bS8D6qWIWWb7FuFViCJ1vKZXXcVoWGw80xEdPpb
+Unseal Key 5: widYoZ8nFXjEHRNl7GpfrylGnAvcoRzCc53CGuADtnI8
+Initial Root Token: e0c168fe-8f91-43da-adb2-707c9df5e8a4 (revoked)
+Root Token: 4874c6dd-546e-0ac1-4512-988d2523f28c
+
+realwave:bC6GZynrbaYaf7kj87md
+
+senha do zip: d9q5qwvk2zugEQMR9qea
+
+===============================================================================================
+
+*Deploy Vivo Easy Transbordo
+
+Backoffice: adesaoweb, backoffice, meuvivo, vivo360
+Baixar o arquivo, copiar em   vivo-next-transbordo01.azure.zup.com.br
+/opt/zup/apps/vivo-easy-transbordo 
+sudo su -
+
+===============================================================================================
+
+*Criar máquina nova AWS
+
+Usar a AMI: CentOS Linux 7 x86_64 HVM EBS 1602-b7ee8a69-ee97-4a49-9e68-afaee216db2e-ami-d7e1d2bd.3 (ami-26b93b4a)
+Adicionar o host no /etc/ansible/hosts
+# cd /opt/zup/continuous-playbooks/provisioning
+# ansible-playbook --private-key ansible-provisioning.pem -u centos --extra-vars "hosts=zupme-1a-gateway-development002.aws.zup.com.br" ec2-zupfy.yml
+
+
+*Criar máquina nova AZURE
+Adicionar o host no /etc/ansible/hosts
+# cd /opt/zup/continuous-playbooks/provisioning
+# ansible-playbook -bku azure-admin --ask-pass --ask-sudo-pass --extra-vars "hosts=commons-sonar-nexus.azure.zup.com.br" azure-zupfy2.yml
+
+===============================================================================================
+
+*Rotate Banco Mongo Backoffice
+
+- Logar na Azure, fazer o snapshot dos discos de data das máquinas commons-mongo-database01 e commons-mongo-database02. Necessário somente de uma máquina;
+- Depois do snapshot, pessoal de banco fazer o drop database do banco;
+- Logar na bridge Azure e depois na máquina do backoffice commons-backoffice01 e como root fazer o restart do jetty para que ele crie as collections e indices;
+  # systemctl restart jetty
+- PEssoal de banco valida se foram criados os collections e indices;
+- Logar na bridge e fazer o scale n-1 do serviço santander-esfera_services e depois scale up novamente;
+	# docker-commons-prod service scale santander-esfera_services=5
+	# docker-commons-prod service scale santander-esfera_services=6
+- Validar com a operação se o backoffice está funcional através do endereço: https://backoffice.continuousplatform.com/santandernew/login
+
+===============================================================================================
+
+*GERAR CHAVE PÚBLICA E VALIDAR
+
+- Gerar a chave pública através de uma chave privada:
+# openssl rsa -in private.key -pubout -out public.key
+
+- Validar a chave pública
+Public key encrypts, private key decrypts (encrypting):
+
+# openssl rsautl -encrypt -inkey public.key -pubin -in message.txt -out message.ssl
+# openssl rsautl -decrypt -inkey private.key       -in message.ssl -out message.txt
+
+Private key encrypts, public key decrypts (signing):
+
+# openssl rsautl -sign -inkey private.key       -in message.txt -out message.ssl
+# openssl rsautl       -inkey public.key -pubin -in message.ssl -out message.txt
+
+
+
+FONTE: https://stackoverflow.com/questions/5244129/use-rsa-private-key-to-generate-public-key
+FONTE: https://stackoverflow.com/questions/18257185/how-does-a-public-key-verify-a-signature
+
+===============================================================================================
+
+*CERTIFICADOS DIGITAIS
+
+- Using openssl to get the certificate from a server
+# echo "" | openssl s_client -connect i-wallet.api.zup.me:443 -prexit 2>/dev/null | sed -n -e '/BEGIN\ CERTIFICATE/,/END\ CERTIFICATE/ p'
+
+- Verificar data de expiração do certificado via connect
+# echo | openssl s_client -connect activedirectory.zup.me:636 2> /dev/null | openssl x509 -noout -enddate
+
+
+===============================================================================================
+
+*COMANDOS AZURE CLI - az cli
+
+- Listar as subscriptions
+# az account list
+
+- Mostrar a subscription atual
+# az account show
+
+- Mudar para outra subscription
+# az account set --subscription a3d06c53-f000-4640-bfcc-a56eb65ac037
+
+- Criar uma interface de rede NIC
+# az network nic create -g Santander-MKT --vnet-name Santander --subnet Santander-MKT -n santander-mkt-applic436
+
+=============================================================================================
+
+*COMANDOS COUCHBASE
+
+- Aumentar quantidade máxima de buckets a serem criados
+curl -X POST -u admin:senha -d maxBucketCount=15 http://localhost:8091/internalSettings
+
+=============================================================================================
+
+- Comandos no crontab para limpar espaço em disco nos docker-swarm
+
+##Limpar imagens do docker
+0 */12 * * * docker system prune -a -f
+
+##Limpar 1x por semana arquivos log do diretorio docker maiores que 1G
+00 14 * * 2 find /var/lib/docker -type f -name "*.log" -size +1G -exec tee {} \; </dev/null
+
+=============================================================================================
+
+*K8s Google Cloud
+
+- Para mudar de projeto
+
+NX1 PRE-PROD
+gcloud config set project claro-preprod
+gcloud beta container clusters get-credentials cluster-rw --region southamerica-east1 --project claro-preprod
+
+FLEX PRE-PROD
+gcloud config set project claro-preprod
+gcloud container clusters get-credentials cluster-flex-preprod --region southamerica-east1 --project claro-preprod
+
+NX1-PROD
+gcloud config set project claro-nx1-producao
+gcloud container clusters get-credentials cluster-nx1-prod --region southamerica-east1 --project claro-nx1-producao
+
+REALWAVE-PRODUCAO
+gcloud config set project claro-realwave-producao
+gcloud beta container clusters get-credentials cluster-rw-producao --region southamerica-east1
+
+FLEX-PRODUCAO
+gcloud config set project claro-flex-prod
+gcloud beta container clusters get-credentials cluster-flex-producao --region southamerica-east1 --project claro-flex-prod
+
+CREDENTIALS-QA
+gcloud config set project claro-credentials-qa
+gcloud container clusters get-credentials cluster-credentials-qa --region southamerica-east1 --project claro-credentials-qa
+gcloud container clusters get-credentials cluster-credentials-dev --region southamerica-east1 --project claro-credentials-qa
+
+
+
+=============================================================================================
+
+*K8s Azure
+
+ZUPME-STAGING
+az account set --subscription 981c186b-d3a3-4e23-bc1e-8ac0dc63b4e6
+az aks get-credentials --resource-group Zupme-Staging --name k8s-zupmestg
+
+SRE-PROD
+az account set --subscription 2a9ee567-1561-4abc-a521-6735c99ba319
+az aks get-credentials --resource-group SRE --name k8s-sre
+
+OLE-PROD
+az account set --subscription 1708ce83-54f2-4f84-bc6d-99ec2e0f52f0
+az aks get-credentials --resource-group Ole --name k8s-ole
+
+CLARO-QA
+az account set --subscription 1e1e1f8c-50e8-4c60-a331-bf7159bc9cca
+
+
+=============================================================================================
+
+*K8s AWS
+
+NX1-PROD
+aws eks --region sa-east-1  update-kubeconfig --name claro-nx1-prod
+
+
+
+=============================================================================================
+
+*Configuracao logrotate
+
+# vim /etc/logrotate.d/syslog
+
+{
+    daily
+    rotate 10
+    compress
+    missingok
+    sharedscripts
+    postrotate
+        /bin/kill -HUP `cat /var/run/syslogd.pid 2> /dev/null` 2> /dev/null || true
+    endscript
+}
+
+
+=============================================================================================
+
+*Consultas no Kibana
+
+- Busca com dois parametros dentro do Dev Tools:
+
+GET syslog-2019.10*/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+         {
+          "match": {
+            "sysloghost":".*claro.*"
+          }
+        },
+        {
+          "regexp": {
+            "programname.keyword": "rkhunter"
+          }
+        }
+      ]
+    }
+  }
+}

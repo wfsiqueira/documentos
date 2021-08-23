@@ -1,0 +1,317 @@
+Date: Tue, 4 Aug 2020 19:31:16 +0000 (UTC)
+Message-ID: <223962322.45.1596569476980@b69eb428412d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_44_130199060.1596569476980"
+
+------=_Part_44_130199060.1596569476980
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Payments - Vault Integration</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Payments - Vault Integration</h1>
+    <div class=3D"Section1">
+        <p>Documenta=C3=A7=C3=A3o da integra=C3=A7=C3=A3o do payments-comma=
+nd com o Vault.</p>
+<h2 id=3D"Payments-VaultIntegration-Depend=C3=AAncias">Depend=C3=AAncias</h=
+2>
+<p><a href=3D"http://stedolan.github.io/jq/download/linux64/jq" class=3D"ex=
+ternal-link" rel=3D"nofollow">http://stedolan.github.io/jq/download/linux64=
+/jq</a>&nbsp;(lib util para parser de json) - utilizada no<strong> passo 6<=
+/strong> para parser do token tempor=C3=A1rio</p>
+<p>Obs: eu n=C3=A3o analisei o c=C3=B3digo fonte da lib, ou seja, pode ser =
+um impeditivo utiliza-la por conta de PCI ou da pr=C3=B3pria seguran=C3=A7a=
+ do processo de deploy, mas a vantagem =C3=A9 que =C3=A9 opensource e nos d=
+=C3=A1 condi=C3=A7=C3=A3o de analisar os fontes.</p>
+<p><br></p>
+<p><a href=3D"https://releases.hashicorp.com/vault/0.8.1/vault_0.8.1_linux_=
+amd64.zip" class=3D"external-link" rel=3D"nofollow">https://releases.hashic=
+orp.com/vault/0.8.1/vault_0.8.1_linux_amd64.zip</a>&nbsp;(o pr=C3=B3prio va=
+ult servindo como "cli" para facilitar as opera=C3=A7=C3=B5es, pois do cont=
+r=C3=A1rio necessita-se de utilizar o curl montando todas as chamadas http)=
+</p>
+<h2 id=3D"Payments-VaultIntegration-Deploy">Deploy</h2>
+<p><strong>1.&nbsp;Exportando a vari=C3=A1vel 'VAULT_ADDR" com o host do va=
+ult.</strong></p>
+<pre>export VAULT_ADDR=3D"https://vault:8200"<br><br></pre>
+<p><strong>2. Autenticando no vault</strong></p>
+<pre><span style=3D"color: rgb(36,41,46);">./vault auth -method=3Duserpass =
+username=3Drealwave password=3D[password]</span></pre>
+<p>Obs: esta opera=C3=A7=C3=A3o cria uma sess=C3=A3o no vault e armazena no=
+ cache local do usu=C3=A1rio, a sess=C3=A3o expira ap=C3=B3s alguns minutos=
+.</p>
+<p><br></p>
+<p><strong>3. Montando o backend de warmup (</strong><em>health entre a app=
+ cliente e o vault, no caso o payments escreve o nome da app e um timestamp=
+, procedimento feito na inicializa=C3=A7=C3=A3o, a wallet tamb=C3=A9m faz)<=
+/em></p>
+<p>./vault mount -path=3Drealwave/warmup generic<br><br>Obs: pode ocorrer u=
+m log de erro 400 caso o backend j=C3=A1 tiver sido montado, apenas ignorar=
+ pois n=C3=A3o h=C3=A1 problema.</p>
+<p><br></p>
+<p><strong>4. Montando o backend da wallet onde o payments somente ter=C3=
+=A1 acesso de leitura conforme passo 5.</strong></p>
+<pre>./vault mount  -path=3Drealwave/wallet generic</pre>
+<p>Obs: pode ocorrer um log de erro 400 caso o backend j=C3=A1 tiver sido m=
+ontado, apenas ignorar pois n=C3=A3o h=C3=A1 problema.</p>
+<p><br></p>
+<p><strong>5. Escrevendo a policy do payments para o backend da wallet e pa=
+ra o backend de warmup</strong></p>
+<pre>./vault policy-write payments-policy payments-policy.txt</pre>
+<p>conte=C3=BAdo do arquivo "payments-policy.txt":</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: text; gutter: false; theme: Confluence" data-theme=3D"Confluence">path "s=
+ys/health" {
+  capabilities =3D ["read"]
+}
+
+path "realwave/wallet/*" {
+  capabilities =3D ["read"]
+}
+
+path "realwave/warmup/*" {
+  capabilities =3D ["read","create","update"]
+}</pre>=20
+</div>
+</div>
+<p><br></p>
+<p><strong>6. Gerando e exportando o token tempor=C3=A1rio com tempo de vid=
+a de 10 minutos para autentica=C3=A7=C3=A3o via CubbyHole</strong></p>
+<pre>token_response=3D$(./vault token-create -role=3Drealwave -wrap-ttl=3D"=
+10m" -policy=3Dpayments-policy -format=3Djson)<br>wrapping_token=3D$(echo $=
+token_response | ./jq -r '.wrap_info.token')<br>export VAULT_TOKEN=3D"$wrap=
+ping_token"</pre>
+<p>Obs: o export do token deve ser feito no container da pr=C3=B3pria aplic=
+a=C3=A7=C3=A3o payments-command, para que ela possa utilizar como vari=C3=
+=A1vel de ambiente no momento de sua inicializa=C3=A7=C3=A3o, pois =C3=A9 n=
+este instante que o token de acesso =C3=A9 solicitado ao vault e armazenado=
+ apenas em mem=C3=B3ria tornando o processo mais seguro.</p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_44_130199060.1596569476980--

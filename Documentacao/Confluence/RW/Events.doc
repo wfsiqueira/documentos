@@ -1,0 +1,635 @@
+Date: Tue, 4 Aug 2020 19:29:04 +0000 (UTC)
+Message-ID: <320993745.45.1596569344322@6f36c4f94bb4>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_44_249286387.1596569344322"
+
+------=_Part_44_249286387.1596569344322
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Events</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Events</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"Events-Meiodepagamentoatualizado">Meio de pagamento atual=
+izado</h2>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>payment_method_updated</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "header": {
+    "eventId": "SUB-5500d3a1-6197-4ac6-87ca-d1847c265d00",
+    "eventType": "SUBSCRIPTION_PAYMENT_METHOD_UPDATED",
+    "customerId": "83237f28-8853-41a3-83d0-03457db6d014",
+    "context": {
+      "localTrackingId": "7705d223be19400ebf95e069952617b1",
+      "globalTrackingId": "022ef94e85b44b478ea2a2797fd39c6d",
+      "organization": "zup",
+      "application": "sample_segment",
+      "custom": {}
+    },
+    "domain": "SUBSCRIPTIONS",
+    "timestamp": "2018-06-24T18:47:06.416"
+  },
+  "payloadType": "SUBSCRIPTION_PAYMENT_METHOD_UPDATED",
+  "payload": {
+    "newPaymentMethod": {
+      "method": "CREDIT_CARD",
+      "methodId": "CARD-_B4_eGolel-72kdiR8rT3lsiu7egBN8Nu837kdoi9Q2H=3D",
+      "preferred": true,
+      "customFields": {
+        "customField1": 2018,
+        "customFiled2": {
+          "field1": "value1",
+          "field2": "value2"
+        }
+      }
+    },
+    "oldPaymentMethod": {
+      "method": "CREDIT_CARD",
+      "methodId": "CARD-aw457Fu5yeTlP2hOcNVNvMo3tNMc_pAl8rFBqVCVSwQ=3D",
+      "preferred": false
+    },
+    "chargeNow": true
+  }
+}</pre>=20
+</div>
+</div>
+<p><br></p>
+<h2 id=3D"Events-Renova=C3=A7=C3=A3oprocessadacomsucesso">Renova=C3=A7=C3=
+=A3o processada com sucesso</h2>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>renewal_processed</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: js; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "eventId": "REV-24283810-3e4f-422f-8239-c04768293dc4",
+  "eventType": "RENEWAL_PROCESSED",
+  "domain": "SUBSCRIPTIONS",
+  "timestamp": "2018-04-05T18:40:17.783",
+  "customerId": "83237f28-8853-41a3-83d0-03457db6d014",
+  "context": {
+    "localTrackingId": "94603f9d336845a198823e93457ebc10",
+    "globalTrackingId": "780fe2ac383f469282a0e43927f2ba5a",
+    "organization": "zup",
+    "application": "665b3ba9e5acf839c16061cb95f9c00612964061",
+    "custom": {}
+  },
+  "payload": {
+    "subscriptionId": "SUB-c15f2326-7eb7-4d91-9b24-ae53082e3da2",
+    "customerId": "7da7c3ce-091a-4e1f-82bc-d4316986b3c1",
+    "externalId": "SUB-1507746223919",
+    "originApp": "MGM",
+    "description": "Plano 2 - COMBO: internet + mobile",
+    "type": "STANDARD",
+    "discounts": [
+      {
+        "description": "Promocional",
+        "status": "ACTIVE",
+        "amountAsPercent": 10,
+        "cycles": {
+          "start": 1,
+          "quantity": 1
+        }
+      }
+    ],
+    "payments": [
+      {
+        "method": "CREDIT_CARD",
+        "methodId": "CARD-aw457Fu5yeTlP2hOcNVNvMo3tNMc_pAl8rFBqVCVSwQ=3D",
+        "preferred": false
+      },
+      {
+        "method": "ACCOUNT_CASH",
+        "methodId": "WACC-bc4bf761-3709-4240-ac5c-60530ca68fab",
+        "preferred": true
+      }
+    ],
+    "recurring": {
+      "startDate": "2018-01-01",
+      "duration": 12,
+      "period": "MONTH",
+      "cycles": 1
+    },
+    "offer": {
+      "catalogOfferId": "41530168-12dd-4510-be2b-7add0e7d14e9",
+      "catalogOfferType": "PLAN",
+      "catalogOfferDescription": "description-test",
+      "validity": {
+        "period": "DAY",
+        "duration": 30,
+        "unlimited": false
+      },
+      "price": {
+        "currency": "BRL",
+        "amount": 1999,
+        "scale": 2
+      },
+      "offerItems": [
+        {
+          "catalogOfferItemId": "1f0ef0f7-3a46-4b9f-8143-6490a046ff5b",
+          "productTypeId": "d497bdc4-57e1-4652-86d2-1f8e32435aba",
+          "productTypeName": "MOBILE_DATA_OFFER",
+          "productId": "1",
+          "compositionId": "c8e4a43e-019b-4fa1-a0a5-bb66497a9f76",
+          "compositionName": "INTERNET_MOBILE",
+          "price": {
+            "currency": "BRL",
+            "amount": 1999,
+            "scale": 2
+          },
+          "recurrent": false
+        }
+      ]
+    },
+    "price": {
+      "currency": "BRL",
+      "amount": 1999,
+      "scale": 2
+    },
+    "createdAt": "2017-10-11T18:23:44.525Z[GMT]",
+    "renewals": [
+      {
+        "renewalId": "REN-987bf463-1557-4db4-b471-90f5a0fddcc5",
+        "customerId": "7da7c3ce-091a-4e1f-82bc-d4316986b3c1",
+        "subscriptionId": "SUB-10dd2b8d-27a2-40f7-9c89-dbee017ae1c0",
+        "dueAt": "2017-10-11",
+        "scheduledTo": "2017-10-11T20:23:44.615Z[GMT]",
+        "status": "PROCESSED",
+        "timestamp": "2017-10-11T18:23:44.643Z[GMT]",
+        "processingAt": "2017-10-11T19:00:00.379046Z[GMT]",
+        "processedAt": "2017-10-11T19:00:02.553711Z[GMT]",
+        "recurringIndex": 1
+      }
+    ],
+    "status": "ACTIVE"
+  }
+}</pre>=20
+</div>
+</div>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"Events-Falhanarenova=C3=A7=C3=A3o">Falha na renova=C3=A7=C3=A3o</=
+h2>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>renewal_failed</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "eventId": "REV-7600f834-7ace-4520-9571-4f1af1f851eb",
+  "eventType": "RENEWAL_FAILED",
+  "domain": "SUBSCRIPTIONS",
+  "timestamp": "2018-04-05T16:55:02.894",
+  "customerId": "83237f28-8853-41a3-83d0-03457db6d014",
+  "context": {
+    "localTrackingId": "91a95129bd8f429e88e65a8b595911a9",
+    "globalTrackingId": "6c9f4b1ab9404099880e6b513eb209f5",
+    "organization": "zup",
+    "application": "665b3ba9e5acf839c16061cb95f9c00612964061",
+    "custom": {}
+  },
+  "payload": {
+    "subscriptionId": "SUB-83ec8d7c-4c97-46f6-a6a1-79388a89a9c7",
+    "customerId": "7da7c3ce-091a-4e1f-82bc-d4316986b3c1",
+    "externalId": "SUB-1507746223919",
+    "originApp": "MGM",
+    "description": "Plano 2 - COMBO: internet + mobile",
+    "type": "STANDARD",
+    "discounts": [
+      {
+        "description": "Promocional",
+        "status": "ACTIVE",
+        "amountAsPercent": 10,
+        "cycles": {
+          "start": 1,
+          "quantity": 1
+        }
+      }
+    ],
+    "payments": [
+      {
+        "method": "CREDIT_CARD",
+        "methodId": "CARD-aw457Fu5yeTlP2hOcNVNvMo3tNMc_pAl8rFBqVCVSwQ=3D",
+        "preferred": false
+      },
+      {
+        "method": "ACCOUNT_CASH",
+        "methodId": "WACC-bc4bf761-3709-4240-ac5c-60530ca68fab",
+        "preferred": true
+      }
+    ],
+    "recurring": {
+      "startDate": "2018-01-01",
+      "duration": 12,
+      "period": "MONTH",
+      "cycles": 1
+    },
+    "offer": {
+      "catalogOfferId": "41530168-12dd-4510-be2b-7add0e7d14e9",
+      "catalogOfferType": "PLAN",
+      "catalogOfferDescription": "description-test",
+      "validity": {
+        "period": "DAY",
+        "duration": 30,
+        "unlimited": false
+      },
+      "price": {
+        "currency": "BRL",
+        "amount": 1999,
+        "scale": 2
+      },
+      "offerItems": [
+        {
+          "catalogOfferItemId": "1f0ef0f7-3a46-4b9f-8143-6490a046ff5b",
+          "productTypeId": "d497bdc4-57e1-4652-86d2-1f8e32435aba",
+          "productTypeName": "MOBILE_DATA_OFFER",
+          "productId": "1",
+          "compositionId": "c8e4a43e-019b-4fa1-a0a5-bb66497a9f76",
+          "compositionName": "INTERNET_MOBILE",
+          "price": {
+            "currency": "BRL",
+            "amount": 1999,
+            "scale": 2
+          },
+          "recurrent": false
+        }
+      ]
+    },
+    "price": {
+      "currency": "BRL",
+      "amount": 1999,
+      "scale": 2
+    },
+    "createdAt": "2017-10-11T18:23:44.525Z[GMT]",
+    "renewals": [
+      {
+        "renewalId": "REN-af8788d6-d4dd-4791-9bb9-76d9ec8d806a",
+        "customerId": "c15f2326-7eb7-4d91-9b24-ae53082e3da2",
+        "subscriptionId": "SUB-83ec8d7c-4c97-46f6-a6a1-79388a89a9c7",
+        "dueAt": "2018-04-05",
+        "scheduledTo": "2018-04-05T16:54:36.456346-03:00[America/Sao_Paulo]=
+",
+        "status": "FAILED",
+        "timestamp": "2018-04-05T16:54:36.456346-03:00[America/Sao_Paulo]",
+        "processingAt": "2018-04-05T16:54:36.456346-03:00[America/Sao_Paulo=
+]",
+        "failedAt": "2018-04-05T16:55:02.837950-03:00[America/Sao_Paulo]",
+        "recurringIndex": 1,
+        "attemptCount": 1
+      }
+    ],
+    "status": "ACTIVE"
+  }
+}</pre>=20
+</div>
+</div>
+<h2 class=3D"auto-cursor-target" id=3D"Events-Falhanaautoriza=C3=A7=C3=A3od=
+epagamento">Falha na autoriza=C3=A7=C3=A3o de pagamento</h2>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>renewal_payment_failed</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: js; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "eventId": "REV-24283810-3e4f-422f-8239-c04768293dc4",
+  "eventType": "RENEWAL_PAYMENT_FAILED",
+  "domain": "SUBSCRIPTIONS",
+  "timestamp": "2018-04-05T18:40:17.783",
+  "customerId": "83237f28-8853-41a3-83d0-03457db6d014",
+  "context": {
+    "localTrackingId": "94603f9d336845a198823e93457ebc10",
+    "globalTrackingId": "780fe2ac383f469282a0e43927f2ba5a",
+    "organization": "zup",
+    "application": "665b3ba9e5acf839c16061cb95f9c00612964061",
+    "custom": {}
+  },
+  "payload": {
+    "subscriptionId": "SUB-c15f2326-7eb7-4d91-9b24-ae53082e3da2",
+    "customerId": "7da7c3ce-091a-4e1f-82bc-d4316986b3c1",
+    "externalId": "SUB-1507746223919",
+    "originApp": "MGM",
+    "description": "Plano 2 - COMBO: internet + mobile",
+    "type": "STANDARD",
+    "discounts": [
+      {
+        "description": "Promocional",
+        "status": "ACTIVE",
+        "amountAsPercent": 10,
+        "cycles": {
+          "start": 1,
+          "quantity": 1
+        }
+      }
+    ],
+    "payments": [
+      {
+        "method": "CREDIT_CARD",
+        "methodId": "CARD-aw457Fu5yeTlP2hOcNVNvMo3tNMc_pAl8rFBqVCVSwQ=3D",
+        "preferred": false
+      },
+      {
+        "method": "ACCOUNT_CASH",
+        "methodId": "WACC-bc4bf761-3709-4240-ac5c-60530ca68fab",
+        "preferred": true
+      }
+    ],
+    "recurring": {
+      "startDate": "2018-01-01",
+      "duration": 12,
+      "period": "MONTH",
+      "cycles": 1
+    },
+    "offer": {
+      "catalogOfferId": "41530168-12dd-4510-be2b-7add0e7d14e9",
+      "catalogOfferType": "PLAN",
+      "catalogOfferDescription": "description-test",
+      "validity": {
+        "period": "DAY",
+        "duration": 30,
+        "unlimited": false
+      },
+      "price": {
+        "currency": "BRL",
+        "amount": 1999,
+        "scale": 2
+      },
+      "offerItems": [
+        {
+          "catalogOfferItemId": "1f0ef0f7-3a46-4b9f-8143-6490a046ff5b",
+          "productTypeId": "d497bdc4-57e1-4652-86d2-1f8e32435aba",
+          "productTypeName": "MOBILE_DATA_OFFER",
+          "productId": "1",
+          "compositionId": "c8e4a43e-019b-4fa1-a0a5-bb66497a9f76",
+          "compositionName": "INTERNET_MOBILE",
+          "price": {
+            "currency": "BRL",
+            "amount": 1999,
+            "scale": 2
+          },
+          "recurrent": false
+        }
+      ]
+    },
+    "price": {
+      "currency": "BRL",
+      "amount": 1999,
+      "scale": 2
+    },
+    "createdAt": "2017-10-11T18:23:44.525Z[GMT]",
+    "renewals": [
+      {
+        "renewalId": "REN-987bf463-1557-4db4-b471-90f5a0fddcc5",
+        "customerId": "7da7c3ce-091a-4e1f-82bc-d4316986b3c1",
+        "subscriptionId": "SUB-10dd2b8d-27a2-40f7-9c89-dbee017ae1c0",
+        "dueAt": "2017-10-11",
+        "scheduledTo": "2017-10-11T20:23:44.615Z[GMT]",
+        "status": "PROCESSING",
+        "timestamp": "2017-10-11T18:23:44.643Z[GMT]",
+        "processingAt": "2017-10-11T19:00:00.379046Z[GMT]",
+        "recurringIndex": 1
+      }
+    ],
+    "status": "ACTIVE"
+  }
+}</pre>=20
+</div>
+</div>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_44_249286387.1596569344322--

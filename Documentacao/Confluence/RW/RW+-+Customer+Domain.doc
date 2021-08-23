@@ -1,0 +1,278 @@
+Date: Tue, 4 Aug 2020 19:07:47 +0000 (UTC)
+Message-ID: <417232292.23.1596568067536@fa0f03a4ba39>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_22_1326287897.1596568067536"
+
+------=_Part_22_1326287897.1596568067536
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>RW - Customer Domain</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>RW - Customer Domain</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"RW-CustomerDomain-TMForumReference:">TM Forum Reference:<=
+/h1>
+<p><br></p>
+<p><span class=3D"confluence-embedded-file-wrapper"><img class=3D"confluenc=
+e-embedded-image confluence-external-resource" alt=3D"5. Customer Managemen=
+t Domain" src=3D"https://www.tmforum.org/Browsable_HTML_Frameworx_R16.5/mai=
+n/diagram553.png" data-image-src=3D"https://www.tmforum.org/Browsable_HTML_=
+Frameworx_R16.5/main/diagram553.png"></span></p>
+<h3 id=3D"RW-CustomerDomain-DiagramDescription">Diagram Description</h3>
+<p>Customer Relationship Management (CRM) processes and functions are defin=
+ed by the Business Process Framework (TMF GB 921) as the process grouping t=
+hat considers the fundamental knowledge of customers needs and includes all=
+ functionalities necessary for the acquisition, enhancement and retention o=
+f a relationship with a customer.&nbsp;<br><br>The customer as defined by t=
+he e-TOM e-business reference model is responsible for ordering, using and =
+(usually) paying for service products. The customer may represent an end-cu=
+stomer, where the product provided by the value network is consumed, or a w=
+holesale customer that resells the product provided, generally with some ad=
+ded value. The customer may also be a corporate customer that potentially h=
+as many contact people, departments, sites, services and billing accounts w=
+ith the service provider.&nbsp;<br><br>CRM encompasses the end to end lifec=
+ycle of the customer, from customer initiation/acquisition, sales, ordering=
+ and service activation, customer care and support, proactive campaigns, cr=
+oss sell/up sell and retention/loyalty. CRM needs to involve all the touch =
+points and channels to the customer, including contact center, retail store=
+s, dealers, self service, and field service, as well as via any media (phon=
+e, face to face, web, mobile device, Chat, Email, SMS, mail, the customer=
+=E2=80=99s bill, etc.).&nbsp;<br><br>As an example, the following diagram d=
+escribes the typical work flow of customer service representatives (CSRs) o=
+f Communication Service Providers (Diagram Figure 7: Typical work flow of C=
+ustomer Service Representatives).<br><br>Another significant component of C=
+RM evolves around marketing activities. This includes retention management,=
+ cross-selling, up-selling and direct marketing for the purpose of selling =
+to customers. CRM also includes the collection of customer information and =
+its application to personalize, customize and integrate delivery of service=
+ to a customer, as well as to identify opportunities for increasing the val=
+ue of the customer to the enterprise.<br><br>In the Telecom Applications Ma=
+p, a number of systems and applications provide these functions. Typically =
+an operator may have the following applications:</p>
+<p>This was created from the Frameworx 16.5 Model</p>
+    </div>
+</body>
+</html>
+------=_Part_22_1326287897.1596568067536--

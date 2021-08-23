@@ -1,0 +1,106 @@
+curl -fsSL https://get.docker.com | bash  
+# Install Docker 
+
+CTRL + PQ
+# Sair sem matar o container
+
+docker container start <container_id>
+docker container stop <container_id>
+docker container restart <container_id>
+# Iniciar / Parar / Reiniciar o container
+
+docker container inspect <container_id>
+# Verificar informações do container
+
+docker build -t <nome_da_imagem>:<tag> .
+# Realizar o build do container
+
+docker container attach <container_id>
+# Voltar no container em execução
+
+docker tag 0e5574283393 fedora/httpd:version1.0
+# Criar tag
+
+docker exec -it -u <user> <name_container> bash
+docker exec -it <name_container> bash
+# Acessar um container
+
+docker run -dit --restart always --name <nome_container> -v <volume> -p <porta_externa>:<porta_interna> <nome_da_imagem>:<tag>
+# Executar um container
+
+docker cp <arquivo> <name_container>:<pasta>
+# Copiar aquivos do host para o container ou vice-versa
+
+docker system df
+# Verificar espaço em disco dos containers e imagens
+
+docker network create --driver bridge --subnet=192.168.0.0/24 --gateway=192.168.0.1 redelocal
+# Criar rede no docker
+
+docker run -dit --network=<nome_rede> --ip=<endereco_ip> <imagem>
+# Vincular container a uma rede
+
+docker run -dit --network host <imagem>
+# Compartilhar ip do host com o container
+
+docker network connect <nome_da_rede> <nome_container>
+# Conectar uma nova rede ao container
+
+docker inspect <nome_container> | grep "IPAddress"
+# Verificar IP Local do container
+
+docker export <container> > <arquivo.tar>
+# Realizar o backup do container
+
+docker import <arquivo.tar> <nome_da_imagem>:<tag>
+docker run -it <nome_container> /bin/bash
+# Realizar o restore dos containers
+
+docker commit <nome_container> <nome_da_imagem>:<tag>
+docker save <nome_da_imagem>:<tag> > <arquivo.tar>
+# Realizar o backup do container (Preserva todas as configurações da imagem)
+
+docker load < <arquivo.tar>
+docker run -dit --name <nome_container> <nome_da_imagem>:<tag>
+# Realizar o restore dos containers (Preserva todas as configurações da imagem)
+
+docker-compose up -d
+# carregar todos os contêineres do Docker
+
+docker-compose stop
+# pare todos os contêineres do docker
+
+docker rm <name_container>
+# remover um contêiner do docker específico
+
+docker rm -f $(docker ps -a -q)
+docker rm -f $(docker ps -qa)
+# remova todos os contêineres
+
+docker ps -a
+# lista todos os contêineres do docker com ID, imagem (local), comando, criado, status, portas, nomes
+
+docker volume create <nome_volume>
+# Criar um volume
+
+(Parametro) --mount type=volume,src=<nome_volume>,dst=<pasta_montagem>
+(Parametro) --volume <nome_volume>:<pasta_montagem>
+# Vincular um volume a um container
+
+docker volume rm <nome_volume>
+# Remover volumes
+
+docker rm $(docker ps -qa -f status=exited)
+# remova apenas os contêineres encerrados
+
+docker rmi -f $(docker images | grep "<none>" | sed "s/\s\+/ /g" | cut -d" " -f3)
+# remover imagens órfãos
+
+docker rmi -f $(docker images | sed "s/\s\+/ /g" | cut -d" " -f3)
+# remover todas as imagens
+
+docker history <name_container> | awk 'NR>1 {print $1}' | xargs docker inspect --format '{{ ((index .ContainerConfig.Cmd ) 0) }}'
+# inspecionar uma imagem
+
+docker stop $(docker ps -q); docker rm $(docker ps -a -q); docker volume rm $(docker volume ls -q); docker rmi -f $(docker images -q); docker network rm $(docker network ls -q);
+# comando docker para limpar tudo

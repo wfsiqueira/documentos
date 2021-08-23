@@ -1,0 +1,636 @@
+Date: Tue, 4 Aug 2020 19:20:08 +0000 (UTC)
+Message-ID: <607569355.19.1596568808057@5ec4bbdf5701>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_18_878066064.1596568808056"
+
+------=_Part_18_878066064.1596568808056
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Teste de Carga Customer</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Teste de Carga Customer</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"TestedeCargaCustomer-1-Ambientedebenchmark">1 - Ambiente =
+de benchmark</h1>
+<p>Foram realizados testes de stress no ambiente de benchmark afim de obter=
+ o limite m=C3=ADnimo de requisi=C3=A7=C3=B5es suportadas para um =C3=BAnic=
+o container com as configura=C3=A7=C3=B5es default.</p>
+<p>Para gera=C3=A7=C3=A3o da carga foi utilizada a ferramenta&nbsp;<strong>=
+<a class=3D"external-link" href=3D"http://jmeter.apache.org/" rel=3D"nofoll=
+ow">Apache JMetter</a></strong>&nbsp;onde o cluster existente =C3=A9&nbsp;c=
+omposto por 6 m=C3=A1quinas, sendo uma master e cinco slaves. Apenas as m=
+=C3=A1quinas slaves realizam as requisi=C3=A7=C3=B5es de acordo com os coma=
+ndos da master.</p>
+<p>O ambiente de benchmark =C3=A9 composto por 2 VCPUs com clock de 2.4Ghz =
+e 14 GB de mem=C3=B3ria RAM.</p>
+<p>Todas as requisi=C3=A7=C3=B5es foram feitas passando pelo Gateway e reno=
+vando o token de autentica=C3=A7=C3=A3o no IAM a cada 2 minutos.</p>
+<p>Todos os testes foram executados com pool de 20 conex=C3=B5es dispon=C3=
+=ADveis no PostgreSQL.</p>
+<h2 id=3D"TestedeCargaCustomer-1.1Cria=C3=A7=C3=A3odeCustomer">1.1 Cria=C3=
+=A7=C3=A3o de Customer</h2>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 45.=
+1507%;">
+<colgroup>
+<col style=3D"width: 4.37424%;">
+<col style=3D"width: 21.6282%;">
+<col style=3D"width: 15.7959%;">
+<col style=3D"width: 15.9174%;">
+<col style=3D"width: 20.5346%;">
+<col style=3D"width: 21.7497%;">
+</colgroup>
+<tbody>
+<tr>
+<td colspan=3D"6" class=3D"confluenceTd"><strong>Cria=C3=A7=C3=A3o de custo=
+mer - POST /v1/customers</strong></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><strong>Quantidade de Threads</strong></td>
+<td class=3D"confluenceTd"><strong>Dura=C3=A7=C3=A3o</strong></td>
+<td class=3D"confluenceTd"><strong>Lat=C3=AAncia (ms)</strong></td>
+<td class=3D"confluenceTd"><strong>Throughput (Req/s)</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>Percentual de Erros</stron=
+g></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">1</td>
+<td colspan=3D"1" class=3D"confluenceTd">5</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">716</td>
+<td colspan=3D"1" class=3D"confluenceTd">6.7</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.02%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">2</td>
+<td colspan=3D"1" class=3D"confluenceTd">10</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">1376</td>
+<td colspan=3D"1" class=3D"confluenceTd">7.1</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.02%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">3</td>
+<td colspan=3D"1" class=3D"confluenceTd">25</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">3113</td>
+<td colspan=3D"1" class=3D"confluenceTd">7.9</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.08%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">4</td>
+<td colspan=3D"1" class=3D"confluenceTd">50</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">6211</td>
+<td colspan=3D"1" class=3D"confluenceTd">7.8</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.08%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>=C3=89 poss=C3=ADvel observar que o&nbsp;throughput m=C3=A1ximo atingido=
+ fica na casa de 7.9 requisi=C3=A7=C3=B5es por segundo e o aumento do n=C3=
+=BAmero de threads n=C3=A3o contribui para o crescimento do throughput, ape=
+nas para o aumento da lat=C3=AAncia.</p>
+<h2 id=3D"TestedeCargaCustomer-1.2.Atualiza=C3=A7=C3=A3odeCustomer">1.2. At=
+ualiza=C3=A7=C3=A3o de Customer</h2>
+<p>A atualiza=C3=A7=C3=A3o de customer foi realizada em paralelo com a cria=
+=C3=A7=C3=A3o para que fossem gerados IDS din=C3=A2micos, evitando poss=C3=
+=ADveis problemas de lock e caching.</p>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 46.=
+1918%;">
+<colgroup>
+<col style=3D"width: 4.15677%;">
+<col style=3D"width: 24.7031%;">
+<col style=3D"width: 13.1829%;">
+<col style=3D"width: 15.5582%;">
+<col style=3D"width: 21.0214%;">
+<col style=3D"width: 21.3777%;">
+</colgroup>
+<tbody>
+<tr>
+<td colspan=3D"6" class=3D"confluenceTd"><strong>Atualiza=C3=A7=C3=A3o de c=
+ustomer - PUT /v1/customers/{customerId}</strong></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><strong>Quantidade de Threads</strong></td>
+<td class=3D"confluenceTd"><strong>Dura=C3=A7=C3=A3o</strong></td>
+<td class=3D"confluenceTd"><strong>Lat=C3=AAncia (ms)</strong></td>
+<td class=3D"confluenceTd"><strong>Throughput (Req/s)</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>Percentual de Erros</stron=
+g></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">1</td>
+<td colspan=3D"1" class=3D"confluenceTd">5</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">385</td>
+<td colspan=3D"1" class=3D"confluenceTd">6.2</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.00%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">2</td>
+<td colspan=3D"1" class=3D"confluenceTd">10</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">780</td>
+<td colspan=3D"1" class=3D"confluenceTd">6.3</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.00%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">3</td>
+<td colspan=3D"1" class=3D"confluenceTd">25</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">1748</td>
+<td colspan=3D"1" class=3D"confluenceTd">7.3</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.01%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">4</td>
+<td colspan=3D"1" class=3D"confluenceTd">50</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">4037</td>
+<td colspan=3D"1" class=3D"confluenceTd">7.8</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.26%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Podemos observar o mesmo comportamento do teste de cria=C3=A7=C3=A3o, ou=
+ seja, o aumento&nbsp; no n=C3=BAmero de threads apenas contribui para o cr=
+escimento da lat=C3=AAncia.</p>
+<h2 id=3D"TestedeCargaCustomer-1.3.BuscadeCustomer(CustomerSearch)">1.3. Bu=
+sca de Customer (Customer Search)</h2>
+<p>A busca de customer foi realizada no m=C3=B3dulo de Customer Search, ond=
+e a aplica=C3=A7=C3=A3o utiliza um banco n=C3=A3o relacional que =C3=A9 oti=
+mizado para consultas (ElasticSearch)</p>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 46.=
+1918%;">
+<colgroup>
+<col style=3D"width: 4.15677%;">
+<col style=3D"width: 24.7031%;">
+<col style=3D"width: 13.1829%;">
+<col style=3D"width: 15.5582%;">
+<col style=3D"width: 21.0214%;">
+<col style=3D"width: 21.3777%;">
+</colgroup>
+<tbody>
+<tr>
+<td colspan=3D"6" class=3D"confluenceTd"><strong>Busca de customer por ID -=
+ GET /api/customers/{customerId}</strong></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><strong>Quantidade de Threads</strong></td>
+<td class=3D"confluenceTd"><strong>Dura=C3=A7=C3=A3o</strong></td>
+<td class=3D"confluenceTd"><strong>Lat=C3=AAncia (ms)</strong></td>
+<td class=3D"confluenceTd"><strong>Throughput (Req/s)</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>Percentual de Erros</stron=
+g></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">1</td>
+<td colspan=3D"1" class=3D"confluenceTd">5</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">81</td>
+<td colspan=3D"1" class=3D"confluenceTd">55.5</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.00%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">2</td>
+<td colspan=3D"1" class=3D"confluenceTd">10</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">86</td>
+<td colspan=3D"1" class=3D"confluenceTd">108.4</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.00%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">3</td>
+<td colspan=3D"1" class=3D"confluenceTd">25</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">179</td>
+<td colspan=3D"1" class=3D"confluenceTd">206.51</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.00%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">4</td>
+<td colspan=3D"1" class=3D"confluenceTd">50</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">269</td>
+<td colspan=3D"1" class=3D"confluenceTd">84.73</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.00%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">5</td>
+<td colspan=3D"1" class=3D"confluenceTd">250</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">543</td>
+<td colspan=3D"1" class=3D"confluenceTd">184.53</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.01%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>O throughput m=C3=A1ximo que se pode observar no teste =C3=A9 de aproxim=
+adamente 200 requisi=C3=A7=C3=B5es por segundo. Ap=C3=B3s isso a lat=C3=AAn=
+cia come=C3=A7a aumentar consideravelmente conforme o n=C3=BAmero de thread=
+s vai aumentando o que reflete diretamente na queda do throughput.</p>
+<h1 id=3D"TestedeCargaCustomer-2-AmbienteSAAS-Produ=C3=A7=C3=A3o">2 - Ambie=
+nte SAAS - Produ=C3=A7=C3=A3o</h1>
+<p>Devido ao fim do ambiente de Benchmark, resolvemos realizar os testes no=
+ ambiente SAAS - Produ=C3=A7=C3=A3o, para simular um comportamento mais pr=
+=C3=B3ximo de um ambiente de produ=C3=A7=C3=A3o.&nbsp;&nbsp;<br>O ambiente =
+=C3=A9 composto por 2 VCPUs com clock de 2.4Ghz e 14 GB de mem=C3=B3ria RAM=
+. Foram utilizados dois containers para o servi=C3=A7o de customer.<br>Tamb=
+=C3=A9m otimizamos as configura=C3=A7=C3=B5es da JVM, elevamos o n=C3=ADvel=
+ do log e modificamos para que os eventos de auditoria fossem salvos no eve=
+nt-store de forma ass=C3=ADncrona.</p>
+<h2 id=3D"TestedeCargaCustomer-1.1Cria=C3=A7=C3=A3odeCustomer.1">1.1 Cria=
+=C3=A7=C3=A3o de Customer</h2>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 45.=
+3151%;">
+<colgroup>
+<col style=3D"width: 4.47942%;">
+<col style=3D"width: 21.5496%;">
+<col style=3D"width: 15.7385%;">
+<col style=3D"width: 15.8596%;">
+<col style=3D"width: 20.46%;">
+<col style=3D"width: 21.9128%;">
+</colgroup>
+<tbody>
+<tr>
+<td colspan=3D"6" class=3D"confluenceTd"><strong>Cria=C3=A7=C3=A3o de custo=
+mer - POST /v1/customers</strong></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><strong>Quantidade de Threads</strong></td>
+<td class=3D"confluenceTd"><strong>Dura=C3=A7=C3=A3o</strong></td>
+<td class=3D"confluenceTd"><strong>Lat=C3=AAncia (ms)</strong></td>
+<td class=3D"confluenceTd"><strong>Throughput (Req/s)</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>Percentual de Erros</stron=
+g></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">1</td>
+<td colspan=3D"1" class=3D"confluenceTd">5</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">168</td>
+<td colspan=3D"1" class=3D"confluenceTd">28.3</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.02%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">2</td>
+<td colspan=3D"1" class=3D"confluenceTd">10</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">187</td>
+<td colspan=3D"1" class=3D"confluenceTd">50.8</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.02%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">3</td>
+<td colspan=3D"1" class=3D"confluenceTd">25</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">272</td>
+<td colspan=3D"1" class=3D"confluenceTd">89.4</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.00%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">4</td>
+<td colspan=3D"1" class=3D"confluenceTd">50</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">477</td>
+<td colspan=3D"1" class=3D"confluenceTd">101.3</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.08%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>O througput e o tempo de resposta tiveram uma grande melhoria ap=C3=B3s =
+as mudan=C3=A7as terem sido realizadas.</p>
+<h2 id=3D"TestedeCargaCustomer-1.2Cria=C3=A7=C3=A3odeJobTitle">1.2 Cria=C3=
+=A7=C3=A3o de Job Title</h2>
+<p>Resolvemos testar a cria=C3=A7=C3=A3o de job titles mesmo sabendo que ne=
+ste recurso em espec=C3=ADfico n=C3=A3o vai ser necess=C3=A1rio uma perform=
+ance elevada, a fim de validar a mudan=C3=A7a arquitetural para o <a href=
+=3D"https://medium.com/@gabrielqueiroz/vamos-falar-sobre-event-sourcing-276=
+ae66106f7" class=3D"external-link" rel=3D"nofollow">"event-sourcing"</a> e =
+comparar com a cria=C3=A7=C3=A3o de customer que est=C3=A1 na arquitetura a=
+ntiga.</p>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 45.=
+0959%;">
+<colgroup>
+<col style=3D"width: 4.74453%;">
+<col style=3D"width: 21.6545%;">
+<col style=3D"width: 15.6934%;">
+<col style=3D"width: 15.9367%;">
+<col style=3D"width: 20.5596%;">
+<col style=3D"width: 21.4112%;">
+</colgroup>
+<tbody>
+<tr>
+<td colspan=3D"6" class=3D"confluenceTd"><strong>Cria=C3=A7=C3=A3o de Job T=
+itles - POST /v2/job-titles</strong></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><br></td>
+<td class=3D"confluenceTd"><strong>Quantidade de Threads</strong></td>
+<td class=3D"confluenceTd"><strong>Dura=C3=A7=C3=A3o</strong></td>
+<td class=3D"confluenceTd"><strong>Lat=C3=AAncia (ms)</strong></td>
+<td class=3D"confluenceTd"><strong>Throughput (Req/s)</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>Percentual de Erros</stron=
+g></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">1</td>
+<td colspan=3D"1" class=3D"confluenceTd">5</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">138</td>
+<td colspan=3D"1" class=3D"confluenceTd">34.7</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.00%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">2</td>
+<td colspan=3D"1" class=3D"confluenceTd">10</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">155</td>
+<td colspan=3D"1" class=3D"confluenceTd">62.2</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.00%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">3</td>
+<td colspan=3D"1" class=3D"confluenceTd">25</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">220</td>
+<td colspan=3D"1" class=3D"confluenceTd">109.4</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.00%</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">4</td>
+<td colspan=3D"1" class=3D"confluenceTd">50</td>
+<td colspan=3D"1" class=3D"confluenceTd">10 min</td>
+<td colspan=3D"1" class=3D"confluenceTd">333</td>
+<td colspan=3D"1" class=3D"confluenceTd">138.8</td>
+<td colspan=3D"1" class=3D"confluenceTd">0.00%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>O throughput foi consideravelmente superior se comparado com a arquitetu=
+ra da cria=C3=A7=C3=A3o de customer que n=C3=A3o usa event-sourcing. Isso s=
+e d=C3=A1 pelo fato de o n=C3=BAmero de I/Os realizados no modelo event-sou=
+rcing ser menor, al=C3=A9m de que as opera=C3=A7=C3=B5es de escritas est=C3=
+=A3o sendo realizadas em um banco n=C3=A3o relacional otimizado para escrit=
+a (<a href=3D"https://eventstore.org/" class=3D"external-link" rel=3D"nofol=
+low">Event Store</a>).&nbsp;<br>Entretanto, o resultado obtido ainda n=C3=
+=A3o foi o esperado, deveria ser um valor bem maior do que o resultado obti=
+do, o que n=C3=A3o aconteceu devido a existencia de alguns problemas j=C3=
+=A1 identificados que est=C3=A3o degradando a performance na comunica=C3=A7=
+=C3=A3o com o Event-Store.</p>
+<h1 id=3D"TestedeCargaCustomer-Conclus=C3=A3oGeral">Conclus=C3=A3o Geral</h=
+1>
+<p>Atrav=C3=A9s dos testes realizados foi poss=C3=ADvel de identificar uma =
+s=C3=A9rie de problemas que estavam degradando a performance dos servi=C3=
+=A7os, tais como pool de conex=C3=B5es do Hikari, o n=C3=ADvel dos logs e t=
+amb=C3=A9m sincronicidade da persist=C3=AAncia dos eventos de audoria no Ev=
+ent Store. Tamb=C3=A9m foi poss=C3=ADvel testar algumas otimiza=C3=A7=C3=B5=
+es da JVM e chegar em um throughput aceit=C3=A1vel para as demandas que tem=
+os hoje.</p>
+<p>Com rela=C3=A7=C3=A3o a compara=C3=A7=C3=A3o entre o modelo arquitetural=
+ usando event sourcing e o modelo tradicional, j=C3=A1 conseguimos ver uma =
+melhoria consider=C3=A1vel no throughput al=C3=A9m da diminui=C3=A7=C3=A3o =
+do tempo de resposta, mesmo com os problemas existentes j=C3=A1 identificad=
+os. Acreditamos fortemente que a resolu=C3=A7=C3=A3o destes problemas contr=
+ibuir=C3=A1 para um ganho de performance ainda maior do que os j=C3=A1 comp=
+rovados por este teste.&nbsp;</p>
+    </div>
+</body>
+</html>
+------=_Part_18_878066064.1596568808056--

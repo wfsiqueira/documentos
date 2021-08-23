@@ -1,0 +1,419 @@
+Date: Tue, 4 Aug 2020 20:09:02 +0000 (UTC)
+Message-ID: <745176826.127.1596571742155@b69eb428412d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_126_2124613876.1596571742154"
+
+------=_Part_126_2124613876.1596571742154
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Tutorial: como montar os testes de carga no Jmeter</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Tutorial: como montar os testes de carga no Jmeter</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"Tutorial:comomontarostestesdecarganoJmeter-InstalandooJMe=
+ter,ospluginsdoJSONeabrindooiJoin">Instalando o JMeter, os plugins do JSON =
+e abrindo o iJoin</h2>
+<ol>
+<li>Fa=C3=A7a o <a href=3D"http://jmeter.apache.org/download_jmeter.cgi?Pre=
+ferred=3Dftp%3A%2F%2Fapache.mirrors.tds.net%2Fpub%2Fapache.org%2F" class=3D=
+"external-link" rel=3D"nofollow">download</a> do apache JMeter. O diret=C3=
+=B3rio do JMeter deve conter uma pasta "<strong>bin</strong>" e "<strong>li=
+b</strong>". Se n=C3=A3o tiver, voc=C3=AA n=C3=A3o baixou o JMeter certo.</=
+li>
+<li>No Windows, voc=C3=AA deve setar o caminho da pasta "bin" do seu JMeter=
+ na vari=C3=A1vel de ambiente "path"&nbsp;
+<ol>
+<li style=3D"margin-left: 0.0px;">Para acessar essa tela, v=C3=A1 em <u><em=
+>Meu Computador &gt; Propriedades &gt; Vari=C3=A1veis de Ambiente &gt; enco=
+ntre "path" &gt; Editar &gt; adicione "C:\jmeter\bin"</em></u> (supondo que=
+ voc=C3=AA extraiu a pasta do JMeter no c:\).</li>
+</ol></li>
+<li style=3D"margin-left: 0.0px;">Baixe a collection do iJoin. Para isso ba=
+sta fazer um <strong>git clone</strong> <a href=3D"https://github.com/ZupIT=
+/realwave-collections.git" class=3D"external-link" rel=3D"nofollow">https:/=
+/github.com/ZupIT/realwave-collections.git</a>. A collection estar=C3=A1 em=
+&nbsp;<u>\perform-tests\ijoin_tests.jmx</u></li>
+<li style=3D"margin-left: 0.0px;">Agora que voc=C3=AA tem a collection baix=
+ada, entre na pasta&nbsp;<u>\perform-tests\plugin-jmeter</u> e copie os 3 a=
+rquivos "<strong>jar</strong>" dentro da pasta "<strong>lib</strong>" do se=
+u JMeter.</li>
+<li style=3D"margin-left: 0.0px;">Inicie o JMeter. Basta digitar "jmeter" n=
+o executar do windows se voc=C3=AA configurou a vari=C3=A1vel de ambiente c=
+onforme o passo 2.</li>
+<li style=3D"margin-left: 0.0px;">Se voc=C3=AA copiou os "<strong>jars</str=
+ong>" corretamente, o menu <em><u>Op=C3=A7=C3=B5es &gt; Plugin Manager</u><=
+/em> estar=C3=A1 dispon=C3=ADvel. Acesse o <strong>Plugin Manager</strong> =
+e certifique-se que <strong>JSON Plugins</strong> est=C3=A1 habilitado.</li=
+>
+<li style=3D"margin-left: 0.0px;">Agora abra o&nbsp;<u>\perform-tests\ijoin=
+_tests.jmx</u>. Nenhum erro de plugin deve acontecer.</li>
+<li style=3D"margin-left: 0.0px;">Pronto! Agora voc=C3=AA j=C3=A1 tem o ijo=
+in pronto para rodar na sua m=C3=A1quina.</li>
+</ol>
+<h2 id=3D"Tutorial:comomontarostestesdecarganoJmeter-Comoautomatizarmeusm=
+=C3=B3dulos?">Como automatizar meus m=C3=B3dulos?</h2>
+<p>Siga o tutorial acima para instalar corretamente a collection do iJoin n=
+a sua m=C3=A1quina.</p>
+<ol>
+<li>Com o iJoin aberto na sua m=C3=A1quina, clique no menu <em><strong>Arqu=
+ivo &gt; Salvar Plano de Testes como</strong></em> e salve uma c=C3=B3pia d=
+o iJoin em outro diret=C3=B3rio. Renomeie com o nome do <strong>seu m=C3=B3=
+dulo</strong>.</li>
+<li>O iJoin j=C3=A1 tem o <strong>CPF generator</strong>, gera o <strong>Be=
+arer Token</strong>, adiciona um <strong>Customer</strong> e adiciona um <s=
+trong>cart=C3=A3o de cr=C3=A9dito</strong> para esse Customer. Essa =C3=A9 =
+a base que quase todos os m=C3=B3dulos precisam para funcionar.</li>
+<li>Voc=C3=AA pode excluir os demais testes e come=C3=A7ar a criar os seus =
+a partir da=C3=AD OU voc=C3=AA pode editar os testes existentes com a sua u=
+rl.</li>
+<li>"<strong>Vari=C3=A1veis definidas pelo usu=C3=A1rio</strong>" =C3=A9 ig=
+ual ao "environment" do Postman.&nbsp;</li>
+<li>Nos testes para chamar as vari=C3=A1veis, ao inv=C3=A9s de&nbsp;{{url}}=
+ como =C3=A9 no Postman, voc=C3=AA deve chamar dessa forma: <strong>${url}<=
+/strong>. Outro exemplo comum: {{customerId}} vira <strong>${customerId}</s=
+trong> e assim por diante.</li>
+<li>Observe que alguns requests tem um JSON Extractor. Ele extrai valores d=
+o Response e guarda em vari=C3=A1veis assim como a gente faz no Postman.
+<ol>
+<li style=3D"margin-left: 0.0px;">Exemplo 1: Criei um customer e quero guar=
+dar o id dele. Ent=C3=A3o na requisi=C3=A7=C3=A3o que cria o customer, vou =
+criar um JSON Extractor e preencher da seguinte forma:
+<ol>
+<li style=3D"margin-left: 0.0px;">Variable names:&nbsp;<strong>customerId</=
+strong></li>
+<li style=3D"margin-left: 0.0px;">Json Path Expressions: <strong>$.id</stro=
+ng> (isso significa que na raiz do JSON ele vai achar um atributo id e vai =
+jogar o valor dele em customerId).</li>
+</ol></li>
+<li style=3D"margin-left: 0.0px;">Exemplo 2: quero pegar a primeira renewal=
+Id de uma subscription.
+<ol>
+<li style=3D"margin-left: 0.0px;">Variable names: <strong>renewalId</strong=
+></li>
+<li style=3D"margin-left: 0.0px;">Json Path Expressions:&nbsp;<strong>$.ren=
+ewals[0].renewalId</strong> (como o renewals =C3=A9 um array e eu quero o p=
+rimeiro, passo 0 que =C3=A9 a primeira posi=C3=A7=C3=A3o).</li>
+</ol></li>
+</ol></li>
+<li style=3D"margin-left: 0.0px;">Existem tamb=C3=A9m <strong>express=C3=B5=
+es regulares</strong> no JSON para voc=C3=AA usar como quiser. Encontre a q=
+ue voc=C3=AA precisa olhando <a href=3D"http://jmeter.apache.org/usermanual=
+/component_reference.html#Regular_Expression_Extractor" class=3D"external-l=
+ink" rel=3D"nofollow">esta</a> documenta=C3=A7=C3=A3o do <strong>JSON Extra=
+ctor.</strong></li>
+<li style=3D"margin-left: 0.0px;"><strong>Header Padr=C3=A3o</strong>: veja=
+ que no iJoin, cada teste tem seu header dentro dele. Voc=C3=AA pode, opcio=
+nalmente, <strong>mover esse header para fora,</strong>&nbsp;deixar ele aba=
+ixo de "Vari=C3=A1veis definidas pelo usu=C3=A1rio" e cham=C3=A1-lo de "Def=
+ault Header" ou "Header Padr=C3=A3o". Agora voc=C3=AA pode excluir todos os=
+ headers que est=C3=A3o dentro dos testes porque esse <strong>Header Padr=
+=C3=A3o</strong> ser=C3=A1 chamado em todos os testes da su=C3=ADte <strong=
+>que n=C3=A3o tenha um header</strong>. Isso facilita para, caso o header m=
+ude, voc=C3=AA muda apenas o Header Padr=C3=A3o.</li>
+<li style=3D"margin-left: 0.0px;"><span style=3D"color: rgb(255,0,0);"><str=
+ong>O</strong></span><strong style=3D"color: rgb(255,0,0);"> JMeter n=C3=A3=
+o aceita acentua=C3=A7=C3=A3o no payload</strong>. Se tiver, substitua por =
+caracteres equivalentes.
+<ol>
+<li style=3D"margin-left: 0.0px;">Exemplo: "<strong>usu=C3=A1rio</strong>" =
+troque para "<strong>usuario</strong>".</li>
+<li style=3D"margin-left: 0.0px;">Exemplo: "<strong>importa=C3=A7=C3=A3o</s=
+trong>" troque para "<strong>importacao</strong>".</li>
+</ol></li>
+<li style=3D"margin-left: 0.0px;"><strong><span style=3D"color: rgb(255,0,0=
+);">O JMeter n=C3=A3o aceita barras "/" ou "\" no payload.</span></strong> =
+Se voc=C3=AA precisa passar algo que tenha barra, voc=C3=AA precisa dar um =
+escape nela utilizando contra-barra "\" na frente.
+<ol>
+<li style=3D"margin-left: 0.0px;">Exemplo: <strong>"path" : "c:\pasta"</str=
+ong> fica <strong>"path" : "c:\\pasta"</strong>.</li>
+<li style=3D"margin-left: 0.0px;">Exemplo: <strong>"type" : "type1/type2"</=
+strong> fica <strong>"type" : "type1\/type2"</strong>.</li>
+</ol></li>
+<li style=3D"margin-left: 0.0px;">Fun=C3=A7=C3=B5es: voc=C3=AA pode usar al=
+gumas fun=C3=A7=C3=B5es no JMeter que ajudam bastante para montar o payload=
+. Aqui vai algumas mais comuns:
+<ol>
+<li style=3D"margin-left: 0.0px;"><strong>externalId</strong>: voc=C3=AA po=
+de usar&nbsp;<strong>${__Random(1,10000000)}</strong> para gerar um n=C3=BA=
+mero aleat=C3=B3rio entre 1 e&nbsp;10000000.&nbsp;</li>
+<li style=3D"margin-left: 0.0px;"><strong>Data de hoje</strong>: muitos pay=
+loads precisam da date de hoje. Voc=C3=AA pode usar:&nbsp;<strong>${__time(=
+yyyy-MM-dd)}</strong>. Se voc=C3=AA precisar de um formato diferente, basta=
+ alterar:&nbsp;${__time(dd/MM/yyyy)}</li>
+<li style=3D"margin-left: 0.0px;"><p class=3D"auto-cursor-target"><strong>P=
+ara gerar uma data diferente de hoje</strong>, voc=C3=AA deve criar um "<st=
+rong>Testador BeanShell</strong>" e, no campo script, colocar o seguinte c=
+=C3=B3digo:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>Gera=C3=A7=C3=A3o de datas</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; first-line: 1; theme: Confluence" data-theme=3D"Conf=
+luence">import java.text.SimpleDateFormat;=20
+import java.util.Calendar;=20
+import java.util.Date;
+
+try {
+=09// Este =C3=A9 o formato da data gerada "yyyy-MM-dd". Voc=C3=AA pode alt=
+erar conforme a necessidade.
+    SimpleDateFormat sdf =3D new SimpleDateFormat("yyyy-MM-dd");=20
+=09Date d=3D new Date();
+=09
+=09Calendar cal =3D Calendar.getInstance();=20
+=09cal.setTime(d);=20
+=09// nesse ponto voc=C3=AA adiciona ou subtrai quantos dias voc=C3=AA quis=
+er em rela=C3=A7=C3=A3o a data de hoje
+=09// nesse caso, o -7 representa uma semana atr=C3=A1s em rela=C3=A7=C3=A3=
+o a data de hoje
+=09// se voc=C3=AA precisa da data de amanh=C3=A3, basta trocar o "-7" para=
+ "1"
+=09cal.add(Calendar.DAY_OF_YEAR,-7);=20
+=09d =3D cal.getTime();=20
+=09// como neste exemplo =C3=A9 de uma semana atr=C3=A1s, o nome da vari=C3=
+=A1vel =C3=A9 "lastWeek"
+=09// voc=C3=AA pode alterar o nome dessa vari=C3=A1vel conforme sua necess=
+idade
+=09// lembre-se de que esta vari=C3=A1vel precisa estar criada em "Vari=C3=
+=A1veis do Usu=C3=A1rio"
+=09vars.put("lastWeek", sdf.format(d));
+}
+catch (Throwable ex) {
+    log.error("Beanshell failure", ex);
+    throw ex;
+}
+</pre>=20
+</div>
+</div></li>
+</ol></li>
+</ol>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_126_2124613876.1596571742154--

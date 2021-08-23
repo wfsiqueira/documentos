@@ -1,0 +1,699 @@
+Date: Tue, 4 Aug 2020 19:22:27 +0000 (UTC)
+Message-ID: <1927390652.55.1596568947317@7358258bd595>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_54_475774794.1596568947317"
+
+------=_Part_54_475774794.1596568947317
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Subscription Manager Integration (COM)</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Subscription Manager Integration (COM)</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"SubscriptionManagerIntegration(COM)-CreateSubscriptionPay=
+load">Create Subscription Payload</h1>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+   "externalId":"PLAN-02_233dda31",
+   "originApp":"MGM",
+   "description":"Plano 2 - COMBO:  internet + dados moveis",
+   "type":"STANDARD",
+   "discounts":[
+      {
+         "description":"Promo=C3=A7=C3=A3o de f=C3=A9rias de Julho",
+         "amountAsPercent":30,
+         "cycles":{
+            "start":1,
+            "quantity":3
+         }
+      },
+      {
+         "description":"Desconto fidelidade",
+         "amountAsCurrency":{
+            "currency":"BRL",
+            "amount":1000,
+            "scale":2
+         },
+         "cycles":{
+            "start":1,
+            "quantity":12
+         }
+      }
+   ],
+   "recurring":{
+      "duration":2,
+      "cycles":6,
+      "period":"MONTH",
+      "starDate":"2017-10-01"
+   },
+   "payment":{
+      "async":true,
+      "methods":[
+         {
+            "method":"ACCOUNT_CASH",
+            "methodId":"CASH-f370de7c-29c8-439b-b527-9b2ee85deba3",
+            "preferred":true
+         },
+         {
+            "method":"CREDIT_CARD",
+            "methodId":"CRC-21be8fa4-a29b-410c-9f63-1d49cab63027",
+            "customFields":{
+               "servico":"CLARO FLEX RECORRENCIA",
+               "senha":"CFE4701",
+               "externalCustomerId":"45127634147"
+            }
+         }
+      ]
+   },
+   "offer":{
+      "catalogOfferId":"41530168-12dd-4510-be2b-7add0e7d14e9",
+      "catalogOfferType":"PLAN",
+      "validity":{
+         "period":"DAY",
+         "duration":30,
+         "unlimited":false
+      },
+      "offerItems":[
+         {
+            "catalogOfferItemId":"1f0ef0f7-3a46-4b9f-8143-6490a046ff5b",
+            "productId":"1",
+            "productTypeId":"34bd17ed-e028-53bd-8508-ca855f2209a0",
+            "productTypeName":"Mobile Line",
+            "compositionId":"31bd17ed-e0e8-43bd-8508-ca855f2204b1",
+            "compositionName":"INTERNET_MOBILE",
+            "price":{
+               "amount":2999,
+               "currency":"BRL",
+               "scale":2
+            }
+         },
+         {
+            "catalogOfferItemId":"bb85a188-84a1-46d7-b09b-96ba3e2e30f2",
+            "productId":"1",
+            "productTypeId":"34bd17ed-e028-53bd-8508-ca855f2209a0",
+            "productTypeName":"Mobile Line",
+            "compositionId":"ca2d8278-bcff-4efc-aace-1fe1dcd0eeb4",
+            "compositionName":"CALLS_MOBILE",
+            "price":{
+               "amount":1000,
+               "currency":"BRL",
+               "scale":2
+            }
+         },
+         {
+            "catalogOfferItemId":"ec6371cb-32ad-4116-a72c-7a03d8092654",
+            "productId":"2",
+            "productTypeId":"5e5fa900-4be4-4321-8dc6-9f95f1348e98",
+            "productTypeName":"Cable Tv",
+            "compositionId":"1938fe5d-effc-4626-9737-cfd6c85d1d05",
+            "compositionName":"TV",
+            "price":{
+               "amount":1000,
+               "currency":"BRL",
+               "scale":2
+            }
+         }
+      ]
+   },
+   "price":{
+      "amount":4999,
+      "currency":"BRL",
+      "scale":2
+   },
+   "firstRenewalProcessed":true,
+   "customFields":{
+      "custom1":"value1",
+      "custom2":"value2"
+   }
+}
+
+</pre>=20
+</div>
+</div>
+<p><br></p>
+<h1 id=3D"SubscriptionManagerIntegration(COM)-SubscriptionRenewCustomerOrde=
+r">Subscription Renew Customer Order</h1>
+<p> </p>
+<div id=3D"refresh-module-1937588501" class=3D"confluence-jim-macro refresh=
+-module-id jira-table">=20
+<p> </p>
+<div id=3D"jira-issues-1937588501" style=3D"width: 100%;  overflow: auto;" =
+class=3D"jira-issues">=20
+<table class=3D"aui">=20
+<tbody>=20
+<tr></tr>=20
+<tr>=20
+<th style=3D"text-align: left; text-transform: capitalize;" class=3D"jira-m=
+acro-table-underline-pdfexport">Chave</th>=20
+<th style=3D"text-align: left; text-transform: capitalize;" class=3D"jira-m=
+acro-table-underline-pdfexport">Resumo</th>=20
+<th style=3D"text-align: left; text-transform: capitalize;" class=3D"jira-m=
+acro-table-underline-pdfexport">T</th>=20
+<th style=3D"text-align: left; text-transform: capitalize;" class=3D"jira-m=
+acro-table-underline-pdfexport">Situa=C3=A7=C3=A3o</th>=20
+<th style=3D"text-align: left; text-transform: capitalize;" class=3D"jira-m=
+acro-table-underline-pdfexport">Descri=C3=A7=C3=A3o</th>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</div>=20
+<p></p>=20
+</div>=20
+<p></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "customerId": "46239b61-7154-45cc-abb6-3578cb13911c",
+  "externalId": "b25614a3-9aff-4b0c-ab1b-fa8172477faf",
+  "callback": "http://localhost:8080/callback",
+  "type": "RENEWAL",
+  "subscription": {
+    "id": "SUB-35823249-2f69-40ab-90fc-9f8c101393b5",
+    "recurringIndex": 2
+  },
+  "payment": {
+    "methods": [
+      {
+        "method": "ACCOUNT_CASH",
+        "methodId": "CASH-f370de7c-29c8-439b-b527-9b2ee85deba3",
+        "price": {
+          "amount": 2000,
+          "currency": "BRL",
+          "scale": 2
+        }
+      },
+      {
+        "method": "CREDIT_CARD",
+        "methodId": "CRC-21be8fa4-a29b-410c-9f63-1d49cab63027",
+        "price": {
+          "amount": 2999,
+          "currency": "BRL",
+          "scale": 2
+        },
+        "customFields": {
+          "servico": "CLARO FLEX RECORRENCIA",
+          "senha": "CFE4701",
+          "externalCustomerId": "45127634147"
+        }
+      }
+    ]
+  },
+  "offers": [
+    {
+      "catalogOfferId": "41530168-12dd-4510-be2b-7add0e7d14e9",
+      "catalogOfferType": "PLAN",
+      "offerItems": [
+        {
+          "productId": "1",
+          "productTypeId": "34bd17ed-e028-53bd-8508-ca855f2209a0",
+          "productTypeName": "Mobile Line",
+          "catalogOfferItemId": "1f0ef0f7-3a46-4b9f-8143-6490a046ff5b",
+          "compositionId": "31bd17ed-e0e8-43bd-8508-ca855f2204b1",
+          "compositionName": "INTERNET_MOBILE",
+          "price": {
+            "amount": 2999,
+            "currency": "BRL",
+            "scale": 2
+          },
+          "recurrent": true
+        },
+        {
+          "productId": "1",
+          "productTypeId": "34bd17ed-e028-53bd-8508-ca855f2209a0",
+          "productTypeName": "Mobile Line",
+          "catalogOfferItemId": "bb85a188-84a1-46d7-b09b-96ba3e2e30f2",
+          "compositionId": "ca2d8278-bcff-4efc-aace-1fe1dcd0eeb4",
+          "compositionName": "CALLS_MOBILE",
+          "price": {
+            "amount": 1000,
+            "currency": "BRL",
+            "scale": 2
+          },
+          "recurrent": true
+        },
+        {
+          "productId": "2",
+          "productTypeId": "5e5fa900-4be4-4321-8dc6-9f95f1348e98",
+          "productTypeName": "Cable Tv",
+          "catalogOfferItemId": "ec6371cb-32ad-4116-a72c-7a03d8092654",
+          "compositionId": "1938fe5d-effc-4626-9737-cfd6c85d1d05",
+          "compositionName": "TV",
+          "price": {
+            "amount": 1000,
+            "currency": "BRL",
+            "scale": 2
+          },
+          "recurrent": true
+        }
+      ],
+      "price": {
+        "amount": 4999,
+        "currency": "BRL",
+        "scale": 2
+      },
+      "validity": {
+        "period": "DAY",
+        "duration": 30,
+        "unlimited": false
+      }
+    }
+  ]
+}</pre>=20
+</div>
+</div>
+<p><br></p>
+<h1 id=3D"SubscriptionManagerIntegration(COM)-CreateCustomerOrderResponse">=
+Create Customer Order Response</h1>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "id": "94ad04fc-3d22-4ddf-af27-3760a8d36189",
+  "externalId": "d8e0f8d1-4d9e-4e00-afbf-d085ddb8c140",
+  "status": "Acknowledged",
+  "steps": [
+    {
+      "step": "PAYMENT",
+      "status": "PENDING",
+      "startDate": null,
+      "endDate": null,
+      "processed": 1,
+      "total": 1
+    },
+    {
+      "step": "REGISTRATION",
+      "status": "PENDING",
+      "startDate": null,
+      "endDate": null,
+      "processed": 0,
+      "total": 1
+    },
+    {
+      "step": "PRODUCT_ACTIVATION",
+      "status": "PENDING",
+      "startDate": null,
+      "endDate": null,
+      "processed": 0,
+      "total": 2
+    },
+    {
+      "step": "OFFER_ACTIVATION",
+      "status": "PENDING",
+      "startDate": null,
+      "endDate": null,
+      "processed": 0,
+      "total": 4
+    },
+    {
+      "step": "SUBSCRIPTION",
+      "status": "PENDING",
+      "startDate": null,
+      "endDate": null,
+      "processed": 0,
+      "total": 1
+    }
+  ]
+}</pre>=20
+</div>
+</div>
+<p><br></p>
+<h1 id=3D"SubscriptionManagerIntegration(COM)-CustomerOrderCallback">Custom=
+er Order Callback</h1>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "id": "94ad04fc-3d22-4ddf-af27-3760a8d36189",
+  "externalId": "d8e0f8d1-4d9e-4e00-afbf-d085ddb8c140",
+  "status": "InProgress",
+  "payment": {
+     "paymentId": "PAY-bf99c941-b423-4e15-bccf-4a7df498cf48",
+     "status": "CONFIRMED"
+  },
+  "steps": [
+    {
+      "step": "PAYMENT",
+      "status": "PROCESSED",
+      "startDate": "2017-08-08T19:51:29.153Z",
+      "endDate": "2017-08-08T19:51:29.153Z",
+      "processed": 1,
+      "total": 1
+    },
+    {
+      "step": "REGISTRATION",
+      "status": "PROCESSED",
+      "startDate": "2017-08-09T19:51:29.153Z",
+      "endDate": "2017-08-09T19:51:29.153Z",
+      "processed": 1,
+      "total": 1
+    },
+    {
+      "step": "PRODUCT_ACTIVATION",
+      "status": "PENDING",
+      "startDate": null,
+      "endDate": null,
+      "processed": 0,
+      "total": 2
+    },
+    {
+      "step": "OFFER_ACTIVATION",
+      "status": "PENDING",
+      "startDate": null,
+      "endDate": null,
+      "processed": 0,
+      "total": 4
+    },
+    {
+      "step": "SUBSCRIPTION",
+      "status": "PENDING",
+      "startDate": null,
+      "endDate": null,
+      "processed": 0,
+      "total": 1
+    }
+  ],
+  "subscription": {
+     "id": "66CA85CE-F338-4E2C-AAAF-F6EDAB946B23",
+     "recurringIndex": 2
+  },
+  "reason": {
+     "code": "STATUS_CODE",
+     "description": "Description"
+  }
+}</pre>=20
+</div>
+</div>
+<p><br></p>
+<p><br></p>
+<h1 id=3D"SubscriptionManagerIntegration(COM)-CustomerOrderCallback-Payment=
+Error">Customer Order Callback - Payment Error</h1>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "id": "94ad04fc-3d22-4ddf-af27-3760a8d36189",
+  "externalId": "d8e0f8d1-4d9e-4e00-afbf-d085ddb8c140",
+  "status": "InProgress",
+  "payment": {
+    "paymentId": "PAY-bf99c941-b423-4e15-bccf-4a7df498cf48",
+    "status": "FAILED",
+    "error": {
+      "errorCode": "M4U-01",
+      "retryPolicy": {
+        "retry": true,
+        "temporalUnit": "HOURS",
+        "temporalValue": 1
+      },
+      "notificationPolicy": {
+        "notify": true,
+        "channels": [
+          {
+            "id": "SMS",
+            "template": "SMS-PAY-M4U-01"
+          },
+          {
+            "id": "PUSH",
+            "template": "PUSH-PAY-M4U-01"
+          },
+          {
+            "id": "EMAIL",
+            "template": "EMAIL-PAY-M4U-01"
+          }
+        ]
+      }
+    }
+  },
+  "steps": [
+    {
+      "step": "PAYMENT",
+      "status": "ERROR",
+      "startDate": "2017-08-08T19:51:29.153Z",
+      "endDate": "2017-08-08T19:51:29.153Z",
+      "processed": 1,
+      "total": 1
+    },
+    {
+      "step": "REGISTRATION",
+      "status": "PROCESSED",
+      "startDate": "2017-08-09T19:51:29.153Z",
+      "endDate": "2017-08-09T19:51:29.153Z",
+      "processed": 1,
+      "total": 1
+    },
+    {
+      "step": "PRODUCT_ACTIVATION",
+      "status": "PENDING",
+      "startDate": null,
+      "endDate": null,
+      "processed": 0,
+      "total": 2
+    },
+    {
+      "step": "OFFER_ACTIVATION",
+      "status": "PENDING",
+      "startDate": null,
+      "endDate": null,
+      "processed": 0,
+      "total": 4
+    },
+    {
+      "step": "SUBSCRIPTION",
+      "status": "PENDING",
+      "startDate": null,
+      "endDate": null,
+      "processed": 0,
+      "total": 1
+    }
+  ]
+}</pre>=20
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_54_475774794.1596568947317--

@@ -1,0 +1,314 @@
+Date: Tue, 4 Aug 2020 20:02:00 +0000 (UTC)
+Message-ID: <1766248875.83.1596571320484@c7d71765e9a0>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_82_1622128708.1596571320484"
+
+------=_Part_82_1622128708.1596571320484
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>RW3.0 - LAB Environment</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>RW3.0 - LAB Environment</h1>
+    <div class=3D"Section1">
+        <pre>apiVersion: v1
+clusters:
+- cluster:
+    insecure-skip-tls-verify: true
+    server: <span class=3D"nolink">https://k8s-lab-zup.brazilsouth.cloudapp=
+.azure.com</span>
+  name: k8s-lab-zup
+contexts:
+- context:
+    cluster: k8s-lab-zup
+    user: devlab<br>    namespace: qa
+  name: devlab
+current-context: devlab
+kind: Config
+preferences: {}
+users:
+- name: devlab
+  user:
+    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVBRE=
+NDQWVpZ0F3SUJBZ0lVUDYzRlV0SkxicjlSSlBsY1B1K0pXTG1kYjZRd0RRWUpLb1pJaHZjTkFRR=
+U4KQlFBd0RURUxNQWtHQTFVRUF4TUNZMkV3SGhjTk1Ua3dOVEV3TVRReU5EQXdXaGNOTWpBd05U=
+QTVNVFF5TkRBdwpXakFSTVE4d0RRWURWUVFERXdaa1pYWnNZV0l3Z2dFaU1BMEdDU3FHU0liM0R=
+RRUJBUVVBQTRJQkR3QXdnZ0VLCkFvSUJBUURWSUFmc3cvR05Ibmh4Zkt4Um1ERHZFNFJXSmh2bz=
+hBZzhPajJZMnU0WnNCWVlwY1hjdnp4VUVYNE4KZlo0TjAzVHcvT2hLSzNJdE0yMXVLbEZuNUlqO=
+EsvcVF2Vkw5QVZjVlAwM3FyVVd5SnZWaEJNVm4vN3pBRXpPNQpiSFAycEVLczA0L3hCZDFEVHhP=
+NVc2UlNhemRLbzZkOE1PZEVlMmcyYU5ZUmdTREdJd2l5djk2MzJvL1pWRE5DCjJuc3JwN2paeVZ=
+ES2NScmpvajR6WHBMenJXL3NESUd2V3dud1N2L0dxc29wRW5aZ0ViOFppSFordWx4bksyZTgKQk=
+VOOVhDNHBBemIxUlU5NkZZaXhYUjRTdzF0OFhKKzN5YnZ5eXlZRE1JNFdiVU1mRE5EbjB1dmZ2T=
+zE4MytWSAp5UmRHblh2OExnTG9MVmpGb1UwTHZ1blp4b1NYQWdNQkFBR2pWREJTTUE0R0ExVWRE=
+d0VCL3dRRUF3SUZvREFUCkJnTlZIU1VFRERBS0JnZ3JCZ0VGQlFjREFqQU1CZ05WSFJNQkFmOEV=
+BakFBTUIwR0ExVWREZ1FXQkJUVnN0eWgKNitkNjlDaE9hN0RSMkkva1d4bzg2REFOQmdrcWhraU=
+c5dzBCQVEwRkFBT0NBZ0VBclJrVlB3czFzMGk5Z29pSApHbnBOaG5STUhHSGJZelF2amd1cWpGa=
+ER6VVcrT3VER3p6TlNKcU5CZzNXblVPcjlKcXlaVWFFWWVRcW5NR3JDCllKZWplaEhRVHhubzNQ=
+MldPWS9NSDg2cjdWRm1FbkZmcURIZ05RVnltRDA1bHR6WCs0UmdKNEw0c0RZUy9yWHIKcHhRVUV=
+oN1djOUljUEZKSlF4TWhaNDdzMWplcTJySVZ2Ryt4bkhaeERSQmxnTVVtelUyMFF2NW5PUnYrdS=
+tZaAo4R1JYOHIrVGIzSWhlUFI2eXZrNFpiZzE0RWs1WjlEUEVBT2pKemN3M1l3bEoyNVBlRGN1U=
+E9RRGMwYlpDZDMzCkNESjhjbmNWS1VGaFQ2RlFDZk1YWmlkbi8ybWdsUWZ0a3dnSlhvaDBhem5w=
+U0l4RXlBNEhSNmdEWWtqRFpxU28KMEtlZ2JBWkFvSFFDVVNIVUcrM3hjQ29xbTNYTTNmWkJTa0J=
+XWnlQOG14UXdkTnRNS3BtVUowMEtQRUpBQWhCQgppa3ZPU0pqUHFabXZGbGRtMzh3YXpXeTQ3aF=
+ZXVUMvQ2hBYkYwQ2lFYWVKQ2VqYnJySXo1RmRZcVVmRUJXOE05Ck5qVVpFeW4wNDZzeUNCNHFQa=
+Eo2Q2hkelhEWGtiYk1SZnBXMGcxcEZjcGtKUzhiUEROYkdJSThYOW4vdnMzQWEKNEd5R3F4bWdk=
+S0swVTBjNHpOR0U2UW1vN3paS29SU29Jd0M5M01rMDEwTzVGS0xYejU0a0hBUTd4WEFyY0ZLcQp=
+lQ3lETlBDUlkybm8wZ2JFWnNnWVNOUmdPZlUzWXFVUUN4enVMYWNmYkI5UUxhWnlqa2J5K2NQNF=
+VQN3J6RkJ4CnZaek1FK3BWeEJtMDJNcWNPbnZjVjNiNVBFND0KLS0tLS1FTkQgQ0VSVElGSUNBV=
+EUtLS0tLQo=3D
+    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQk=
+FBS0NBUUVBMVNBSDdNUHhqUjU0Y1h5c1VaZ3c3eE9FVmlZYjZQQUlQRG85bU5ydUdiQVdHS1hGC=
+jNMODhWQkYrRFgyZURkTjA4UHpvU2l0eUxUTnRiaXBSWitTSS9DdjZrTDFTL1FGWEZUOU42cTFG=
+c2liMVlRVEYKWi8rOHdCTXp1V3h6OXFSQ3JOT1A4UVhkUTA4VHVWdWtVbXMzU3FPbmZERG5SSHR=
+vTm1qV0VZRWd4aU1Jc3IvZQp0OXFQMlZRelF0cDdLNmU0MmNsUXluRWE0NkkrTTE2Uzg2MXY3QX=
+lCcjFzSjhFci94cXJLS1JKMllCRy9HWWgyCmZycGNaeXRudkFSRGZWd3VLUU0yOVVWUGVoV0lzV=
+jBlRXNOYmZGeWZ0OG03OHNzbUF6Q09GbTFESHd6UTU5THIKMzd6dGZOL2xSOGtYUnAxNy9DNEM2=
+QzFZeGFGTkM3N3AyY2FFbHdJREFRQUJBb0lCQUhodkUwdGVKcCtpT2xtWApKQ0V2cVdkUVZoWUF=
+qd0VBc3dhbHVxMG4raWlWOHNhVzFzcTVYalA3ZG9uVkZIMm5vb3VUdndnNnFOaVdHUjZKCjExcW=
+9NQ2lnQ1lYRkZxSldJWW1tTGplUkZyTm5oSDRBbmpUNHRRYXRVeXRTOSt6R1FjODc5amt6SVNlc=
+UJmRlcKc2ZMSkY0T2NHMGI0czVkbFRTeUI3WVlTdkJ4Nkk0MWpMdVAwWmVLUWN3eWhYWm1QN2VE=
+U2NuWmhCS3BXd25TbAo0bzBSczU3ZmN5TktlVjhkM0tSZjlPenA2TUJZaC8yYWhaUmJWUFhwTXd=
+lQVpIMFh5cFVjT2Y5eVBsR2FabkxUCjFvTWZHbjlCTzlQZks4RjdlVGwrNXNDUTB0MXhPTkQ3cn=
+hHcEY5b3NmNkNUMnN2SWdwelp5UzZ2dkFUbXdRMEsKU1cza1dIRUNnWUVBOFVBNlFYcnlIMGNPU=
+ElBVE5hK3pBUWRONnpkcWZ6OTJid0NWekJBdnFFTDZOR2V0ajVUcgpOcFVjWms1REN1OWxFUmRx=
+VzVTenBWdE9scThKbWZLazV6SW9ON2hPcjVCQUV2Rk5sd3FaejJzQTFIQ1Y5R0hOClFwZ0JpUzg=
+yVEpTVzQrNmZBNGNvYnNlbVdMTUtJUXRCdU5wdlZwL0VFTzYycCtWelN0YjdMYk1DZ1lFQTRpZW=
+MKdmVLUXphWThCcnc0OEtrY3NMMFFqQmxvNGpXUGFmbVBTS0dFRzJpOFdkZUg1WXZJQUY0NG1Kc=
+jgxbXJSVUdJdgpWajdkWWZHdE9WZTR5UnV5dXlGeDhpejNUY0J2dUc4bmEvOUM5ZHJ4MkRYNElH=
+NEloMkRKU3NkeWphWFI2cFNOClpiZUVJUjNvQW9lV2h4U09YQWRFVllwcmdHaFdlMExIblpKbHc=
+0MENnWUVBMmdiTm56ZlpjV0xwL3N0UWtRaEUKb2YxVDhldVhGNERuSzlJL2pyaGlHWkxPUkdZZW=
+VOQ0E4a2MzNzAxelVZS2d1QjJOUlU3U08vS1V4NkZROEF4Vgo4NHRreFZhUDVpSmJoY01GK0NiZ=
+2NvK2xwRmhMYlJ5bVFEVFh6bjhZZDRVaUNNUXllU0hBN0wwS0hNZFJ0Q05VCk5oZFMzOXByZTFJ=
+QlNTTVlXdDZIQ2ZrQ2dZQVF3ckRLSGRWdmVFZHdsRmgvOVhpTDNLY3lTdHZNRC80ZDg0SGIKOXl=
+Sc1I1blY2clJHbmRKbnZKUGpNM0ZUanIwT2dRaFRFdnVqTzU4RDVlMXE4aU9QM00ydURna1IrUl=
+lPakNaVwp5YWN6dzFNekcrVFV1bkxsWFpYdGRkU1dqTmgrMHgyYmtUczRuUmZKd0RTMnRCNU0wY=
+mtOd2VGdnRjdmEvTHNBCmdZNExMUUtCZ0dNQnAwOHVDSWtscjdZQ1RsMnVjUHdWMzV6VHh4MVk2=
+ZFhWOHF3MFg1OEhKT0xGbzV2QkJCKzMKOGl6S1BLVUc2NWJyZ2pCUklGNjFPaEo3QTRhNkpxaWo=
+2VlprZWVLY2MraWNQMjFPMEVuREwvb1ZzMDNESHRnWgpNbFU0Mnl4U2VGZjhIbkhCVXRjZjA2dl=
+Q2OVFGejZYWHE0bGpJWjc0M0VQTkwzczdPc1BWCi0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tL=
+S0tCg=3D=3D</pre>
+    </div>
+</body>
+</html>
+------=_Part_82_1622128708.1596571320484--

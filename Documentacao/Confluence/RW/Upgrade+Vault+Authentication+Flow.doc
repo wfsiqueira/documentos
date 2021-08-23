@@ -1,0 +1,506 @@
+Date: Tue, 4 Aug 2020 19:49:40 +0000 (UTC)
+Message-ID: <176715233.43.1596570580057@fa0f03a4ba39>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_42_1505452733.1596570580056"
+
+------=_Part_42_1505452733.1596570580056
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Upgrade Vault Authentication Flow</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Upgrade Vault Authentication Flow</h1>
+    <div class=3D"Section1">
+        <p><span style=3D"background-color: rgb(245,245,245);">The previous=
+ authentication flow based on CUBBYHOLE and UserRole&nbsp;<span style=3D"co=
+lor: rgb(36,41,46);">don't supported periodic tokens, therefore the applica=
+tions could not refresh the token and session life cycle of the token was f=
+inalized.</span></span></p>
+<p><span style=3D"background-color: rgb(245,245,245);"><span style=3D"color=
+: rgb(36,41,46);"><span style=3D"color: rgb(36,41,46);">To fix this wrong b=
+ehavior&nbsp;we will change the authentication flow to APPROLE <span><span =
+style=3D"color: rgb(36,41,46);"><span style=3D"color: rgb(36,41,46);"><em>(=
+ROLE-ID, SECRET-ID)</em>&nbsp;and Kubernetes</span></span></span>&nbsp;(<em=
+>SERVICE ACCOUNT TOKEN</em>) .</span></span></span></p>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p><span style=3D"color: rgb(36,41,46);"><span style=3D"color: rgb(36,41,46=
+);">Apps deployed on Kubernetes will use&nbsp;<strong>SERVICE ACCOUNT</stro=
+ng>&nbsp;<strong>TOKEN</strong></span></span><span style=3D"color: rgb(36,4=
+1,46);"><span style=3D"color: rgb(36,41,46);">.</span></span></p>
+<p><span style=3D"color: rgb(36,41,46);"><span style=3D"color: rgb(36,41,46=
+);">Apps deployed on Docker Swarm or other ways will use <strong>ROLE-ID</s=
+trong> and <strong>SECRET-ID</strong>.</span></span></p>
+</div>
+</div>
+<p><br></p>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>You will need the root token to perform vault instructions, if you don`t=
+ have one or have lost, you can create root tokens by unseal keys:&nbsp;<a =
+href=3D"https://learn.hashicorp.com/vault/operations/ops-generate-root" cla=
+ss=3D"external-link" rel=3D"nofollow">https://learn.hashicorp.com/vault/ope=
+rations/ops-generate-root</a></p>
+</div>
+</div>
+<p><br></p>
+<h1 id=3D"UpgradeVaultAuthenticationFlow-Kubernetes"><strong>Kubernetes</st=
+rong></h1>
+<div class=3D"confluence-information-macro confluence-information-macro-not=
+e">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
+rmation-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p><strong>Kubernetes prerequisite</strong>:&nbsp;<a href=3D"/wiki/spaces/R=
+W/pages/434176014/KB006+-+How+to+configure+Vault+using+a+Kubernetes+Service=
++Account" data-linked-resource-id=3D"434176014" data-linked-resource-versio=
+n=3D"10" data-linked-resource-type=3D"page">KB006 - How to configure Vault =
+using a Kubernetes Service Account</a>&nbsp;</p>
+<p>Do not perform step "<em><code class=3D"java plain" style=3D"text-align:=
+ left;">vault auth -method=3Duserpass username=3D&lt;vault username&gt; pas=
+sword=3D</code></em><code class=3D"java string" style=3D"text-align: left;"=
+><em>"&lt;vault password&gt;</em></code>"</p>
+<p>Do not perform step&nbsp;"<code><em><span style=3D"color: rgb(0,0,0);">v=
+ault write auth/kubernetes/role/vault bound_service_account_names=3Dvault-a=
+uth bound_service_account_namespaces=3Dqa policies=3Dmanager-policies</span=
+></em>"</code></p>
+</div>
+</div>
+<h2 id=3D"UpgradeVaultAuthenticationFlow-VaultInstructions(rootpermission)"=
+>Vault Instructions (<strong>root permission</strong>)</h2>
+<ol>
+<li><p class=3D"auto-cursor-target">Create policy:&nbsp;repeat the command =
+bellow for each <strong><code>policy&nbsp;</code></strong><code>(</code><co=
+de><code>rw_payments_policy</code></code><strong><code><code>,&nbsp;</code>=
+</code></strong><code><code>rw_wallet_policy</code></code><code><code>)</co=
+de></code>:<strong><em>&nbsp;</em></strong><a href=3D"/wiki/download/attach=
+ments/442368225/rw_payments_policy.hcl?version=3D2&amp;modificationDate=3D1=
+559563163199&amp;cacheVersion=3D1&amp;api=3Dv2" data-linked-resource-id=3D"=
+443580509" data-linked-resource-version=3D"2" data-linked-resource-type=3D"=
+attachment" data-linked-resource-default-alias=3D"rw_payments_policy.hcl" d=
+ata-linked-resource-content-type=3D"application/octet-stream" data-linked-r=
+esource-container-id=3D"442368225" data-linked-resource-container-version=
+=3D"71">rw_payments_policy.hcl</a>&nbsp;and <a href=3D"/wiki/download/attac=
+hments/442368225/rw_wallet_policy.hcl?version=3D2&amp;modificationDate=3D15=
+59589815999&amp;cacheVersion=3D1&amp;api=3Dv2" data-linked-resource-id=3D"4=
+43711629" data-linked-resource-version=3D"2" data-linked-resource-type=3D"a=
+ttachment" data-linked-resource-default-alias=3D"rw_wallet_policy.hcl" data=
+-linked-resource-content-type=3D"application/octet-stream" data-linked-reso=
+urce-container-id=3D"442368225" data-linked-resource-container-version=3D"7=
+1">rw_wallet_policy.hcl</a></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">$ vault=
+ policy-write &lt;policy_name&gt; &lt;policy_name&gt;.hcl</pre>=20
+</div>
+</div></li>
+<li><p class=3D"auto-cursor-target">Create role:&nbsp;repeat the command be=
+llow for each <strong><code>pair&nbsp;</code></strong>(<code>rw_payments_ro=
+le,&nbsp;</code><code>rw_payments_policy</code><code>) </code>and<code>(<co=
+de>rw_wallet_role,&nbsp;</code><code>rw_wallet_policy</code>).&nbsp;</code>=
+</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">$ vault=
+ write auth/kubernetes/role/&lt;role_name&gt; \
+    bound_service_account_names=3D&lt;service_account&gt; \
+    bound_service_account_namespaces=3D&lt;namespace&gt; \
+    policies=3Ddefault,&lt;policy_name&gt; \
+    ttl=3D1h</pre>=20
+</div>
+</div></li>
+</ol>
+<h2 id=3D"UpgradeVaultAuthenticationFlow-ApplicationConfigs">Application Co=
+nfigs</h2>
+<p><strong>Modules</strong>: <em>rw_payments_manager_command,&nbsp;rw_payme=
+nts_manager_consumer,&nbsp;rw_wallet_application</em></p>
+<p>Set the <em>envs</em> bellow and restart the app:</p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">ENV</th>
+<th class=3D"confluenceTh">VALUE</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><em>SPRING_PROFILES_ACTIVE</em></td>
+<td class=3D"confluenceTd"><code>vault-k8s</code></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><em>SPRING_CLOUD_VAULT_URI</em></t=
+d>
+<td colspan=3D"1" class=3D"confluenceTd">&lt;vault uri&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p><br></p>
+<hr>
+<hr>
+<h1 id=3D"UpgradeVaultAuthenticationFlow-DockerSwarm"><strong>Docker Swarm<=
+/strong></h1>
+<h2 id=3D"UpgradeVaultAuthenticationFlow-VaultInstructions(rootpermission).=
+1">Vault Instructions (<strong>root permission</strong>)</h2>
+<ol>
+<li><p class=3D"auto-cursor-target">Enable approle authentication.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence">$ vault=
+ auth-enable approle</pre>=20
+</div>
+</div></li>
+<li><p class=3D"auto-cursor-target">Create policy:&nbsp;repeat the command =
+bellow for each <code><strong>policy&nbsp;</strong><code>(</code><code><cod=
+e>rw_payments_policy</code></code><strong><strong><code><code>,&nbsp;</code=
+></code></strong></strong><code><code>rw_wallet_policy</code></code><strong=
+><code><code>)</code></code></strong></code>:<strong><em>&nbsp;</em></stron=
+g><a href=3D"/wiki/download/attachments/442368225/rw_payments_policy.hcl?ve=
+rsion=3D2&amp;modificationDate=3D1559563163199&amp;cacheVersion=3D1&amp;api=
+=3Dv2" data-linked-resource-id=3D"443580509" data-linked-resource-version=
+=3D"2" data-linked-resource-type=3D"attachment" data-linked-resource-defaul=
+t-alias=3D"rw_payments_policy.hcl" data-linked-resource-content-type=3D"app=
+lication/octet-stream" data-linked-resource-container-id=3D"442368225" data=
+-linked-resource-container-version=3D"71">rw_payments_policy.hcl</a>&nbsp;a=
+nd <a href=3D"/wiki/download/attachments/442368225/rw_wallet_policy.hcl?ver=
+sion=3D2&amp;modificationDate=3D1559589815999&amp;cacheVersion=3D1&amp;api=
+=3Dv2" data-linked-resource-id=3D"443711629" data-linked-resource-version=
+=3D"2" data-linked-resource-type=3D"attachment" data-linked-resource-defaul=
+t-alias=3D"rw_wallet_policy.hcl" data-linked-resource-content-type=3D"appli=
+cation/octet-stream" data-linked-resource-container-id=3D"442368225" data-l=
+inked-resource-container-version=3D"71">rw_wallet_policy.hcl</a>&nbsp;</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">$ vault=
+ policy-write &lt;policy_name&gt; &lt;policy_name&gt;.hcl</pre>=20
+</div>
+</div></li>
+<li><p class=3D"auto-cursor-target">Create role:&nbsp;repeat the command be=
+llow for each <strong><code>pair&nbsp;</code></strong>(<code>rw_payments_ro=
+le,&nbsp;</code><code>rw_payments_policy</code><code>) </code>and<strong>&n=
+bsp;</strong><code>(<code>rw_wallet_role,&nbsp;</code><code>rw_wallet_polic=
+y</code>)</code></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">$ vault=
+ write auth/approle/role/&lt;role_name&gt; policies=3D&lt;policy_name&gt; p=
+eriod=3D1h</pre>=20
+</div>
+</div></li>
+<li><p class=3D"auto-cursor-target">Create&nbsp;role-id and secret-id: exec=
+ute the command bellow for each <code><strong>role</strong></code> (<code>r=
+w_payments_role,&nbsp;<code><code>rw_wallet_role</code></code></code>).&nbs=
+p;Save the role-id and secret-id in a safe place, you will need this values=
+ to inject on apps by env.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">$ vault=
+ read auth/approle/role/&lt;role_name&gt;/role-id</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">$ vault=
+ write -f auth/approle/role/&lt;role_name&gt;/secret-id</pre>=20
+</div>
+</div></li>
+</ol>
+<h2 id=3D"UpgradeVaultAuthenticationFlow-ApplicationConfigs.1">Application =
+Configs&nbsp;</h2>
+<p><strong>Modules</strong>: <em>rw_payments_manager_command,&nbsp;rw_payme=
+nts_manager_consumer,&nbsp;rw_wallet_application</em></p>
+<p>Set the <em>envs</em> bellow and restart the app:</p>
+<div class=3D"table-wrap">
+<table class=3D"relative-table confluenceTable" style=3D"width: 54.6814%;">
+<colgroup>
+<col style=3D"width: 52.3055%;">
+<col style=3D"width: 47.6945%;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">ENV</th>
+<th class=3D"confluenceTh">VALUE</th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><em>SPRING_PROFILES_ACTIVE</em></t=
+d>
+<td colspan=3D"1" class=3D"confluenceTd"><code>vault-approle</code></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><em>SPRING_CLOUD_VAULT_URI</em></t=
+d>
+<td colspan=3D"1" class=3D"confluenceTd">&lt;vault uri&gt;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><em>SPRING_CLOUD_VAULT_APP_ROLE_RO=
+LE_ID</em></td>
+<td colspan=3D"1" class=3D"confluenceTd">&lt;role-id&gt;</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><em>SPRING_CLOUD_VAULT_APP_ROLE_SE=
+CRET_ID</em></td>
+<td colspan=3D"1" class=3D"confluenceTd">&lt;secret-id&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<h1 id=3D"UpgradeVaultAuthenticationFlow-Relatedarticle">Related article</h=
+1>
+<p><a href=3D"https://www.vaultproject.io/docs/concepts/tokens.html#periodi=
+c-tokens" class=3D"external-link" rel=3D"nofollow">https://www.vaultproject=
+.io/docs/concepts/tokens.html#periodic-tokens</a></p>
+<p><a href=3D"https://www.vaultproject.io/docs/auth/approle.html" class=3D"=
+external-link" rel=3D"nofollow">https://www.vaultproject.io/docs/auth/appro=
+le.html</a></p>
+<p><a href=3D"https://learn.hashicorp.com/vault/identity-access-management/=
+iam-authentication" class=3D"external-link" rel=3D"nofollow">https://learn.=
+hashicorp.com/vault/identity-access-management/iam-authentication</a></p>
+<p><a href=3D"https://www.vaultproject.io/docs/auth/kubernetes.html" class=
+=3D"external-link" rel=3D"nofollow">https://www.vaultproject.io/docs/auth/k=
+ubernetes.html</a></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_42_1505452733.1596570580056--

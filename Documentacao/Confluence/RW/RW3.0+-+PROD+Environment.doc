@@ -1,0 +1,398 @@
+Date: Tue, 4 Aug 2020 20:02:14 +0000 (UTC)
+Message-ID: <1219812113.119.1596571334769@b69eb428412d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_118_1811235004.1596571334769"
+
+------=_Part_118_1811235004.1596571334769
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>RW3.0 - PROD Environment</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>RW3.0 - PROD Environment</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<p class=3D"title">Info</p>
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>Here you will find the URLs of our Production environment.</p>
+</div>
+</div>
+</div>
+<div class=3D"table-wrap">
+<div class=3D"table-wrap">
+<p class=3D"auto-cursor-target"><strong>Public URLs</strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped tablesorter tablesorter-default confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr class=3D"tablesorter-headerRow">
+<th class=3D"tablesorter-header sortableHeader tablesorter-headerUnSorted c=
+onfluenceTh" style=3D"text-align: left;" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+Service
+</div></th>
+<th class=3D"tablesorter-header sortableHeader tablesorter-headerUnSorted c=
+onfluenceTh" style=3D"text-align: left;" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+URL
+</div></th>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">Real Wave Prod Appli=
+cation Configuration Portal</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><span class=3D"nolin=
+k"><span class=3D"nolink">https://<strong>slug</strong>.acp.realwave.zup.me=
+</span></span>&nbsp;</td>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">Real Wave Prod Custo=
+mer Support Portal</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><span class=3D"nolin=
+k">https://<strong>slug</strong>.csp.realwave.zup.me/crm</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class=3D"auto-cursor-target"><strong>Gateway Entrypoint<br></strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Private and Public gateway entry points</th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><p class=3D"auto-cursor-target"><s=
+pan style=3D"color: rgb(69,87,120);"><span class=3D"nolink">https://realwav=
+ecore-saas.gateway.zup.me</span></span></p></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><span class=3D"nolink">https://rea=
+lwavecore-public-saas.gateway.zup.me</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class=3D"auto-cursor-target"><strong>Kubeconfig</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>kubeconfig prod</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: py; gutter: false; theme: Confluence" data-theme=3D"Confluence">apiVersio=
+n: v1
+clusters:
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://k8s-prod-zup.brazilsouth.cloudapp.azure.com
+  name: k8s-prod-zup
+contexts:
+- context:
+    cluster: k8s-prod-zup
+    user: devprod
+    namespace: prod
+  name: devprod
+current-context: devprod
+kind: Config
+preferences: {}
+users:
+- name: devprod
+  user:
+    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVBVE=
+NDQWVtZ0F3SUJBZ0lVQW5VeGorRy9kVThPNC83WFVFWU5KUk1UdUMwd0RRWUpLb1pJaHZjTkFRR=
+U4KQlFBd0RURUxNQWtHQTFVRUF4TUNZMkV3SGhjTk1UZ3hNREF6TVRnd01qQXdXaGNOTVRreE1E=
+QXpNVGd3TWpBdwpXakFTTVJBd0RnWURWUVFERXdka1pYWndjbTlrTUlJQklqQU5CZ2txaGtpRzl=
+3MEJBUUVGQUFPQ0FROEFNSUlCCkNnS0NBUUVBNEhHTlNRdUtOSFllemZ0UVoxVUlxdytYdlRsQ0=
+5WdmVkTUNYZGlBd09hUUpWVmZ1VXhJNGxXYkMKbVlPZXhGY0Q0SDAwcWtVZ1owT2RjVE9MRlFqb=
+U5oTnZQZmN4SUZ6TUdhR0ZvV2FLL3hSSXdWc1dhRHNwak1kLwpmZ1EyQ09vanpYUkdxQmVMdTFp=
+TlQ3YUpMMzJqZUZoREVaUzUzTWs2Q2NvcGVFTWVSQnJDRG1wRk50Zjk4SVh0CmYzaTVTTXBzYUV=
+EYnhwSUttM1pxbGloVFdTVHZQak5VdmxOblVITk5mbncvenUyNTA4UVJvZGdoWUt3bVJabzYKcH=
+ZHWHppMFAxUmFtTjdTalJmcjJIZldpNktHL3FGekdOR2lBWUNVMENlTDA5NUJXUGM2ZHJLK0pIZ=
+HBqTmMrbQpGeE9laisvSWcvNFVCWWsyVUF1VFJTU3hodlBmNndJREFRQUJvMVF3VWpBT0JnTlZI=
+UThCQWY4RUJBTUNCYUF3CkV3WURWUjBsQkF3d0NnWUlLd1lCQlFVSEF3SXdEQVlEVlIwVEFRSC9=
+CQUl3QURBZEJnTlZIUTRFRmdRVUlsYXAKRXBuRi9ESHEyZnNYRzVXNGt3YjZQRFV3RFFZSktvWk=
+lodmNOQVFFTkJRQURnZ0lCQURyUTN0YWs1SWFFa3hIWQpMZCtLc0FqWkpGWGVBOVVVTnlEdFRVR=
+EljS1ZFYkhkRUx3MWpZaHRkSUpIdWNpZ3E1bzBOdGl5cCtzRkZtaFZQCld4SWNnTU55b214QW0y=
+ZVhvem9jeElIYzBVRWVWdG5IdVI1Uk1NZkZFTHJiTXljdHpKYlc0T0lBVi81NWY0cW8KUDEzUUt=
+QM0NEbDFnenY0NEw0ajZZK0RYa1kxeEVlY1gwVlpPQmt5R2xtWjgwMFl4NE5PdFBSdWtFcEpIdU=
+U5QwpUaElsOUJmWjg0dCt4d0cwK0ptdDlPNmFxOHFjNW4zWWpnbzJJaGgrU0h4aUNMQzc1S3VyV=
+2lUVFRTYS9EQk51CnYrNEE4NkU0YlBZZ1hUVTZVclV3N0ZtUmNuTjY1QzVuU0h4b2xhYnE4dmdQ=
+Z0RSUTBOVU1MV2xzZWE2T2tRekEKeVlHaWYxbGk1VWQrd1dneG1oL01oemdtQ0RSandUZWFRUHo=
+3dEJkcUVlTjF5aWhIa3gxWDRnV1c1dU50K3l6bgpQS2Ryb3JyOFZsTEliWStpOXRIeWttcHArVF=
+AvNGhLUkJkUXFwYjVKUk5NMC9TWGZnZlVzaEpkR0gvcjg5T0hrCnBJNFFlNFpjWlF5a2pUSngwM=
+1JhckhSekNFWXJBOFY0UldJc2RFZEtVKzFZU0Vxa2ZUdTdCS2Q3OWs2S0dBQTgKSFVLKzlyN0ln=
+S2dXR0tHK3VCUlJIOXpRUmxYNjB4bmFqbnA2ZDBjZEVUTzNWRFFPYVdyRHYvQk43U2FZYnROVgp=
+rTlplb1liL0J0QWdMaEozQzJJV2hoa3lxS092cE9pNjkrR3E3SEZPTG5VeU04clBWUlJnckhVN2=
+ZBRTZTdW55Cll5ZU93YTlBeERScmJrazhLUEFXcEM2QnFrRloKLS0tLS1FTkQgQ0VSVElGSUNBV=
+EUtLS0tLQo=3D
+    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcFFJQk=
+FBS0NBUUVBNEhHTlNRdUtOSFllemZ0UVoxVUlxdytYdlRsQ05WdmVkTUNYZGlBd09hUUpWVmZ1C=
+lV4STRsV2JDbVlPZXhGY0Q0SDAwcWtVZ1owT2RjVE9MRlFqbU5oTnZQZmN4SUZ6TUdhR0ZvV2FL=
+L3hSSXdWc1cKYURzcGpNZC9mZ1EyQ09vanpYUkdxQmVMdTFpTlQ3YUpMMzJqZUZoREVaUzUzTWs=
+2Q2NvcGVFTWVSQnJDRG1wRgpOdGY5OElYdGYzaTVTTXBzYUVEYnhwSUttM1pxbGloVFdTVHZQak=
+5VdmxOblVITk5mbncvenUyNTA4UVJvZGdoCllLd21SWm82cHZHWHppMFAxUmFtTjdTalJmcjJIZ=
+ldpNktHL3FGekdOR2lBWUNVMENlTDA5NUJXUGM2ZHJLK0oKSGRwak5jK21GeE9laisvSWcvNFVC=
+WWsyVUF1VFJTU3hodlBmNndJREFRQUJBb0lCQUVpUnJvTDlyalFFTlRXWQptb2l1bjl6ZmI4cUk=
+1dlZsdk9tM0U4SG42bS9Zc0FQZUtIckhtM0FEQjh5bkdBQ1h1Zk10eUlkOVRsclZLK1RjCks0NG=
+prSHZQa05wU1FKb2NKd25xaGRDSDNVMVllNlc1RStlanFXMlJXNUdkUHZObThTaU8vZ0YvaTNpS=
+nl6Y0kKNkJabzR5QVlPYWRIbFVqajcxWVcvWTJhOWdCQ28zY2RsWU5FbmJMZ0J2emxQd21IZXNJ=
+R0hwRkp2aDRmaysrRwo4V3dXeXNmMFlVcjJEaGcxYWhDL3E0Q1kxZnozSmtIL2ZFZG5pVDkzWlU=
+wbjVCUWJydjZ4Y2I4dWc5UnhLZ0V1Ck5GTHZ1dTYwQnBZWGNJeTNMZ2N2RnU2blErQ29RSEJCY1=
+RjWkpUYjhQbEVTUXBZdTc1RTFKcC9jdE1HOGdYQnoKd2ZDWHRPRUNnWUVBK1ZoZVhpb2VUQldyb=
+3hHeDZndXRnY1pNblY1TjcxakRVMWdXM0hYWG5CaVhpcWlPa2pSaQpkWFJRSUhDUklNUDgrczRm=
+ODZnNlJ5QzBSNUFpOHJINk1wQ1JHT2FxT0lpNU5LRFhDOUhMOGVUZnNkRFdpcU1BCkxhK0xkL1J=
+nTnFYSHBIdUpnc1JXRGZIT1VacWhHZUViZ1kra21XdXp4azVzZXh5KzMvWE96bk1DZ1lFQTVtOE=
+wKZS9PeERwN0oxbnljQk5KSTlnVGpaVDVLMUs4WWMzc2RwNmpCRFVqWTdlQ2Vubm16WjZKeVZkU=
+EpYcU8xdi85MAoxYlhpeGo2cjgxOVVBWlJXTTFSUmpLSG9ySkh5S09BUHp3OC9YdUNkNXBOakdm=
+VFJZOVVsT3JDZmRRSTRHenNJClNaQVNOZWErdno1ZUNHTHc2WjBYTkNHY0tsRVpyZ3lsR0ZXUWt=
+xa0NnWUVBZ01TdkwyZ0c3M245Z3FCZnhpT3oKdmlKZmJLSElFOFErVXl0WjJ3Nk1nNU43cDJMM0=
+JmQkJyTENkdExNTmIrTm5JVXNUMnl4VXRHamlVVmJSaFk1KwpUR0MyWGlxNVc2cllJcUt4aSt3V=
+HE5OXIycE9rU0VKM2xDQmxJVlMxMzJMcjREamdRZ1VNLy9TUmZUa2kyNCtTCk9lMnByb1dkZU5z=
+RlVPcitkQUNvaFpzQ2dZRUE0MTRrVGJ5cE1velpDT3JSSXl5K1V3bUZ1Z3NaMlB1ZnU2cDYKRzB=
+rMm16NEsxY1J4bmxyaysxZmRTdlI2MkFmZXVNQjk3clRXT3RmeDRHUnFSbGl3S1Z1RVQ2Z2VKZE=
+NueVU4MApLaEdZYkt4akFQVGlydVRTaXBmd2NSVi9jUHVza3FuUHhvNENlZTdndldEemRZRHl4d=
+jk2dXJTREczb0VSYWt5CmFXMWNCbWtDZ1lFQXZPeFU5bXVRZVRNaFFMcVFyWkFwQ2ltdHpXRU1p=
+ZXY3MWxWMkZqWjZyVGJtOHkzdThQMmkKUk5Bbyt0TFNyWnFSYnJUakRFNXN3L2dJZSswMTkyTVd=
+oWkMwRnE4WUt4M2xNdXdza1M5QmZTajNtTS9ML0xEOQp3N3hTTWpIby9mSnk0M1gyMzBmc01YNk=
+1VWFc3NDY2eFB1aUVUMVBYRkEzSU5WcmhRdlRpOXlRPQotLS0tLUVORCBSU0EgUFJJVkFURSBLR=
+VktLS0tLQo=3D</pre>=20
+</div>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_118_1811235004.1596571334769--

@@ -1,0 +1,125 @@
+#### CRIAR AS INSTANCIAS NA AWS
+Type: m5.2xlarge	
+CPU: 8
+MEMORIA: 32
+
+#### EXECUTAR O ANSIBLE E PREPAPAR AS INSTANCIAS
+$ cd /opt/zup/continuous-playbooks/provisioning/
+$ ansible-playbook -u ubuntu --private-key="/opt/zup/continuous-playbooks/provisioning/ansible-provisioning.pem" --extra-vars "hosts= <HOST>" ec2-zupfy2.yml
+
+#### CRIAR E MONTAR O LVM
+$ yum install -y yum-utils device-mapper-persistent-data lvm2
+$ fdisk -l | grep 50
+$ pvcreate /dev/nvme3n1 /dev/nvme4n1 /dev/nvme5n1
+$ vgcreate vg_data_es /dev/nvme3n1 /dev/nvme4n1 /dev/nvme5n1
+$ lvcreate -n lv_data_es -l+100%FREE vg_data_es
+$ lvdisplay
+$ mkfs.ext4 /dev/vg_data_es/lv_data_es
+
+#### MONTAR LVM NO DIRETORIO DO EVENTSTORE
+$ mkdir -p /var/lib/eventstore
+$ echo "
+/dev/vg_data_es/lv_data_es		/var/lib/eventstore 	ext4    defaults,noatime  0 0" >> /etc/fstab 
+
+$ mount -a
+$ df -h
+
+#### INSTALANDO OS REPOSITORIOS E O EVENTSTORE
+# REF: https://www.mono-project.com/download/stable/
+# REF: https://eventstore.com/blog/event-store-5.0.8-release/
+
+# Primeiro configurar o repo do Mono
+$ sudo apt install gnupg ca-certificates
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+$ echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+$ sudo apt update
+
+# Depois instalar o Eventstore
+$ curl -s https://packagecloud.io/install/repositories/EventStore/EventStore-OSS/script.deb.sh | sudo bash
+$ sudo apt-get update
+$ sudo apt-get install eventstore-oss=5.0.10-1
+
+##### CONFIGURAÇÂO DO EVENTSTORE.CONF
+RunProjections: All
+IntIp: 0.0.0.0
+ExtIp: 0.0.0.0
+IntTcpPort: 1111
+ExtTcpPort: 1112
+IntHttpPort: 2113
+ExtHttpPort: 2114
+IntHttpPrefixes: http://*:2113/
+ExtHttpPrefixes: http://*:2114/
+ClusterSize: 5
+ClusterDns: realwave-claro-eventstorecluster.aws.zup.com.br
+GossipSeed: 192.168.32.137:2113,192.168.33.152:2113,192.168.34.154:2113
+DiscoverViaDns: False
+ClusterGossipPort: 2113
+Log: /var/log/eventstore
+Db: /var/lib/eventstore
+ConnectionPendingSendBytesThreshold: 5485760
+SkipDbVerify: true
+SkipIndexVerify: true
+InitializationThreads: 8
+ProjectionThreads: 8
+ReaderThreadsCount: 8
+ChunksCacheSize: 17179869184
+IntTcpHeartbeatInterval: 1500
+IntTcpHeartbeatTimeout: 3000
+ExtTcpHeartbeatInterval: 3000
+ExtTcpHeartbeatTimeout: 6000
+GossipIntervalMs: 2000
+GossipTimeoutMs: 4000
+
+#### DELETE EVENTOS
+curl -X DELETE http://127.0.0.1:2113/streams/newstream -H "ES-HardDelete:true"
+
+#### ALTERAR LIMITS (EVENTSTORE.SERVICE)
+$ cat /etc/systemd/system/eventstore.service
+
+LimitNOFILE=500000
+LimitNPROC=500000
+
+#### REALIZAR BACKUP DO ANTIGO EVENTSTORE PARA O S3
+cd /var/lib/eventstore
+time aws s3 cp . s3://backup-claro-eventstore --recursive --exclude "index/*" --exclude "*.00*"
+time aws s3 cp . s3://backup-claro-eventstore --recursive --exclude "*.chk" --exclude "*.00*"
+time aws s3 sync . s3://backup-claro-eventstore --exclude "*.chk" --exclude "index/*"
+
+#### REALIZAR RESTORE DO S3 PARA O NOVO EVENTSTORE
+time aws s3 cp s3://backup-claro-eventstore/chaser.chk /var/lib/eventstore/truncate.chk
+time aws s3 sync --exclude="truncate.chk" s3://backup-claro-eventstore /var/lib/eventstore
+
+#### ALTERAR AS PERMISSOES DA PASTA DO EVENTSTORE
+$ cd /var/lib
+$ chown -R eventstore:eventstore /var/lib/eventstore
+$ ls -alh
+
+#### INICIAR O SERVIÇO DO EVENTSTORE
+$ systemctl enable eventstore
+$ systemctl start eventstore && journalctl -f -u eventstore
+
+
+############################ PLANO MIGRACAO DOS DADOS EVENTSTORE ############################ (RSYNC)
+# 1º) Entar na maquina do EventStore antigo e parar o o serviço do EventStore
+cssh claro-1a-eventstore01.aws.zup.com.br claro-1b-eventstore02.aws.zup.com.br claro-1c-eventstore03.aws.zup.com.br 
+systemctl stop eventstore && systemctl status eventstore
+
+# 2º) Entrar nas novas instancias, parar o serviço do eventstore e realizar o rsync
+cssh claro-1a-eventstore01-prod.aws.zup.com.br claro-1b-eventstore02-prod.aws.zup.com.br claro-1c-eventstore03-prod.aws.zup.com.br
+systemctl stop eventstore && systemctl status eventstore
+
+rm -rf /var/lib/eventstore/*.chk && rm -rf /var/lib/eventstore/index
+rsync -av willian.siqueira@192.168.32.137:/var/lib/eventstore/chaser.chk /var/lib/eventstore/truncate.chk
+rsync -auv willian.siqueira@192.168.32.137:/var/lib/eventstore/*.chk /var/lib/eventstore --exclude="truncate.chk"
+rsync -auv willian.siqueira@192.168.32.137:/var/lib/eventstore/index /var/lib/eventstore
+rsync -auv willian.siqueira@192.168.32.137:/var/lib/eventstore/*.0* /var/lib/eventstore
+
+# 3º) Alterar as configurações do EventStore nas novas instancias
+# claro-1a-eventstore01-prod.aws.zup.com.br claro-1b-eventstore02-prod.aws.zup.com.br claro-1c-eventstore03-prod.aws.zup.com.br
+sed -i 's/realwave-claro-eventstorecluster.aws.zup.com.br/realwave-claro-eventstorecluster2.aws.zup.com.br/' /etc/eventstore/eventstore.conf
+
+# 4º) Iniciar o serviço do eventstore
+systemctl start eventstore && journalctl -f -u eventstore
+
+# 5º) Alterar o DNS na AWS ZAPOS e apontar para o NOVO Cluster
+DNS: realwave-claro-eventstorecluster.aws.zup.com.br

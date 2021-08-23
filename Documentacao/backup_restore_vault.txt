@@ -1,0 +1,90 @@
+
+
+1º) GERAR O SNAPSHOT DO CONSUL DA VAULT ATUAL
+$ ssh -i /opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem -l centos 192.168.32.135
+$ consul snapshot save /data/consul/backup/backup-$(date +%d-%m-%Y).snap
+
+2º) FAZER O UPLOAD SNAPSHOT PARA O S3
+$ cd /data/consul/backup/
+$ aws s3 cp . s3://backup-claro-vault --recursive
+
+3º) RESTAURAR O SNAPSHOT DO CONSUL NA MAQUINA DE JUMPBOX DA CLARO PRD
+$ ssh -i /opt/zup/sre-claro/migracao-aws-claro/prd/keypair/claroprd-provisioning.pem -l centos 172.32.116.80
+$ cd /vault
+$ aws s3 cp s3://backup-claro-vault . --recursive
+$ consul snapshot restore backup-$(date +%d-%m-%Y*).snap
+
+4º) PARAR A VAULT DE PRD 
+$ ssh -i /opt/zup/sre-claro/migracao-aws-claro/prd/keypair/claroprd-provisioning.pem -l centos 172.32.85.163
+$ systemctl stop vault
+
+$ ssh -i /opt/zup/sre-claro/migracao-aws-claro/prd/keypair/claroprd-provisioning.pem -l centos 172.32.36.66
+$ systemctl stop vault
+
+$ ssh -i /opt/zup/sre-claro/migracao-aws-claro/prd/keypair/claroprd-provisioning.pem -l centos 172.32.12.215
+$ systemctl stop vault
+
+5º) REALIZAR A MIGRACAO DOS DADOS PARA A NOVA VAULT
+$ ssh -i /opt/zup/sre-claro/migracao-aws-claro/prd/keypair/claroprd-provisioning.pem -l centos 172.32.116.80
+$ cd /vault
+
+$ echo 'storage_source "consul" {
+  address = "172.32.116.80:8500"
+  path    = "realwave"
+}
+
+storage_destination "consul" {
+  address = "172.32.74.136:8500"
+  path    = "realwave"
+}' > migrate.hcl
+
+$ vault operator migrate -config migrate.hcl
+
+Obs: Esse comando vai conectar no consul de manobra e vai copiar todos os dados dele pro consul de destino.
+
+6º) INICIAR A VAULT DE PRD 
+$ ssh -i /opt/zup/sre-claro/migracao-aws-claro/prd/keypair/claroprd-provisioning.pem -l centos 172.32.85.163
+$ systemctl start vault
+
+$ ssh -i /opt/zup/sre-claro/migracao-aws-claro/prd/keypair/claroprd-provisioning.pem -l centos 172.32.36.66
+$ systemctl start vault
+
+$ ssh -i /opt/zup/sre-claro/migracao-aws-claro/prd/keypair/claroprd-provisioning.pem -l centos 172.32.12.215
+$ systemctl start vault
+
+7°) RODAR O COMANDO DE UNSEAL NA VAULT USANDO 3 DAS 5 CHAVES DA VAULT.
+
+
+######################################### CONSUL EKS ##########################################
+1º) GERAR O SNAPSHOT DO CONSUL DA VAULT ATUAL
+$ ssh -i /opt/zup/sre-claro/ansible/playbooks/ansible-provisioning.pem -l centos 192.168.32.135
+$ consul snapshot save /data/consul/backup/backup-$(date +%d-%m-%Y).snap
+
+2º) FAZER O UPLOAD SNAPSHOT PARA O S3
+$ cd /data/consul/backup/
+$ aws s3 cp . s3://backup-claro-vault --recursive
+
+3º) COPIAR O BACKUP DO CONSUL PARA A POD NO K8S
+$ aws s3 cp s3://backup-claro-vault . --recursive
+$ kubectl cp backup-$(date +%d-%m-%Y).snap vault/vault-consul-0:/consul/data
+
+4º) DELETAR TODOS OS DADOS DO CONSUL
+$ consul kv delete -recurse realwave
+
+5º) REALIZAR O RESTORE DO CONSUL
+$ consul snapshot restore backup-$(date +%d-%m-%Y).snap
+
+
+############### CLARO PROD VAULT UNSEAL ##################
+Unseal Key 1: saWkEpsnE93DnhWwVe+Qa3aQtSBpb5Dy2UVqGmLUmaWX
+Unseal Key 2: 6mYwO1eLdcN9T35YnbahjVT1Opm7c0uAEc2R5HE/bboT
+Unseal Key 3: d/muPQROHEgKRDmegYb0jrojfoK3MCOcB+TG1jgYDpNO
+
+export VAULT_ADDR="http://claro-vault-eks-prd.flexprd.aws.clarobrasil.mobi:8200"
+
+export VAULT_ADDR="http://localhost:8200"
+export VAULT_TOKEN=4874c6dd-546e-0ac1-4512-988d2523f28c
+
+vault operator unseal -tls-skip-verify
+
+vault operator unseal -migrate

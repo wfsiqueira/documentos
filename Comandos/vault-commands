@@ -1,0 +1,372 @@
+############################ INSTALANDO O VAULT ############################
+## Utilizando o Vault em Modo DEV
+$ vault server -dev -dev-listen-address=0.0.0.0:8200
+$ vault server -dev -dev-listen-address=0.0.0.0:8200 -dev-root-token-id=<token> 
+
+#### Instalando o Vault Server (Dados em arquivos)
+$ wget https://releases.hashicorp.com/vault/0.9.6/vault_0.9.6_linux_amd64.zip
+$ unzip vault_0.9.6_linux_amd64.zip
+
+$ mv vault /usr/bin
+$ vault version
+
+$ vault -autocomplete-install
+
+$ mkdir /var/log/vault
+$ mkdir /etc/vault.d/data
+$ mkdir /etc/vault.d
+
+$ touch /etc/vault.d/config.hcl
+$ useradd -r vault
+$ chown -R vault:vault /etc/vault.d/
+$ chown -R vault:vault /etc/vault.d
+
+$ echo 'storage "file" {
+  path    = "/etc/vault.d/data"
+}
+
+listener "tcp"{
+	address 	= "0.0.0.0:8200"
+	tls_disable	= 1
+}
+
+api_addr = "http://0.0.0.0:8200"
+disable_mlock = true
+disable_cache = true
+pid_file = "/etc/vault.d/vault.pid"' > /etc/vault.d/config.hcl
+
+$ echo '[Unit]
+Description=vault service
+Requires=network-online.target
+After=network-online.target
+ConditionFileNotEmpty=/etc/vault.d/config.hcl
+
+[Service]
+User=vault
+Group=vault
+EnvironmentFile=-/etc/sysconfig/vault
+Environment=GOMAXPROCS=2
+Restart=on-failure
+ExecStart=/usr/bin/vault server -config=/etc/vault.d/config.hcl
+StandardOutput=/var/log/vault/output.log
+StandardError=/var/log/vault/error.log
+LimitMEMLOCK=infinity
+ExecReload=/bin/kill -HUP $MAINPID
+KillSignal=SIGTERM
+
+[Install]
+WantedBy=multi-user.target' > /etc/systemd/system/vault.service
+
+$ systemctl enable vault.service
+$ systemctl start vault.service && systemctl status vault.service
+
+$ netstat -atunp
+
+$ export VAULT_ADDR='http://127.0.0.1:8200'
+$ export VAULT_TOKEN='<root-token>'
+$ echo "export VAULT_ADDR='http://127.0.0.1:8200'" >> /root/.bashrc
+
+$ vault operator init
+
+$ vault operator unseal
+
+
+#### Instalando o Vault Server (Dados no Consul)
+## Instalando o Cluster do Consul
+$ mkdir /etc/consul.d
+$ mkdir /data/consul
+$ useradd -r consul
+$ chown -R consul:consul /etc/consul.d
+$ chown -R consul:consul /data/consul
+
+$ wget https://releases.hashicorp.com/consul/1.0.0/consul_1.0.0_linux_amd64.zip
+$ unzip consul_1.0.0_linux_amd64.zip
+
+$ mv consul /usr/bin
+$ consul version
+
+$ echo '{
+  "server": true,
+  "node_name": "claro-1a-vault-consul01-sit",
+  "datacenter": "dc01",
+  "data_dir": "/data/consul",
+  "bind_addr": "0.0.0.0",
+  "client_addr": "0.0.0.0",
+  "advertise_addr": "<ip_instancia_consul>",
+  "bootstrap_expect": 3,
+  "retry_join": ["<ips_clusters_consul>"],
+  "ui": true,
+  "log_level": "DEBUG",
+  "enable_syslog": true,
+  "acl_enforce_version_8": false
+}' > /etc/consul.d/consul.json
+
+$ echo '[Unit]
+Description=consul service agent
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+User=consul
+Group=consul
+PIDFile=/etc/consul.d/consul.pid
+PermissionsStartOnly=true
+ExecStartPre=/bin/mkdir -p /data/consul
+ExecStartPre=/bin/chown -R consul:consul /data/consul
+ExecStart=/usr/bin/consul agent -config-file=/etc/consul.d/consul.json
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+KillSignal=SIGTERM
+Restart=on-failure
+RestartSec=42s
+
+[Install]
+WantedBy=multi-user.target' > /etc/systemd/system/consul.service
+
+$ systemctl disable consul.service
+$ systemctl start consul.service && systemctl status consul.service
+
+$ consul members
+$ consul operator raft list-peers
+
+## Instalando o Cluster do Vault
+$ wget https://releases.hashicorp.com/vault/0.9.6/vault_0.9.6_linux_amd64.zip
+$ unzip vault_0.9.6_linux_amd64.zip
+
+$ mv vault /usr/bin
+$ vault version
+
+$ vault -autocomplete-install
+
+$ mkdir /var/log/vault
+$ mkdir /etc/vault.d
+
+$ touch /etc/vault.d/config.hcl
+$ useradd -r vault
+$ chown -R vault:vault /etc/vault.d
+
+$ echo 'storage "consul" {
+  address = "127.0.0.1:8500"
+  path    = "vault/"
+}
+
+listener "tcp"{
+	address 		= "0.0.0.0:8200"
+	cluster_address = "<ip_instancia_vault>:8201"
+	tls_disable		= 1
+}
+
+ui = true
+api_addr		= "http://0.0.0.0:8200"
+cluster_addr 	= "htt://<ip_instancia_vault>:8201"
+cluster_name	= "<name>"
+disable_mlock 	= true
+disable_cache 	= true
+pid_file 		= "/etc/vault.d/vault.pid"' > /etc/vault.d/config.hcl
+
+$ echo '[Unit]
+Description=vault service
+Requires=network-online.target
+After=network-online.target
+ConditionFileNotEmpty=/etc/vault.d/config.hcl
+
+[Service]
+User=vault
+Group=vault
+EnvironmentFile=-/etc/sysconfig/vault
+Environment=GOMAXPROCS=2
+Restart=on-failure
+ExecStart=/usr/bin/vault server -config=/etc/vault.d/config.hcl
+StandardOutput=/var/log/vault/output.log
+StandardError=/var/log/vault/error.log
+LimitMEMLOCK=infinity
+ExecReload=/bin/kill -HUP $MAINPID
+KillSignal=SIGTERM
+
+[Install]
+WantedBy=multi-user.target' > /etc/systemd/system/vault.service
+
+
+$ wget https://releases.hashicorp.com/consul/1.0.0/consul_1.0.0_linux_amd64.zip
+$ unzip consul_1.0.0_linux_amd64.zip
+
+$ mkdir /etc/consul.d
+$ mkdir /data/consul
+$ useradd -r consul
+$ chown -R consul:consul /etc/consul.d
+$ chown -R consul:consul /data/consul
+
+$ mv consul /usr/bin
+$ consul version
+
+$ echo '{
+  "server": false,
+  "node_name": "claro-1a-vault01-sit",
+  "datacenter": "dc01",
+  "data_dir": "/data/consul",
+  "bind_addr": "172.33.3.82",
+  "client_addr": "127.0.0.1",
+  "retry_join": ["172.33.12.181"],
+  "ui": true,
+  "log_level": "DEBUG",
+  "enable_syslog": true,
+  "acl_enforce_version_8": false
+}' > /etc/consul.d/consul.json
+
+$ echo '[Unit]
+Description=consul service agent
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+User=consul
+Group=consul
+PIDFile=/etc/consul.d/consul.pid
+PermissionsStartOnly=true
+ExecStartPre=/bin/mkdir -p /data/consul
+ExecStartPre=/bin/chown -R consul:consul /data/consul
+ExecStart=/usr/bin/consul agent -config-file=/etc/consul.d/consul.json
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+KillSignal=SIGTERM
+Restart=on-failure
+RestartSec=42s
+
+[Install]
+WantedBy=multi-user.target' > /etc/systemd/system/consul.service
+
+$ systemctl enable consul.service
+$ systemctl start consul.service && systemctl status consul.service
+
+$ systemctl enable vault.service
+$ systemctl restart vault.service && systemctl status vault.service
+
+$ netstat -atunp
+
+$ export VAULT_ADDR='http://127.0.0.1:8200'
+$ export VAULT_TOKEN='<root-token>'
+$ echo "export VAULT_ADDR='http://127.0.0.1:8200'" >> /root/.bashrc
+
+$ vault operator init
+
+$ vault operator unseal
+
+###################### HABILITANDO USER INTERFACE ######################
+$ <IP>:8200
+
+$ echo 'ui = true' >> /etc/vault.d/config.hcl
+
+$ systemctl restart vault.service
+
+############################ COMANDOS VAULT ############################
+## Habilitando secrets engine
+$ vault secrets enable <type_secrets_engine>
+$ vault secrets enable -path=<path> <type_secrets_engine>
+
+## Upgrade do KV secrets engine v1 para o v2
+$ vault secrets enable -version=1 kv
+$ vault secrets enable-versioning <path>
+
+## Comando List
+$ vault list cubbyhole/
+
+## Listar Secret Engine
+$ vault kv list secret 
+
+## Criar uma secret (Secret Engine)
+$ vault kv put <path>/<name> <key>=<value>
+
+## Visualizar uma secret
+$ vault kv get <path>/<name>
+$ vault kv get -field=<key> <path>/<name>
+
+## Visualizar o metadata
+$ vault kv metadata get <path>/<name>
+
+## Visualizar uma versão da secret
+$ vault kv get -version=<versao_metadata> <path>/<name>
+
+## Deletar uma versao da secret
+$ vault kv delete -versions <versao_metadata> <path>/<name>
+
+## Recuperar uma versão da secret
+$ vault kv undelete -versions <versao_metadata> <path>/<name>
+
+## Destruir uma versao da secret
+$ vault kv destroy -versions <versao_metadata> <path>/<name>
+
+## Disabilitar Secret
+$ vault secrets disable <path>
+
+## Mover um path de secrets
+$ vault secrets move <path_antigo> <path_novo>
+
+## Obtendo ajuda do vault
+$ vault path-help <path>
+
+## Metodos de autenticação
+$ vault auth enable <metodo>
+
+## Listar Metodos de autenticação
+$ vault auth list
+
+## Criar usuarios no vault
+$ vault write auth/<path>/users/<nome_users> password=<senha>
+
+## Autenticando usuario
+$ vault login -method=userpass -path=<path> username=<usuario> password=<senha> policies=<policie-name>
+$ vault login token=<token>
+
+## Politicas Vault
+$ touch policy-file.hcl
+
+	path "cubbyhole/*" {
+    	capabilities = ["create", "read", "update", "delete", "list"]
+	}
+	path "auth/token/lookup-self" {
+ 	   capabilities = ["read"]
+	}
+	path "auth/token/renew-self" {
+    	capabilities = ["update"]
+	}
+
+## Criando Politicas
+$ vault policy write <policy-name> <policy-file.hcl>
+
+## Deletando Policies
+$ vault policy delete <policy-name>
+$ vault delete sys/policy/<policy-name>
+
+## Gerando um novo Root Token
+$ vault operator generate-root -init
+$ vault operator generate-root -nonce <id_nonce> <unseal_key>
+$ vault operator generate-root -decode <id_decode> -opt <id_opt>
+
+## Realizando o rekey de nossas chaves
+$ vault operator rekey -init -key-shares 5 -key-treshold 3
+$ vault operator rekey -nonce <id_nonce> <unseal_key>
+
+## Executando a CLI do vault remotamente
+$ export VAULT_ADDR='http://<ip_instancia_vault>:8200'
+$ export VAULT_TOKEN='<token>'
+$ vault status
+
+## Dynamic Secret + AWS Secrets Engine
+$ vault enable aws
+$ vault write aws/config/root access_key=<id_access_key> secre_key=<id_secre_key> region=<region>
+$ vault read aws/config/root
+
+$ echo '{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": "ec2:*",
+			"Resource": "*"	
+		}
+	]
+}' > policy_aws_vault.json
+
+$ vault write aws/roles/my-role credential_type=iam_user policy=@policy_aws_vault.json
+$ vault read aws/roles/my-role 
+$ vault read aws/creds/my-role

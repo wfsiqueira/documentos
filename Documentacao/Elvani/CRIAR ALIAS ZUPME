@@ -1,0 +1,78 @@
+zupme-api-manager-api run rake zupme:create_es_index_for_organization ole 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization orchestrator 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization santander 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization realwave 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization sorocred 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization viavarejo 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization vivo 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization zupcorp 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization nlt 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization elo 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization ericsson 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization claro 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization claroprivate 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization itau 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization ipiranga 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization nextel 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization patagonia 20200305
+zupme-api-manager-api run rake zupme:create_es_index_for_organization vli 20200305
+
+
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization ole 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization orchestrator 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization santander 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization realwave 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization sorocred 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization viavarejo 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization vivo 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization zupcorp 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization nlt 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization elo 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization ericsson 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization claro 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization claroprivate 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization itau 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization ipiranga 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization nextel 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization patagonia 20200305 daily
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization vli 20200305 daily
+
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization ole 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization orchestrator 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization santander 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization realwave 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization sorocred 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization viavarejo 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization vivo 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization zupcorp 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization nlt 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization elo 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization ericsson 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization claro 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization claroprivate 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization itau 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization ipiranga 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization nextel 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization patagonia 20200305 monthly
+zupme-api-manager-api run rake zupme:create_es_aliases_for_organization vli 20200305 monthly
+
+
+
+
+export index_date=20200213 ; zupme-api-manager-api run rake zupme:create_es_index_for_organization ole ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization orchestrator ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization santander ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization realwave ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization sorocred ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization viavarejo ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization vivo ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization zupcorp ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization nlt ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization elo ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization ericsson ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization claro ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization claroprivate ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization itau ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization ipiranga ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization nextel ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization patagonia ${index_date} daily ; zupme-api-manager-api run rake zupme:create_es_index_for_organization vli ${index_date} daily
+
+export aliases_date=20200212 ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization ole ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization orchestrator ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization santander ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization realwave ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization sorocred ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization viavarejo ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization vivo ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization zupcorp ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization nlt ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization elo ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization ericsson ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization claro ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization claroprivate ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization itau ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization ipiranga ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization nextel ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization patagonia ${aliases_date} daily ; zupme-api-manager-api run rake zupme:create_es_aliases_for_organization vli ${aliases_date} daily
+
+
+
+
+
+
+
+
+[2020-02-10 23:23:14.1581387794] ERROR /usr/local/lib/python3.7/site-packages/healthcheck/healthcheck.py:140 run_check(): Health check "zupme_health" failed with output "Co │
+│ FATAL:  Cannot connect to the server sre-postgres                                                                                                                            │
+│ "                                                                                                                                                                            │
+│ [2020-02-10 23:23:14.1581387794] ERROR /usr/local/lib/python3.7/site-packages/healthcheck/healthcheck.py:140 run_check(): Health check "sre_health" failed with output "Coul │
+│ FATAL:  Cannot connect to the server sre-postgres                                                                                                                            │
+│ "                                                    

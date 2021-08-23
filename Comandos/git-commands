@@ -1,0 +1,141 @@
+$ git commit -am "Something message important here"
+# Para confirmar e adicionar arquivos alterados.
+
+$ git add
+# Para adicionar novos arquivos ao git.
+
+$ git log 
+# Para verificar o histórico de alterações registradas no repositório.
+
+$ git log -n 2
+# Este comando mostra os dois últimos commits.
+
+$ git log --oneline
+# Para mostrar um resumo de todas as confirmações no projeto.
+
+$ git log --stat
+# Para mostrar um resumo de todas as alterações no projeto, este comando mostra todas as linhas que foram adicionadas e removidas.
+
+$ git log -n 2 --oneline --stat
+# Este é um exemplo de comandos combinados.
+
+############## BRANCHES ##################
+
+$ git brach
+# Para listar todas as ramificações em seu repositório, ordenadas por nome
+
+$ git branch <nome_branch>
+# Crie um novo branch local
+
+$ git push origin <nome_branch>:<nome_branch>
+# Cire um novo branch remoto
+
+$ git branch -d <nome_branch>
+# Deletar um branch local
+
+$ git push origin :<nome_branch>
+# Deletar um branch remoto
+
+$ git checkout -t origin/<nome_branch>
+# Este comando puxa o branch remoto para local e faz checkout da branch que você deseja usar
+
+$ git branch | egrep "<condition in a regular expression>" | xargs git branch -d
+# Este comando exclui muitos branchs locais, usando expressões regulares
+
+git branch -vv | grep ': gone' | awk '{print $1}' | xargs git branch -d
+# Outro comando para excluir muitos branchs locais, se o branch não estiver totalmente mesclada, usando git branch -D
+
+############## CURSO GIT ##################
+# Iniciar configurações locais do repositorio
+$ git init
+
+# Realizar as configuracoes do usuario
+$ git config --global user.name "Willian Siqueira"
+$ git config --global user.email "willianfsiqueira@hotmail.com"
+
+# Verificar as configuracoes do usuario no git
+$ git config --global -l
+
+# Para adicionar novos arquivos ao git.
+$ git add
+
+# Verificar o estado dos aquivos no git
+$ git status
+
+# Para verificar o histórico de alterações registradas no repositório
+$ git log
+
+# Para confirmar e adicionar arquivos alterados.
+$ git commit -am "Something message important here"
+
+# Verificar as versoes anteriores de um arquivo
+$ git checkout <id_commit>
+
+# Voltar para a ultima versão de um arquivo
+$ git checkout master
+
+# Clonar repositorios do GitHub
+$ git clone <link_do_repositorio>
+
+# Enviar arquivos do repositorio local para o Github
+$ git push
+
+# Baixar arquivos do Github para o reppositorio local
+$ git 
+
+# Criar novas branchs
+$ git branch <nome_da_branch>
+
+# Vrificar branchs existentes
+$ git branch
+
+# Acessar outras branchs
+$ git checkout <nome_da_branch>
+
+# Deletar branch
+$ git branch -d <nome_da_branch>
+
+# Criar e entrar na nova branch
+$ git branch -b <nome_da_branch>
+
+# Realizar merge
+$ git checkout master
+$ git merge <nome_da_branch>
+
+# Atualizar repositorio local com novas branchs
+$ git fetch -p
+$ git checkout -b <branch>
+
+# Desfazer alterações em arquivos ou diretorios
+$ git checkout <nome_do_arquivo>  ou  git restore <nome_do_arquivo>
+
+# Voltando para o commit anterior, porem mantendo as alterações dos commits
+$ git reset --hard HEAD
+
+# Voltar para um commit e apagar as alterações do projeto
+$ git reset --hard <commit_que_quer_voltar>
+
+# Fork - Adicionar um repositorio remoto e sincronizar com o repositorio local
+$ git remote add upstream <link_do_repositorio>
+$ git pull upstream master
+
+# Realizar o rebase da branch
+$ git checkout <branch_que_realizar_o_rebase>
+$ git rebase master
+$ git checkout master
+$ git merge <nome_da_branch>
+
+# Verificar o log de forma simplificada
+$ git log --oneline
+
+# Realizar alterações no histórico dos commit com o rebase (Alterar comentarios dos commits)
+$ git rebase -i <commit_pai> 
+
+OBS: Para unir dois commits, utilizar o comando acima porem com a opcao "squash"
+
+# git fetch: baixa todos os commits do repositório remoto sem afetar o seu código local.
+$ git fetch
+$ git merge origin/master
+
+# git pull: baixa todos os commits do repositório remoto e ja realiza as alterações no repositorio local
+$ git pull

@@ -1,0 +1,973 @@
+Date: Tue, 4 Aug 2020 19:35:29 +0000 (UTC)
+Message-ID: <2023646823.51.1596569729702@b69eb428412d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_50_165151182.1596569729701"
+
+------=_Part_50_165151182.1596569729701
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>MGM - Roadmap</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>MGM - Roadmap</h1>
+    <div class=3D"Section1">
+        <p><br></p>
+<p><br></p>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 72.=
+0226%;">
+<colgroup>
+<col style=3D"width: 24.0741%;">
+<col style=3D"width: 38.3442%;">
+<col style=3D"width: 12.6362%;">
+<col style=3D"width: 16.6667%;">
+<col style=3D"width: 7.84314%;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"highlight-blue confluenceTd" style=3D"text-align: center;" col=
+span=3D"1" data-highlight-colour=3D"blue"><strong>Main Feature</strong></td=
+>
+<td class=3D"highlight-blue confluenceTd" style=3D"text-align: center;" col=
+span=3D"1" data-highlight-colour=3D"blue"><strong>Entreg=C3=A1vel</strong><=
+/td>
+<td class=3D"highlight-blue confluenceTd" style=3D"text-align: center;" col=
+span=3D"1" data-highlight-colour=3D"blue"><strong>Vers=C3=A3o produto</stro=
+ng></td>
+<td class=3D"highlight-blue confluenceTd" style=3D"text-align: center;" col=
+span=3D"1" data-highlight-colour=3D"blue"><strong>Previs=C3=A3o de Release =
+</strong></td>
+<td class=3D"highlight-blue confluenceTd" style=3D"text-align: center;" col=
+span=3D"1" data-highlight-colour=3D"blue"><strong>Status</strong></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas</td>
+<td class=3D"confluenceTd">&nbsp;&nbsp; Criar / Excluir / Editar / Listar</=
+td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time>&nbsp=
+;</p>
+</div></td>
+<td style=3D"text-align: center;" class=3D"confluenceTd"><span style=3D"col=
+or: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas</td>
+<td class=3D"confluenceTd">&nbsp;&nbsp; Pesquisa por status</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></p>
+</div></td>
+<td style=3D"text-align: center;" class=3D"confluenceTd"><span style=3D"col=
+or: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas</td>
+<td class=3D"confluenceTd">&nbsp;&nbsp; Arquivar</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></p>
+</div></td>
+<td style=3D"text-align: center;" class=3D"confluenceTd"><span style=3D"col=
+or: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Suspender</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Reativar</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p style=3D"text-align: center;"><time datetime=3D"2017-08-31" class=3D"dat=
+e-past">31/08/2017</time></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Expirar automaticamen=
+te</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Aprovar</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Customizar Regulament=
+o</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Suporte Multi-Politic=
+as</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p style=3D"text-align: center;"><time datetime=3D"2017-08-31" class=3D"dat=
+e-past">31/08/2017</time></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Compartilhamentos</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Customiza=C3=A7=C3=A3=
+o de Msg para WhatsApp</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Compartilhamentos</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Customiza=C3=A7=C3=A3=
+o de Msg para Facebook</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p style=3D"text-align: center;"><time datetime=3D"2017-11-30" class=3D"dat=
+e-past">30/11/2017</time><span>&nbsp;</span></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Compartilhamentos</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Customiza=C3=A7=C3=A3=
+o de Msg para Messenger</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time><span=
+>&nbsp;</span></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Compartilhamentos</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Customiza=C3=A7=C3=A3=
+o de Msg para Email</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time><span=
+>&nbsp;</span></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Compartilhamentos</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Customiza=C3=A7=C3=A3=
+o de Msg para Outros (Standard OS)</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time><span=
+>&nbsp;</span></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Compartilhamentos</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Tags Din=C3=A2micas n=
+as mensagens</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time><span=
+>&nbsp;</span></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Recompensa para Indic=
+ador</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Recompensa para Convi=
+dado</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Servi=C3=A7os do Cata=
+logo RealWave</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Qtde minima de inscri=
+=C3=A7=C3=B5es para recompensa</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Multiplos de inscri=
+=C3=A7=C3=B5es para recompensa</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Limite de recompensas=
+ para o Indicador</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Validade da recompens=
+a</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; B=C3=B4nus adicional =
+para conquistas</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Notifica=C3=A7=C3=A3o=
+&nbsp; via Push para Indicador</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Notifica=C3=A7=C3=A3o=
+&nbsp; via Push para Convidado</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Tags Din=C3=A2micas e=
+m Notifica=C3=A7=C3=B5es</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Open APIs</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Valida=C3=A7=C3=A3o c=
+=C3=B3digo de indica=C3=A7=C3=A3o</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Open APIs</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Consultar c=C3=B3digo=
+ de indica=C3=A7=C3=A3o do cliente</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Open APIs</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Consultar Politica vi=
+gente</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Open APIs</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Consultar Regulamento=
+</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Open APIs</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Consultar historico d=
+e inscri=C3=A7=C3=B5es de convidados</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Open APIs</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Consultar msg de comp=
+artilhamento por Rede social</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Open APIs</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Solicitar recompensa<=
+/td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n style=3D"color: rgb(0,0,0);">Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Opera=C3=A7=C3=A3o</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp; &nbsp;Health checks</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2017=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2017-08-31" class=3D"date-past">31/08/2017</time></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span style=3D"color: rgb(0,0,0);"=
+>Released</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><br>=
+</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Relat=C3=B3rios</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Vis=C3=A3o Geral de p=
+erformance da Politica</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R1.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Relat=C3=B3rios</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Top Indicadores</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R1.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Relat=C3=B3rios</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Mapa de Convers=C3=A3=
+o por Geolocaliza=C3=A7=C3=A3o</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R1.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Relat=C3=B3rios</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Funil de Convers=C3=
+=A3o</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R1.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Relat=C3=B3rios</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Quantidade de Compart=
+ilhamentos por Rede Social</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R1.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Pontos&nbsp;</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R3.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Dinheiro&nbsp;</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R1.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Descontos em assinatu=
+ras</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R1.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Bundles</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R2.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Planos exclusivos</td=
+>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R1.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Recorr=C3=AAncia de r=
+ecompensas</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R2.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Compartilhamentos&nbsp;&nbsp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp; Customiza=C3=A7=C3=A3o de M=
+sg para SMS</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R2.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Smart Policies - Segm=
+enta=C3=A7=C3=A3o por perfis do cliente</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R2.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time><span=
+>&nbsp;</span></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Segmenta=C3=A7=C3=A3o=
+ por Canais&nbsp;&nbsp;</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R2.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time><span=
+>&nbsp;</span></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Programa de Indica=C3=
+=A7=C3=A3o para Empresas</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R4.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time><span=
+>&nbsp;</span></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Controle Anti-fraude<=
+/td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R2.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time><span=
+>&nbsp;</span></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas&nbsp; &nb=
+sp;</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp; &nbsp;Anexar imagens</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp; &nbsp;2018R2.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n><span>&nbsp;</span></span><time datetime=3D"2018-02-28" class=3D"date-pas=
+t">28/02/2018</time></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>&nbsp;Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Gest=C3=A3o de Politicas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp; &nbsp;Perfis de acesso</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp; &nbsp;2018R2.0</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p style=3D"text-align: center;"><time datetime=3D"2018-02-28" class=3D"dat=
+e-past">28/02/2018</time></p>
+</div></td>
+<td colspan=3D"1" class=3D"confluenceTd"><span>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Notifica=C3=A7=C3=A3o=
+&nbsp; via SMS para Indicador</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R2.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time><span=
+>&nbsp;</span></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Notifica=C3=A7=C3=A3o=
+&nbsp; via SMS para Convidado</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R2.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><time datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time><span=
+>&nbsp;</span></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Notifica=C3=A7=C3=A3o=
+&nbsp; via Email para Indicador</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R2.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Recompensas</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Notifica=C3=A7=C3=A3o=
+&nbsp; via Email para Convidado</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R2.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p style=3D"text-align: center;"><time datetime=3D"2018-02-28" class=3D"dat=
+e-past">28/02/2018</time></p>
+</div></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">Back=
+log</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Recompensas</td>
+<td class=3D"confluenceTd">&nbsp;&nbsp; Pr=C3=A9-Condi=C3=A7=C3=B5es para L=
+ibera=C3=A7=C3=A3o de Recompensas</td>
+<td style=3D"text-align: center;" class=3D"confluenceTd">2018R2.0</td>
+<td style=3D"text-align: center;" class=3D"confluenceTd"><time datetime=3D"=
+2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" class=3D"confluenceTd"><span>Backlog</spa=
+n></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Recompensas</td>
+<td class=3D"confluenceTd">&nbsp;&nbsp; Restringir recompensa a inscri=C3=
+=A7=C3=A3o de um produto especifico</td>
+<td style=3D"text-align: center;" class=3D"confluenceTd">2018R2.0</td>
+<td style=3D"text-align: center;" class=3D"confluenceTd"><time datetime=3D"=
+2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" class=3D"confluenceTd"><span>Backlog</spa=
+n></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Opera=C3=A7=C3=A3o</td>
+<td colspan=3D"1" class=3D"confluenceTd">&nbsp;&nbsp; Dashboard de monitora=
+mento pro-ativo</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd">2018=
+R2.0</td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><tim=
+e datetime=3D"2018-02-28" class=3D"date-past">28/02/2018</time></td>
+<td style=3D"text-align: center;" colspan=3D"1" class=3D"confluenceTd"><spa=
+n>Backlog</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_50_165151182.1596569729701--

@@ -1,0 +1,344 @@
+Date: Tue, 4 Aug 2020 20:09:16 +0000 (UTC)
+Message-ID: <1959790146.97.1596571756450@15d48fbc96ea>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_96_560161362.1596571756450"
+
+------=_Part_96_560161362.1596571756450
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Tutorial: como rodar uma collection do Postman via linha de coma=
+ndo</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Tutorial: como rodar uma collection do Postman via linha de comando=
+</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"Tutorial:comorodarumacollectiondoPostmanvialinhadecomando=
+-InstalandooNodeJS">Instalando o NodeJS</h2>
+<p>Para rodar uma collection via linha de comando, voc=C3=AA precisar=C3=A1=
+ do <a href=3D"https://github.com/postmanlabs/newman#getting-started" class=
+=3D"external-link" rel=3D"nofollow">Newman</a>&nbsp;que =C3=A9 um m=C3=B3du=
+lo do NodeJS.</p>
+<p>Para instalar o NodeJS, basta acessar este link:&nbsp;<a href=3D"https:/=
+/nodejs.org/en/#download" class=3D"external-link" rel=3D"nofollow">https://=
+nodejs.org/en/#download</a></p>
+<h2 id=3D"Tutorial:comorodarumacollectiondoPostmanvialinhadecomando-Instala=
+ndooNewman">Instalando o Newman</h2>
+<p>Agora que voc=C3=AA voc=C3=AA tem o&nbsp;<code>NodeJS</code> basta execu=
+tar o seguinte comando:&nbsp;</p>
+<blockquote>
+<p><code>npm install newman --global</code></p>
+</blockquote>
+<p>Pronto. Para verificar se est=C3=A1 instalado corretamente, abra o termi=
+nal e execute:</p>
+<blockquote>
+<p><code>newman --version</code></p>
+</blockquote>
+<p>Este comando dever=C3=A1 funcionar e retornar a vers=C3=A3o corrente do =
+seu Newman.</p>
+<p>Agora que ele funciona, voc=C3=AA pode rodar sua collection utilizando o=
+ seguinte comando:</p>
+<blockquote>
+<p><code>newman run "caminho-para-sua-collection\Sua_Collection.postman_col=
+lection.json" -e "<code>caminho-para-seu-environment\Seu_Environment.</code=
+>postman_environment.json"</code></p>
+</blockquote>
+<p>Pronto, agora sua collection dever=C3=A1 rodar e os resultados aparecer=
+=C3=A3o no final.</p>
+<p><span class=3D"confluence-embedded-file-wrapper"><img class=3D"confluenc=
+e-embedded-image confluence-external-resource" src=3D"https://s3.amazonaws.=
+com/postman-static-getpostman-com/postman-docs/newman.gif" data-image-src=
+=3D"https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/new=
+man.gif"></span></p>
+<p><br></p>
+<p>Voc=C3=AA pode obter as collections e environments atualizados executand=
+o:</p>
+<blockquote>
+<pre>git clone&nbsp;<span class=3D"nolink">https://github.com/ZupIT/realwav=
+e-collections.git</span></pre>
+</blockquote>
+<h2 id=3D"Tutorial:comorodarumacollectiondoPostmanvialinhadecomando-Gerando=
+Relat=C3=B3riosdetestecomNewman">Gerando Relat=C3=B3rios de teste com Newma=
+n</h2>
+<p>O Newman tem v=C3=A1rios par=C3=A2metros que podem ser usados na linha d=
+e comando que executa a sua Collection. Para saber mais sobre estes comando=
+s, basta consultar <a href=3D"https://github.com/postmanlabs/newman#command=
+-line-options" class=3D"external-link" rel=3D"nofollow">esta</a> documenta=
+=C3=A7=C3=A3o.</p>
+<p>Para gerar relat=C3=B3rio em HTML basta adicionar&nbsp;<code>-r html</co=
+de> ao comando:</p>
+<blockquote>
+<p><code>newman run "caminho-para-sua-collection\Sua_Collection.postman_col=
+lection.json" -e "<code>caminho-para-seu-environment\Seu_Environment.</code=
+>postman_environment.json" <span style=3D"color: rgb(255,0,0);">-r html</sp=
+an></code></p>
+</blockquote>
+<p>Ele ir=C3=A1 gerar uma pasta "newman" dentro do diret=C3=B3rio onde voc=
+=C3=AA executou este comando e vai gerar o relat=C3=B3rio.html l=C3=A1 dent=
+ro.</p>
+<h2 id=3D"Tutorial:comorodarumacollectiondoPostmanvialinhadecomando-Integra=
+ndocomoJenkins">Integrando com o Jenkins</h2>
+<p>Voc=C3=AA pode, opcionalmente, subir um container do Jenkins no seu dock=
+er e rodar os testes periodicamente com um job, seja a cada meia hora ou a =
+cada commit.</p>
+<ol>
+<li>Instale o docker para <a href=3D"https://docs.docker.com/docker-for-win=
+dows/install/" class=3D"external-link" rel=3D"nofollow">Windows</a> ou para=
+ <a href=3D"https://docs.docker.com/install/linux/docker-ce/ubuntu/" class=
+=3D"external-link" rel=3D"nofollow">Linux</a></li>
+<li>Inicie o Docker <strong>como administrador</strong>&nbsp;</li>
+<li>Abra o terminal <strong>como adminstrador</strong></li>
+<li>Execute o seguinte comando:<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<code>=
+docker run -p 8080:8080 -p 50000:50000 "c:/zup/diretorio-onde-esta-sua-coll=
+ection":/data jenkins</code><br>Dessa forma, o docker ir=C3=A1 subir uma in=
+st=C3=A2ncia do Jenkins e o volume estar=C3=A1 apontando para o diret=C3=B3=
+rio onde est=C3=A1 sua collection.<br><span class=3D"confluence-embedded-fi=
+le-wrapper"><img class=3D"confluence-embedded-image confluence-external-res=
+ource" src=3D"http://i65.tinypic.com/2bbp61.png" data-image-src=3D"http://i=
+65.tinypic.com/2bbp61.png"></span><br><br></li>
+<li>Depois disso, basta entrar no seu Jenkins e criar um Job conforme descr=
+ito <a href=3D"https://www.getpostman.com/docs/postman/collection_runs/inte=
+gration_with_jenkins" class=3D"external-link" rel=3D"nofollow">nesta docume=
+nta=C3=A7=C3=A3o</a>.</li>
+</ol>
+<p>OBS: como o seu volume "<strong>data</strong>" aponta para a pasta onde =
+est=C3=A1 sua collection (conforme passo 4), voc=C3=AA dever=C3=A1 informar=
+ <strong>/data/sua_collection.json</strong> na linha de comando do JOB.</p>
+<p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-manu=
+al-size"><img class=3D"confluence-embedded-image confluence-external-resour=
+ce" width=3D"800" src=3D"https://www.getpostman.com/img/v1/docs/integrating=
+_with_jenkins/integrating_with_jenkins_6.png" data-image-src=3D"https://www=
+.getpostman.com/img/v1/docs/integrating_with_jenkins/integrating_with_jenki=
+ns_6.png"></span></p>
+<p>Conforme o exemplo desta imagem que est=C3=A1 na <a href=3D"https://www.=
+getpostman.com/docs/postman/collection_runs/integration_with_jenkins" class=
+=3D"external-link" rel=3D"nofollow">documenta=C3=A7=C3=A3o de integra=C3=A7=
+=C3=A3o com Jenkins</a>, basta substituir <strong>/Users/prakhar/Desktop</s=
+trong> por <strong>/data</strong></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_96_560161362.1596571756450--

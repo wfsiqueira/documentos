@@ -1,0 +1,279 @@
+Date: Tue, 4 Aug 2020 20:07:29 +0000 (UTC)
+Message-ID: <1640969494.131.1596571649164@7358258bd595>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_130_491129191.1596571649163"
+
+------=_Part_130_491129191.1596571649163
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Erros conhecidos</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Erros conhecidos</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"Errosconhecidos-CostumerIdn=C3=A3oencontrado">CostumerId =
+n=C3=A3o encontrado</h2>
+<p><strong>Problema:</strong> alguns m=C3=B3dulos (ex: wallet, subscription=
+s, payments, etc) apresentam a mensagem de erro "<em>Cliente [78b22d12-87c2=
+-46a0-8c45-89955d0d762e] n=C3=A3o encontrado</em>" mas, ao consultar no cus=
+tomer search, ele existe.</p>
+<p><strong>Poss=C3=ADvel diagn=C3=B3stico:</strong> o Customer Search pode =
+ter subido alguma vers=C3=A3o divergente que impossibilita os m=C3=B3dulos =
+de conversar com o Customer Search.</p>
+<p><strong>Quem eu procuro?</strong> a equipe do Customer Search. Tem que p=
+edir para ressincronizar a base.</p>
+<h2 id=3D"Errosconhecidos-Errodesconhecidoaocadastrarcart=C3=A3odecr=C3=A9d=
+ito">Erro desconhecido ao cadastrar cart=C3=A3o de cr=C3=A9dito</h2>
+<p><strong>Problema:</strong> ao tentar cadastrar um cart=C3=A3o de cr=C3=
+=A9dito para o customer, a wallet retorna a mensagem de erro "<em>Erro desc=
+onhecido ao processar a requisi=C3=A7=C3=A3o</em>".</p>
+<p><strong>Poss=C3=ADveis diagn=C3=B3sticos:</strong> 1) o ambiente =C3=A9 =
+novo e o banco ainda n=C3=A3o criado ou n=C3=A3o foi configurado. 2) demoro=
+u demais para fazer o deploy e o token do vault expirou.</p>
+<p><strong>Solu=C3=A7=C3=B5es</strong>: 1) rodar o setup e as configs confo=
+rme esta documenta=C3=A7=C3=A3o. 2) conversar com quem fez o deploy deste a=
+mbiente para refaz=C3=AA-lo.</p>
+<p><strong>E se n=C3=A3o for nada disso?</strong> Procurar o QA da wallet, =
+<a href=3D"mailto:luiz.waldrich@zup.com.br" class=3D"external-link" rel=3D"=
+nofollow">luiz.waldrich@zup.com.br</a></p>
+<h2 id=3D"Errosconhecidos-ErronoVault">Erro no Vault</h2>
+<p><strong>Problema:</strong> ao tentar cadastrar um cart=C3=A3o ou fazer p=
+agamento ou qualquer outra opera=C3=A7=C3=A3o que utilize a wallet, um dos =
+seguintes erros aparecem:</p>
+<ul>
+<li>"<em>Unable to write into vault backend</em>"</li>
+<li>"<em>Vault is sealed</em>"</li>
+<li>"<em>Failed to retrieve data from vault</em>"</li>
+</ul>
+<p><strong>Poss=C3=ADvel diagn=C3=B3stico:</strong> o ambiente caiu e foi r=
+einiciado automaticamente e o "unseal" do vault (que =C3=A9 feito manualmen=
+te) n=C3=A3o foi feito.</p>
+<p><strong>Solu=C3=A7=C3=B5es:</strong> o pessoal da infra deve fazer o uns=
+eal do vault conforme descrito <a href=3D"https://zupjira.atlassian.net/wik=
+i/spaces/RW/pages/50576202/Provisionamento+e+deploy" rel=3D"nofollow">nesta=
+ </a>documenta=C3=A7=C3=A3o.</p>
+    </div>
+</body>
+</html>
+------=_Part_130_491129191.1596571649163--

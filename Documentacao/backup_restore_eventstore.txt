@@ -1,0 +1,34 @@
+1º) PARAR O SERVIÇO DO EVENTSTORE
+$ systemctl stop eventstore && systemctl status eventstore
+
+2º) VERIFICAR AS CREDENCIAIS DA AWS NA MAQUINA DO EVENTSTORE
+$ cat ~/.aws/credentials 
+
+[default]
+aws_access_key_id = AKIA3ZGL62NM6JSRX6LM
+aws_secret_access_key = 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
+
+3º) REMOVER OS ARQUIVOS DE INDEX DO S3
+$ aws s3 rm s3://backup-claro-eventstore/index --recursive
+
+4º) REALIZAR BACKUP DO ANTIGO EVENTSTORE PARA O S3
+$ cd /var/lib/eventstore
+$ aws s3 cp . s3://backup-claro-eventstore --recursive --exclude "index/*" --exclude "*.00*"
+$ aws s3 cp . s3://backup-claro-eventstore --recursive --exclude "*.chk" --exclude "*.00*"
+$ aws s3 sync . s3://backup-claro-eventstore --exclude "*.chk" --exclude "index/*"
+
+5º) PARAR O SERVIÇO DO EVENTSTORE (NOVA MAQUINA)
+$ systemctl stop eventstore && systemctl status eventstore
+
+6º) REALIZAR RESTORE DO S3 PARA O NOVO EVENTSTORE
+$ aws s3 cp s3://backup-claro-eventstore/chaser.chk /var/lib/eventstore/truncate.chk
+$ aws s3 sync --exclude="truncate.chk" s3://backup-claro-eventstore /var/lib/eventstore
+
+7º) ALTERAR AS PERMISSOES DA PASTA DO EVENTSTORE
+$ cd /var/lib
+$ chown -R eventstore:eventstore /var/lib/eventstore
+$ ls -alh
+
+8º) INICIAR O SERVIÇO DO EVENTSTORE
+$ systemctl enable eventstore
+$ systemctl start eventstore && journalctl -f -u eventstore

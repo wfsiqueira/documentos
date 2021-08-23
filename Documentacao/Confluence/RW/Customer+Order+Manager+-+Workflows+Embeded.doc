@@ -1,0 +1,380 @@
+Date: Tue, 4 Aug 2020 19:23:44 +0000 (UTC)
+Message-ID: <646954556.41.1596569024606@c8d122cc4352>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_40_335567526.1596569024606"
+
+------=_Part_40_335567526.1596569024606
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Customer Order Manager - Workflows Embeded</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Customer Order Manager - Workflows Embeded</h1>
+    <div class=3D"Section1">
+        <p class=3D"auto-cursor-target">O COM (Customer Order Manager) util=
+iza como mecanismo de <em>workflow</em> o <a href=3D"https://camunda.org" c=
+lass=3D"external-link" rel=3D"nofollow">Camunda</a>, para garantir a config=
+urabilidade de comportamento, dinamismo e capacidade de evolu=C3=A7=C3=A3o =
+de processos.</p>
+<p class=3D"auto-cursor-target">O <a href=3D"https://camunda.org" class=3D"=
+external-link" rel=3D"nofollow">Camunda </a>possui uma significativa utiliz=
+a=C3=A7=C3=A3o de mercado al=C3=A9m de algumas ferramentas que possibilita =
+a gest=C3=A3o das instancias em execu=C3=A7=C3=A3o e a configura=C3=A7=C3=
+=A3o de novos processos de negocio.&nbsp;</p>
+<p class=3D"auto-cursor-target">Para utilizar a ferramenta gr=C3=A1fica par=
+a cria=C3=A7=C3=A3o dos <em>workflows</em> e visualiza=C3=A7=C3=A3o dos mes=
+mos utilize o <a href=3D"https://camunda.org/download/modeler/" class=3D"ex=
+ternal-link" rel=3D"nofollow">Camunda Modeler</a>.</p>
+<h2 class=3D"auto-cursor-target" id=3D"CustomerOrderManager-WorkflowsEmbede=
+d-WorkflowscriadosnoCOM:">Workflows criados no COM:</h2>
+<div class=3D"table-wrap">
+<table class=3D"wrapped relative-table confluenceTable" style=3D"width: 100=
+.0%;">
+<colgroup>
+<col style=3D"width: 10.2008%;">
+<col>
+<col style=3D"width: 18.7149%;">
+<col style=3D"width: 52.2088%;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Workflow</th>
+<th colspan=3D"1" class=3D"confluenceTh">Nome</th>
+<th class=3D"confluenceTh">Responsabilidades</th>
+<th class=3D"confluenceTh">Observa=C3=A7=C3=B5es</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><a href=3D"/wiki/spaces/RW/pages/50763559/Bonus+=
+offer+activation" data-linked-resource-id=3D"50763559" data-linked-resource=
+-version=3D"14" data-linked-resource-type=3D"page">Bonus offer activation &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></td>
+<td colspan=3D"1" class=3D"confluenceTd">BONUS</td>
+<td class=3D"confluenceTd">
+<ol>
+<li>Receber ofertas</li>
+<li>Efetuar pagamento</li>
+<li>Cadastrar ofertas no CIM</li>
+<li>Conceder as ofertas</li>
+<li>Atualizar as ofertas no CIM</li>
+</ol></td>
+<td class=3D"confluenceTd">
+<ol>
+<li>Envia o pagamento para Payments ( com valor =3D 0 ) o m=C3=A9todo dever=
+ia ser BONUS, porem n=C3=A3o h=C3=A1 nenhuma valida=C3=A7=C3=A3o</li>
+<li>No momento n=C3=A3o possuem assinaturas</li>
+<li>N=C3=A3o efetuam ativa=C3=A7=C3=B5es de produtos</li>
+</ol></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><a href=3D"https://zupjira.atlassian.net/wiki/sp=
+aces/RW/pages/50766536/Product+With+Offers+Workflow" rel=3D"nofollow">Produ=
+ct with offers activation</a></td>
+<td colspan=3D"1" class=3D"confluenceTd">JOIN</td>
+<td class=3D"confluenceTd">
+<ol>
+<li>Receber ofertas</li>
+<li>Efetuar pagamento</li>
+<li>Cadastrar produtos no CIM</li>
+<li>Ativar produtos no SOM</li>
+<li>Conceder as ofertas</li>
+<li>Atualizar as ofertas no CIM</li>
+<li>Assinatura no Subscription</li>
+<li>Notificar MGM</li>
+</ol></td>
+<td class=3D"confluenceTd">
+<ol>
+<li>Envia o pagamento para Payments o m=C3=A9todo =C3=A9 CREDIT_CARD &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
+<li>No momento n=C3=A3o possuem assinaturas</li>
+<li>Efetua ativa=C3=A7=C3=B5es de produtos</li>
+<li>Cria assinatura no Subscription</li>
+<li>Notifica o MGM</li>
+</ol><p><br></p></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><a href=3D"/wiki/spaces/RW/pages/5=
+1153236/Subscrition+offer+renewal" data-linked-resource-id=3D"51153236" dat=
+a-linked-resource-version=3D"6" data-linked-resource-type=3D"page">Subscrit=
+ion offer renewal</a></td>
+<td colspan=3D"1" class=3D"confluenceTd">RENEWAL</td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Receber ofertas</li>
+<li>Efetuar pagamento</li>
+<li>Cadastrar ofertas no CIM</li>
+<li>Conceder as ofertas</li>
+<li>Atualizar as ofertas no CIM</li>
+</ol></td>
+<td colspan=3D"1" class=3D"confluenceTd">
+<ol>
+<li>Envia o pagamento para Payments o m=C3=A9todo =C3=A9 CREDIT_CARD</li>
+<li>N=C3=A3o efetuam ativa=C3=A7=C3=B5es de produtos</li>
+</ol></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Offer Activation</td>
+<td colspan=3D"1" class=3D"confluenceTd">BUY</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">COUPON</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">CHANGE</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">SUSPEND_PRODUCT</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">REACTIVE_PRODUCT</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd">CANCEL_PRODUCT</td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_40_335567526.1596569024606--
