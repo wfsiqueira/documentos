@@ -588,12 +588,10 @@ https://medium.com/@jackalus/vault-kubernetes-auth-and-database-secrets-engine-6
 willian.siqueira@zup.com.br
 T7Je8pMrJ*7^RYbo
 
-
 Server    smtp.sendgrid.net
-Ports   587
+Ports     587
 Username  apikey
 Password  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
-
 
 https://drive.google.com/drive/folders/19IeEat_zliULeQq7GeYG8IAWDfDCO0uN
 
